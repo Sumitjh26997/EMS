@@ -1,0 +1,65 @@
+2018-03-17 06:54:50 [::1][-][bbq7c60qh1qt6ghmd475ukp7s0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/contact in /srv/http/ems/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /srv/http/ems/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('contact', Array)
+#1 /srv/http/ems/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/contact', Array)
+#2 /srv/http/ems/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /srv/http/ems/backend/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /srv/http/ems/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /srv/http/ems/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /srv/http/ems/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-03-17 06:54:49 [::1][-][bbq7c60qh1qt6ghmd475ukp7s0][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => 'f75rj3of4djpve5ankfkuun60i'
+    '_csrf-frontend' => '4ecfa8223b5a5cd837b174af7f43f907f3fa6f8c28ffadff20fe171af54e5a5fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UN3d0sJCH6f_BG5LCFcCA1INlRlsV1IG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=f75rj3of4djpve5ankfkuun60i; _csrf-frontend=4ecfa8223b5a5cd837b174af7f43f907f3fa6f8c28ffadff20fe171af54e5a5fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UN3d0sJCH6f_BG5LCFcCA1INlRlsV1IG%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/backend/web/index.php'
+    'REMOTE_PORT' => '51942'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/ems/backend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/ems/backend/web/index.php'
+    'PHP_SELF' => '/ems/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1521269689.555
+    'REQUEST_TIME' => 1521269689
+]

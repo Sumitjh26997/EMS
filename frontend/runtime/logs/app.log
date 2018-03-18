@@ -1,0 +1,213 @@
+2018-03-14 16:00:41 [::1][-][7cn7f4n693emukiqhcro3t3fcs][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required. in /srv/http/ems/vendor/yiisoft/yii2/captcha/Captcha.php:175
+Stack trace:
+#0 /srv/http/ems/vendor/yiisoft/yii2/captcha/Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 /srv/http/ems/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /srv/http/ems/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 /srv/http/ems/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /srv/http/ems/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /srv/http/ems/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /srv/http/ems/vendor/yiisoft/yii2/widgets/ActiveField.php(781): yii\base\Widget::widget(Array)
+#8 /srv/http/ems/frontend/views/site/contact.php(34): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /srv/http/ems/vendor/yiisoft/yii2/base/View.php(336): require('/srv/http/ems/f...')
+#10 /srv/http/ems/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/srv/http/ems/f...', Array)
+#11 /srv/http/ems/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/srv/http/ems/f...', Array, Object(frontend\controllers\SiteController))
+#12 /srv/http/ems/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('contact', Array, Object(frontend\controllers\SiteController))
+#13 /srv/http/ems/frontend/controllers/SiteController.php(131): yii\base\Controller->render('contact', Array)
+#14 [internal function]: frontend\controllers\SiteController->actionContact()
+#15 /srv/http/ems/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /srv/http/ems/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /srv/http/ems/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('contact', Array)
+#18 /srv/http/ems/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/contact', Array)
+#19 /srv/http/ems/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /srv/http/ems/frontend/web/index.php(17): yii\base\Application->run()
+#21 {main}
+2018-03-14 16:00:40 [::1][-][7cn7f4n693emukiqhcro3t3fcs][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => '7cn7f4n693emukiqhcro3t3fcs'
+    '_csrf-frontend' => '8de36006ca469bc641e85e4a63c1c78e9a600c47cba238028368fc4d298c4640a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1dqsxjliRNdlATrq9jhr1wTjYMXVJt-O\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ems/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=7cn7f4n693emukiqhcro3t3fcs; _csrf-frontend=8de36006ca469bc641e85e4a63c1c78e9a600c47cba238028368fc4d298c4640a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221dqsxjliRNdlATrq9jhr1wTjYMXVJt-O%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/frontend/web/index.php'
+    'REMOTE_PORT' => '48366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/ems/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/ems/frontend/web/index.php'
+    'PHP_SELF' => '/ems/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1521043240.805
+    'REQUEST_TIME' => 1521043240
+]
+2018-03-14 16:01:19 [::1][-][7cn7f4n693emukiqhcro3t3fcs][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required. in /srv/http/ems/vendor/yiisoft/yii2/captcha/Captcha.php:175
+Stack trace:
+#0 /srv/http/ems/vendor/yiisoft/yii2/captcha/Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 /srv/http/ems/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /srv/http/ems/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 /srv/http/ems/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /srv/http/ems/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /srv/http/ems/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /srv/http/ems/vendor/yiisoft/yii2/widgets/ActiveField.php(781): yii\base\Widget::widget(Array)
+#8 /srv/http/ems/frontend/views/site/contact.php(34): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /srv/http/ems/vendor/yiisoft/yii2/base/View.php(336): require('/srv/http/ems/f...')
+#10 /srv/http/ems/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/srv/http/ems/f...', Array)
+#11 /srv/http/ems/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/srv/http/ems/f...', Array, Object(frontend\controllers\SiteController))
+#12 /srv/http/ems/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('contact', Array, Object(frontend\controllers\SiteController))
+#13 /srv/http/ems/frontend/controllers/SiteController.php(131): yii\base\Controller->render('contact', Array)
+#14 [internal function]: frontend\controllers\SiteController->actionContact()
+#15 /srv/http/ems/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /srv/http/ems/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 /srv/http/ems/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('contact', Array)
+#18 /srv/http/ems/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/contact', Array)
+#19 /srv/http/ems/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /srv/http/ems/frontend/web/index.php(17): yii\base\Application->run()
+#21 {main}
+2018-03-14 16:01:19 [::1][-][7cn7f4n693emukiqhcro3t3fcs][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => '7cn7f4n693emukiqhcro3t3fcs'
+    '_csrf-frontend' => '8de36006ca469bc641e85e4a63c1c78e9a600c47cba238028368fc4d298c4640a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1dqsxjliRNdlATrq9jhr1wTjYMXVJt-O\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ems/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=7cn7f4n693emukiqhcro3t3fcs; _csrf-frontend=8de36006ca469bc641e85e4a63c1c78e9a600c47cba238028368fc4d298c4640a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221dqsxjliRNdlATrq9jhr1wTjYMXVJt-O%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/frontend/web/index.php'
+    'REMOTE_PORT' => '48372'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/ems/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/ems/frontend/web/index.php'
+    'PHP_SELF' => '/ems/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1521043279.241
+    'REQUEST_TIME' => 1521043279
+]
+2018-03-14 16:02:53 [::1][-][7cn7f4n693emukiqhcro3t3fcs][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/lib/php/modules/zip.so (/usr/lib/php/modules/zip.so: undefined symbol: spprintf), /usr/lib/php/modules/zip.so.so (/usr/lib/php/modules/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-14 16:02:53 [::1][-][7cn7f4n693emukiqhcro3t3fcs][info][application] $_GET = [
+    'r' => 'site/captcha'
+    'v' => '5aa947acefe3c'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => '7cn7f4n693emukiqhcro3t3fcs'
+    '_csrf-frontend' => '8de36006ca469bc641e85e4a63c1c78e9a600c47cba238028368fc4d298c4640a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1dqsxjliRNdlATrq9jhr1wTjYMXVJt-O\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rafaeo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ems/frontend/web/index.php?r=site%2Fcontact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=7cn7f4n693emukiqhcro3t3fcs; _csrf-frontend=8de36006ca469bc641e85e4a63c1c78e9a600c47cba238028368fc4d298c4640a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221dqsxjliRNdlATrq9jhr1wTjYMXVJt-O%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/frontend/web/index.php'
+    'REMOTE_PORT' => '48432'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcaptcha&v=5aa947acefe3c'
+    'REQUEST_URI' => '/ems/frontend/web/index.php?r=site%2Fcaptcha&v=5aa947acefe3c'
+    'SCRIPT_NAME' => '/ems/frontend/web/index.php'
+    'PHP_SELF' => '/ems/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1521043372.997
+    'REQUEST_TIME' => 1521043372
+]
