@@ -15,8 +15,12 @@ return [
         'showScriptName' => false,
         // Use pretty URLs
         'enablePrettyUrl' => true,
-        'rules' => [
-        ],
+        'rules' => array(
+            '<alias:\w+>' => 'site/<alias>',
+            '<controller:\w+>/<id:\d+>' => '<controller>/view',
+            '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+            '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+        ),
     ],
     ],
 ];
