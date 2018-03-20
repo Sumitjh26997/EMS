@@ -231,3 +231,573 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1521372824.783
     'REQUEST_TIME' => 1521372824
 ]
+2018-03-19 05:19:01 [::1][-][oje07mkovu14grvrhuvek2etn3][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/lib/php/modules/zip.so (/usr/lib/php/modules/zip.so: undefined symbol: spprintf), /usr/lib/php/modules/zip.so.so (/usr/lib/php/modules/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-19 05:19:01 [::1][-][oje07mkovu14grvrhuvek2etn3][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => 'bca251pif459pa1c98pmgkj6ou'
+    '_csrf-frontend' => 'b7d3e6b52dc6af72511c9f0d7f26752e831ad734820d75df3668f538d5a38be5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"yGF8vN8EEVvJPssChLtRRi93qpFN5rkM\";}'
+    'advanced-backend' => 'oje07mkovu14grvrhuvek2etn3'
+    '_csrf-backend' => 'be272585f75fa019fa3b975b7c52dcfc33a0a3903f3f2d1041ab9baa771c3178a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ezlnjNnj1MUUockZMHCs7q29Lf27StSx\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ems/admin/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=bca251pif459pa1c98pmgkj6ou; _csrf-frontend=b7d3e6b52dc6af72511c9f0d7f26752e831ad734820d75df3668f538d5a38be5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22yGF8vN8EEVvJPssChLtRRi93qpFN5rkM%22%3B%7D; advanced-backend=oje07mkovu14grvrhuvek2etn3; _csrf-backend=be272585f75fa019fa3b975b7c52dcfc33a0a3903f3f2d1041ab9baa771c3178a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ezlnjNnj1MUUockZMHCs7q29Lf27StSx%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/admin/index.php'
+    'REMOTE_PORT' => '54718'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ems/admin/'
+    'SCRIPT_NAME' => '/ems/admin/index.php'
+    'PHP_SELF' => '/ems/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1521436741.071
+    'REQUEST_TIME' => 1521436741
+]
+2018-03-19 09:37:49 [::1][-][fkch0bpv4pc4c2glbl5acoc1t9][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/lib/php/modules/zip.so (/usr/lib/php/modules/zip.so: undefined symbol: spprintf), /usr/lib/php/modules/zip.so.so (/usr/lib/php/modules/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-19 09:37:49 [::1][-][fkch0bpv4pc4c2glbl5acoc1t9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => 's462glsm7v525umih0mu4rt4ev'
+    '_csrf-frontend' => '60e12fad68003375385757851e19457bdd3365dac630ab155bc191ae590aec66a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xGewewD9Yse3mr6VNRvzitx8LCR3CKmx\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ems/admin/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=s462glsm7v525umih0mu4rt4ev; _csrf-frontend=60e12fad68003375385757851e19457bdd3365dac630ab155bc191ae590aec66a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xGewewD9Yse3mr6VNRvzitx8LCR3CKmx%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/admin/index.php'
+    'REMOTE_PORT' => '50186'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ems/admin/'
+    'SCRIPT_NAME' => '/ems/admin/index.php'
+    'PHP_SELF' => '/ems/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1521452269.408
+    'REQUEST_TIME' => 1521452269
+]
+2018-03-19 09:37:53 [::1][-][fkch0bpv4pc4c2glbl5acoc1t9][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/lib/php/modules/zip.so (/usr/lib/php/modules/zip.so: undefined symbol: spprintf), /usr/lib/php/modules/zip.so.so (/usr/lib/php/modules/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-19 09:37:53 [::1][-][fkch0bpv4pc4c2glbl5acoc1t9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => 's462glsm7v525umih0mu4rt4ev'
+    '_csrf-frontend' => '60e12fad68003375385757851e19457bdd3365dac630ab155bc191ae590aec66a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xGewewD9Yse3mr6VNRvzitx8LCR3CKmx\";}'
+    'advanced-backend' => 'fkch0bpv4pc4c2glbl5acoc1t9'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ems/admin/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=s462glsm7v525umih0mu4rt4ev; _csrf-frontend=60e12fad68003375385757851e19457bdd3365dac630ab155bc191ae590aec66a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xGewewD9Yse3mr6VNRvzitx8LCR3CKmx%22%3B%7D; advanced-backend=fkch0bpv4pc4c2glbl5acoc1t9'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/admin/index.php'
+    'REMOTE_PORT' => '50188'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ems/admin/'
+    'SCRIPT_NAME' => '/ems/admin/index.php'
+    'PHP_SELF' => '/ems/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1521452273.398
+    'REQUEST_TIME' => 1521452273
+]
+2018-03-19 09:39:50 [::1][-][fkch0bpv4pc4c2glbl5acoc1t9][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/lib/php/modules/zip.so (/usr/lib/php/modules/zip.so: undefined symbol: spprintf), /usr/lib/php/modules/zip.so.so (/usr/lib/php/modules/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-19 09:39:50 [::1][-][fkch0bpv4pc4c2glbl5acoc1t9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => 's462glsm7v525umih0mu4rt4ev'
+    '_csrf-frontend' => '60e12fad68003375385757851e19457bdd3365dac630ab155bc191ae590aec66a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xGewewD9Yse3mr6VNRvzitx8LCR3CKmx\";}'
+    'advanced-backend' => 'fkch0bpv4pc4c2glbl5acoc1t9'
+    '_csrf-backend' => 'd35d16b43ed8b6ff386a409b8cfc6b3cb897f54ebc5519eefd733d7a568b0761a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oReNu4WEa3E9WR5qDAbbSovcQthu1vzp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ems/admin/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=s462glsm7v525umih0mu4rt4ev; _csrf-frontend=60e12fad68003375385757851e19457bdd3365dac630ab155bc191ae590aec66a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xGewewD9Yse3mr6VNRvzitx8LCR3CKmx%22%3B%7D; advanced-backend=fkch0bpv4pc4c2glbl5acoc1t9; _csrf-backend=d35d16b43ed8b6ff386a409b8cfc6b3cb897f54ebc5519eefd733d7a568b0761a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oReNu4WEa3E9WR5qDAbbSovcQthu1vzp%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/admin/index.php'
+    'REMOTE_PORT' => '50250'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ems/admin/'
+    'SCRIPT_NAME' => '/ems/admin/index.php'
+    'PHP_SELF' => '/ems/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1521452390.411
+    'REQUEST_TIME' => 1521452390
+]
+2018-03-19 09:40:04 [::1][-][fkch0bpv4pc4c2glbl5acoc1t9][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/lib/php/modules/zip.so (/usr/lib/php/modules/zip.so: undefined symbol: spprintf), /usr/lib/php/modules/zip.so.so (/usr/lib/php/modules/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-19 09:40:03 [::1][-][fkch0bpv4pc4c2glbl5acoc1t9][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => 's462glsm7v525umih0mu4rt4ev'
+    '_csrf-frontend' => '60e12fad68003375385757851e19457bdd3365dac630ab155bc191ae590aec66a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xGewewD9Yse3mr6VNRvzitx8LCR3CKmx\";}'
+    'advanced-backend' => 'fkch0bpv4pc4c2glbl5acoc1t9'
+    '_csrf-backend' => 'd35d16b43ed8b6ff386a409b8cfc6b3cb897f54ebc5519eefd733d7a568b0761a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oReNu4WEa3E9WR5qDAbbSovcQthu1vzp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ems/admin/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=s462glsm7v525umih0mu4rt4ev; _csrf-frontend=60e12fad68003375385757851e19457bdd3365dac630ab155bc191ae590aec66a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xGewewD9Yse3mr6VNRvzitx8LCR3CKmx%22%3B%7D; advanced-backend=fkch0bpv4pc4c2glbl5acoc1t9; _csrf-backend=d35d16b43ed8b6ff386a409b8cfc6b3cb897f54ebc5519eefd733d7a568b0761a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oReNu4WEa3E9WR5qDAbbSovcQthu1vzp%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/admin/index.php'
+    'REMOTE_PORT' => '50262'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ems/admin/'
+    'SCRIPT_NAME' => '/ems/admin/index.php'
+    'PHP_SELF' => '/ems/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1521452403.228
+    'REQUEST_TIME' => 1521452403
+]
+2018-03-19 13:04:07 [::1][-][b104m4e9nk0ajaofa5c93hl187][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/lib/php/modules/zip.so (/usr/lib/php/modules/zip.so: undefined symbol: spprintf), /usr/lib/php/modules/zip.so.so (/usr/lib/php/modules/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-19 13:04:06 [::1][-][b104m4e9nk0ajaofa5c93hl187][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => 'q9rhm52fc39manaj4ub523lf7n'
+    '_csrf-frontend' => '3ff9ce3c02d2eec62c7f0539efc65bc686230a2c3ca34d9961fa199051c51c78a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"k4YjYL6rPEI9iRNJmzik4tcEZqo-uaSs\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ems/admin/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=q9rhm52fc39manaj4ub523lf7n; _csrf-frontend=3ff9ce3c02d2eec62c7f0539efc65bc686230a2c3ca34d9961fa199051c51c78a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22k4YjYL6rPEI9iRNJmzik4tcEZqo-uaSs%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/admin/index.php'
+    'REMOTE_PORT' => '42158'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ems/admin/'
+    'SCRIPT_NAME' => '/ems/admin/index.php'
+    'PHP_SELF' => '/ems/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1521464646.756
+    'REQUEST_TIME' => 1521464646
+]
+2018-03-19 13:04:13 [::1][-][b104m4e9nk0ajaofa5c93hl187][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/lib/php/modules/zip.so (/usr/lib/php/modules/zip.so: undefined symbol: spprintf), /usr/lib/php/modules/zip.so.so (/usr/lib/php/modules/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-19 13:04:13 [::1][-][b104m4e9nk0ajaofa5c93hl187][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => 'q9rhm52fc39manaj4ub523lf7n'
+    '_csrf-frontend' => '3ff9ce3c02d2eec62c7f0539efc65bc686230a2c3ca34d9961fa199051c51c78a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"k4YjYL6rPEI9iRNJmzik4tcEZqo-uaSs\";}'
+    'advanced-backend' => 'b104m4e9nk0ajaofa5c93hl187'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ems/admin/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=q9rhm52fc39manaj4ub523lf7n; _csrf-frontend=3ff9ce3c02d2eec62c7f0539efc65bc686230a2c3ca34d9961fa199051c51c78a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22k4YjYL6rPEI9iRNJmzik4tcEZqo-uaSs%22%3B%7D; advanced-backend=b104m4e9nk0ajaofa5c93hl187'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/admin/index.php'
+    'REMOTE_PORT' => '42160'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ems/admin/'
+    'SCRIPT_NAME' => '/ems/admin/index.php'
+    'PHP_SELF' => '/ems/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1521464653.156
+    'REQUEST_TIME' => 1521464653
+]
+2018-03-19 13:04:13 [::1][-][b104m4e9nk0ajaofa5c93hl187][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/lib/php/modules/zip.so (/usr/lib/php/modules/zip.so: undefined symbol: spprintf), /usr/lib/php/modules/zip.so.so (/usr/lib/php/modules/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-19 13:04:13 [::1][-][b104m4e9nk0ajaofa5c93hl187][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => 'q9rhm52fc39manaj4ub523lf7n'
+    '_csrf-frontend' => '3ff9ce3c02d2eec62c7f0539efc65bc686230a2c3ca34d9961fa199051c51c78a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"k4YjYL6rPEI9iRNJmzik4tcEZqo-uaSs\";}'
+    'advanced-backend' => 'b104m4e9nk0ajaofa5c93hl187'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ems/admin/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=q9rhm52fc39manaj4ub523lf7n; _csrf-frontend=3ff9ce3c02d2eec62c7f0539efc65bc686230a2c3ca34d9961fa199051c51c78a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22k4YjYL6rPEI9iRNJmzik4tcEZqo-uaSs%22%3B%7D; advanced-backend=b104m4e9nk0ajaofa5c93hl187'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/admin/index.php'
+    'REMOTE_PORT' => '42162'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ems/admin/'
+    'SCRIPT_NAME' => '/ems/admin/index.php'
+    'PHP_SELF' => '/ems/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1521464653.697
+    'REQUEST_TIME' => 1521464653
+]
+2018-03-19 13:04:13 [::1][-][b104m4e9nk0ajaofa5c93hl187][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/lib/php/modules/zip.so (/usr/lib/php/modules/zip.so: undefined symbol: spprintf), /usr/lib/php/modules/zip.so.so (/usr/lib/php/modules/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-19 13:04:13 [::1][-][b104m4e9nk0ajaofa5c93hl187][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => 'q9rhm52fc39manaj4ub523lf7n'
+    '_csrf-frontend' => '3ff9ce3c02d2eec62c7f0539efc65bc686230a2c3ca34d9961fa199051c51c78a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"k4YjYL6rPEI9iRNJmzik4tcEZqo-uaSs\";}'
+    'advanced-backend' => 'b104m4e9nk0ajaofa5c93hl187'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ems/admin/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=q9rhm52fc39manaj4ub523lf7n; _csrf-frontend=3ff9ce3c02d2eec62c7f0539efc65bc686230a2c3ca34d9961fa199051c51c78a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22k4YjYL6rPEI9iRNJmzik4tcEZqo-uaSs%22%3B%7D; advanced-backend=b104m4e9nk0ajaofa5c93hl187'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/admin/index.php'
+    'REMOTE_PORT' => '42164'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ems/admin/'
+    'SCRIPT_NAME' => '/ems/admin/index.php'
+    'PHP_SELF' => '/ems/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1521464653.937
+    'REQUEST_TIME' => 1521464653
+]
+2018-03-19 13:04:14 [::1][-][b104m4e9nk0ajaofa5c93hl187][error][yii\base\ErrorException:32] yii\base\ErrorException: PHP Startup: Unable to load dynamic library 'zip.so' (tried: /usr/lib/php/modules/zip.so (/usr/lib/php/modules/zip.so: undefined symbol: spprintf), /usr/lib/php/modules/zip.so.so (/usr/lib/php/modules/zip.so.so: cannot open shared object file: No such file or directory)) in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-03-19 13:04:14 [::1][-][b104m4e9nk0ajaofa5c93hl187][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => 'q9rhm52fc39manaj4ub523lf7n'
+    '_csrf-frontend' => '3ff9ce3c02d2eec62c7f0539efc65bc686230a2c3ca34d9961fa199051c51c78a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"k4YjYL6rPEI9iRNJmzik4tcEZqo-uaSs\";}'
+    'advanced-backend' => 'b104m4e9nk0ajaofa5c93hl187'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/ems/admin/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=q9rhm52fc39manaj4ub523lf7n; _csrf-frontend=3ff9ce3c02d2eec62c7f0539efc65bc686230a2c3ca34d9961fa199051c51c78a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22k4YjYL6rPEI9iRNJmzik4tcEZqo-uaSs%22%3B%7D; advanced-backend=b104m4e9nk0ajaofa5c93hl187'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/admin/index.php'
+    'REMOTE_PORT' => '42166'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ems/admin/'
+    'SCRIPT_NAME' => '/ems/admin/index.php'
+    'PHP_SELF' => '/ems/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1521464654.147
+    'REQUEST_TIME' => 1521464654
+]
