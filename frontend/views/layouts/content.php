@@ -4,7 +4,7 @@ use dmstr\widgets\Alert;
 
 ?>
 <div class="content-wrapper">
-    <section class="content-header">
+    <!-- <section class="content-header">
         <?php if (isset($this->blocks['content-header'])) { ?>
             <h1><?= $this->blocks['content-header'] ?></h1>
         <?php } else { ?>
@@ -13,9 +13,9 @@ use dmstr\widgets\Alert;
                 if ($this->title !== null) {
                     echo \yii\helpers\Html::encode($this->title);
                 } else {
-                    echo \yii\helpers\Inflector::camel2words(
-                        \yii\helpers\Inflector::id2camel($this->context->module->id)
-                    );
+                    // echo \yii\helpers\Inflector::camel2words(
+                    //     \yii\helpers\Inflector::id2camel($this->context->module->id)
+                    //);
                     echo ($this->context->module->id !== \Yii::$app->id) ? '<small>Module</small>' : '';
                 } ?>
             </h1>
@@ -27,7 +27,7 @@ use dmstr\widgets\Alert;
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             ]
         ) ?>
-    </section>
+    </section> -->
 
     <section class="content">
         <?= Alert::widget() ?>
@@ -39,7 +39,7 @@ use dmstr\widgets\Alert;
     <div class="pull-right hidden-xs">
         <b>Version</b> 2.0
     </div>
-    <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+    <strong>Copyright &copy; <?php?> <a href="http://www.mospi.gov.in/" target="_blank">Ministry of Statics and Programme Implementation</a>.</strong> All rights
     reserved.
 </footer>
 

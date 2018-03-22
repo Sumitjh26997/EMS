@@ -5,9 +5,9 @@ use yii\helpers\Html;
 /* @var $content string */
 
 
-if (Yii::$app->controller->action->id === 'login') { 
+if (Yii::$app->controller->action->id === 'login') {
 /**
- * Do not use this code in your template. Remove it. 
+ * Do not use this code in your template. Remove it.
  * Instead, use the code  $this->layout = '//main-login'; in your controller.
  */
     echo $this->render(
@@ -30,8 +30,10 @@ if (Yii::$app->controller->action->id === 'login') {
     <!DOCTYPE html>
     <html lang="<?= Yii::$app->language ?>">
     <head>
+        <!-- <link="icon" href="mospi.webp" type="image"> -->
         <meta charset="<?= Yii::$app->charset ?>"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
