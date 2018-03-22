@@ -680,3 +680,131 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1521737316.784
     'REQUEST_TIME' => 1521737316
 ]
+2018-03-22 17:05:55 [::1][-][0tebaciu8d9o1idkjk670mfk0h][error][yii\db\Exception] PDOException: could not find driver in /srv/http/ems/vendor/yiisoft/yii2/db/Connection.php:686
+Stack trace:
+#0 /srv/http/ems/vendor/yiisoft/yii2/db/Connection.php(686): PDO->__construct('mysql:host=loca...', 'root', '12345', NULL)
+#1 /srv/http/ems/vendor/yiisoft/yii2/db/Connection.php(612): yii\db\Connection->createPdoInstance()
+#2 /srv/http/ems/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#3 /srv/http/ems/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#4 /srv/http/ems/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 /srv/http/ems/vendor/yiisoft/yii2/db/Connection.php(880): yii\db\Schema->quoteValue('Sumit Hotchanda...')
+#6 /srv/http/ems/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('Sumit Hotchanda...')
+#7 /srv/http/ems/vendor/yiisoft/yii2/db/Command.php(1096): yii\db\Command->getRawSql()
+#8 /srv/http/ems/vendor/yiisoft/yii2/db/Command.php(1117): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /srv/http/ems/vendor/yiisoft/yii2/db/Command.php(422): yii\db\Command->queryInternal('fetchColumn', 0)
+#10 /srv/http/ems/vendor/yiisoft/yii2/db/Query.php(425): yii\db\Command->queryScalar()
+#11 /srv/http/ems/vendor/yiisoft/yii2/validators/UniqueValidator.php(187): yii\db\Query->exists()
+#12 /srv/http/ems/vendor/yiisoft/yii2/validators/UniqueValidator.php(145): yii\validators\UniqueValidator->modelExists('\\common\\models\\...', Array, Object(frontend\models\SignupForm))
+#13 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#14 /srv/http/ems/vendor/yiisoft/yii2/db/Connection.php(1058): call_user_func(Object(Closure), Object(yii\db\Connection))
+#15 /srv/http/ems/vendor/yiisoft/yii2/validators/UniqueValidator.php(146): yii\db\Connection->useMaster(Object(Closure))
+#16 /srv/http/ems/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#17 /srv/http/ems/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#18 /srv/http/ems/frontend/models/SignupForm.php(46): yii\base\Model->validate()
+#19 /srv/http/ems/frontend/controllers/SiteController.php(155): frontend\models\SignupForm->signup()
+#20 [internal function]: frontend\controllers\SiteController->actionSignup()
+#21 /srv/http/ems/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#22 /srv/http/ems/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 /srv/http/ems/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('signup', Array)
+#24 /srv/http/ems/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#25 /srv/http/ems/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /srv/http/ems/index.php(17): yii\base\Application->run()
+#27 {main}
+
+Next yii\db\Exception: could not find driver in /srv/http/ems/vendor/yiisoft/yii2/db/Connection.php:623
+Stack trace:
+#0 /srv/http/ems/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#1 /srv/http/ems/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#2 /srv/http/ems/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 /srv/http/ems/vendor/yiisoft/yii2/db/Connection.php(880): yii\db\Schema->quoteValue('Sumit Hotchanda...')
+#4 /srv/http/ems/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('Sumit Hotchanda...')
+#5 /srv/http/ems/vendor/yiisoft/yii2/db/Command.php(1096): yii\db\Command->getRawSql()
+#6 /srv/http/ems/vendor/yiisoft/yii2/db/Command.php(1117): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /srv/http/ems/vendor/yiisoft/yii2/db/Command.php(422): yii\db\Command->queryInternal('fetchColumn', 0)
+#8 /srv/http/ems/vendor/yiisoft/yii2/db/Query.php(425): yii\db\Command->queryScalar()
+#9 /srv/http/ems/vendor/yiisoft/yii2/validators/UniqueValidator.php(187): yii\db\Query->exists()
+#10 /srv/http/ems/vendor/yiisoft/yii2/validators/UniqueValidator.php(145): yii\validators\UniqueValidator->modelExists('\\common\\models\\...', Array, Object(frontend\models\SignupForm))
+#11 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#12 /srv/http/ems/vendor/yiisoft/yii2/db/Connection.php(1058): call_user_func(Object(Closure), Object(yii\db\Connection))
+#13 /srv/http/ems/vendor/yiisoft/yii2/validators/UniqueValidator.php(146): yii\db\Connection->useMaster(Object(Closure))
+#14 /srv/http/ems/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#15 /srv/http/ems/vendor/yiisoft/yii2/base/Model.php(367): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#16 /srv/http/ems/frontend/models/SignupForm.php(46): yii\base\Model->validate()
+#17 /srv/http/ems/frontend/controllers/SiteController.php(155): frontend\models\SignupForm->signup()
+#18 [internal function]: frontend\controllers\SiteController->actionSignup()
+#19 /srv/http/ems/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /srv/http/ems/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /srv/http/ems/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('signup', Array)
+#22 /srv/http/ems/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#23 /srv/http/ems/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /srv/http/ems/index.php(17): yii\base\Application->run()
+#25 {main}
+Additional Information:
+
+2018-03-22 17:05:55 [::1][-][0tebaciu8d9o1idkjk670mfk0h][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'iRtx2hCz6Ry4tA8jrdGnxtyiNPsJiZE-ucpf0ZbtTSfMeQKRXoKDUI_BaVbE4_715cBmjm643Eb48zi2w4gZVw=='
+    'SignupForm' => [
+        'username' => 'Sumit Hotchandani'
+        'email' => 'sumit.hotchandani@gmail.com'
+        'password' => 'wadia10004'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => '0tebaciu8d9o1idkjk670mfk0h'
+    'advanced-backend' => '9ha8tutv9m6hdbo9m2groq8fe6'
+    '_csrf-backend' => 'f12d6094a680a8829183ae7531dd2728606bd25775091e7568eddc2ec219123da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2oa3uqUgyi5qIlc94AhQXIop2EF8l-OS\";}'
+    '_csrf-frontend' => '595aa068c5452237fba1c19139cdb79db612161e88f929de465cc74a553826a9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"EbsKN1jL7ufui2Y39bRug1MxA9ggUeTp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '253'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ems/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=0tebaciu8d9o1idkjk670mfk0h; advanced-backend=9ha8tutv9m6hdbo9m2groq8fe6; _csrf-backend=f12d6094a680a8829183ae7531dd2728606bd25775091e7568eddc2ec219123da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222oa3uqUgyi5qIlc94AhQXIop2EF8l-OS%22%3B%7D; _csrf-frontend=595aa068c5452237fba1c19139cdb79db612161e88f929de465cc74a553826a9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22EbsKN1jL7ufui2Y39bRug1MxA9ggUeTp%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems/index.php'
+    'REMOTE_PORT' => '53060'
+    'REDIRECT_URL' => '/ems/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ems/signup'
+    'SCRIPT_NAME' => '/ems/index.php'
+    'PHP_SELF' => '/ems/index.php'
+    'REQUEST_TIME_FLOAT' => 1521738355.929
+    'REQUEST_TIME' => 1521738355
+]
