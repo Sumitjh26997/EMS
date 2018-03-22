@@ -72,6 +72,7 @@ class ComposerStaticInit06fd81b132eee426ecb495bde9060630
         ),
         'C' => 
         array (
+            'Composer\\Installers\\' => 20,
             'Codeception\\Extension\\' => 22,
             'Codeception\\' => 12,
         ),
@@ -175,6 +176,10 @@ class ComposerStaticInit06fd81b132eee426ecb495bde9060630
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'Composer\\Installers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
         'Codeception\\Extension\\' => 
         array (
