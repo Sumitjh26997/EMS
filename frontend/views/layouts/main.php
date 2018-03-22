@@ -36,6 +36,8 @@ if (Yii::$app->controller->action->id === 'login') {
 
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
+        <link rel="icon" href="favicon.jpg" type="image/jpg">
+
         <?php $this->head() ?>
     </head>
     <body class="hold-transition skin-blue sidebar-mini">
