@@ -277,3 +277,267 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1521436898.172
     'REQUEST_TIME' => 1521436898
 ]
+2018-03-22 16:25:53 [::1][-][0tebaciu8d9o1idkjk670mfk0h][error][yii\db\Exception] PDOException: could not find driver in /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php:686
+Stack trace:
+#0 /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php(686): PDO->__construct('mysql:host=loca...', 'root', '12345', NULL)
+#1 /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php(612): yii\db\Connection->createPdoInstance()
+#2 /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#3 /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#4 /srv/http/ems2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /srv/http/ems2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#6 /srv/http/ems2/vendor/yiisoft/yii2/db/Command.php(439): yii\db\Command->queryInternal('fetchAll', 7)
+#7 /srv/http/ems2/vendor/yiisoft/yii2/db/mysql/Schema.php(111): yii\db\Command->queryColumn()
+#8 /srv/http/ems2/vendor/yiisoft/yii2/db/Schema.php(237): yii\db\mysql\Schema->findTableNames('')
+#9 /srv/http/ems2/vendor/yiisoft/yii2-gii/generators/model/Generator.php(161): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 /srv/http/ems2/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#12 /srv/http/ems2/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct(Array)
+#14 /srv/http/ems2/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#15 /srv/http/ems2/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#16 /srv/http/ems2/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#17 /srv/http/ems2/vendor/yiisoft/yii2/widgets/ActiveForm.php(333): yii\BaseYii::createObject(Array)
+#18 /srv/http/ems2/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(336): require('/srv/http/ems2/...')
+#20 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/srv/http/ems2/...', '[<span class="s...')
+#21 /srv/http/ems2/vendor/yiisoft/yii2-gii/views/default/view.php(37): yii\base\View->renderFile('/srv/http/ems2/...', Array)
+#22 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(336): require('/srv/http/ems2/...')
+#23 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/srv/http/ems2/...', '[<span class="s...')
+#24 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/srv/http/ems2/...', Array, Object(yii\gii\controllers\DefaultController))
+#25 /srv/http/ems2/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 /srv/http/ems2/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(72): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 /srv/http/ems2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#29 /srv/http/ems2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#30 /srv/http/ems2/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#31 /srv/http/ems2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 /srv/http/ems2/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /srv/http/ems2/index.php(17): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: could not find driver in /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php:623
+Stack trace:
+#0 /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#1 /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#2 /srv/http/ems2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /srv/http/ems2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#4 /srv/http/ems2/vendor/yiisoft/yii2/db/Command.php(439): yii\db\Command->queryInternal('fetchAll', 7)
+#5 /srv/http/ems2/vendor/yiisoft/yii2/db/mysql/Schema.php(111): yii\db\Command->queryColumn()
+#6 /srv/http/ems2/vendor/yiisoft/yii2/db/Schema.php(237): yii\db\mysql\Schema->findTableNames('')
+#7 /srv/http/ems2/vendor/yiisoft/yii2-gii/generators/model/Generator.php(161): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 /srv/http/ems2/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#10 /srv/http/ems2/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\BaseObject->__construct(Array)
+#12 /srv/http/ems2/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#13 /srv/http/ems2/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#14 /srv/http/ems2/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#15 /srv/http/ems2/vendor/yiisoft/yii2/widgets/ActiveForm.php(333): yii\BaseYii::createObject(Array)
+#16 /srv/http/ems2/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(336): require('/srv/http/ems2/...')
+#18 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/srv/http/ems2/...', '[<span class="s...')
+#19 /srv/http/ems2/vendor/yiisoft/yii2-gii/views/default/view.php(37): yii\base\View->renderFile('/srv/http/ems2/...', Array)
+#20 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(336): require('/srv/http/ems2/...')
+#21 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/srv/http/ems2/...', '[<span class="s...')
+#22 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/srv/http/ems2/...', Array, Object(yii\gii\controllers\DefaultController))
+#23 /srv/http/ems2/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 /srv/http/ems2/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(72): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 /srv/http/ems2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#27 /srv/http/ems2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 /srv/http/ems2/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#29 /srv/http/ems2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 /srv/http/ems2/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /srv/http/ems2/index.php(17): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2018-03-22 16:25:53 [::1][-][0tebaciu8d9o1idkjk670mfk0h][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => '0tebaciu8d9o1idkjk670mfk0h'
+    'advanced-backend' => '9ha8tutv9m6hdbo9m2groq8fe6'
+    '_csrf-backend' => 'f12d6094a680a8829183ae7531dd2728606bd25775091e7568eddc2ec219123da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2oa3uqUgyi5qIlc94AhQXIop2EF8l-OS\";}'
+    '_csrf-frontend' => '595aa068c5452237fba1c19139cdb79db612161e88f929de465cc74a553826a9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"EbsKN1jL7ufui2Y39bRug1MxA9ggUeTp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ems2/gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=0tebaciu8d9o1idkjk670mfk0h; advanced-backend=9ha8tutv9m6hdbo9m2groq8fe6; _csrf-backend=f12d6094a680a8829183ae7531dd2728606bd25775091e7568eddc2ec219123da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222oa3uqUgyi5qIlc94AhQXIop2EF8l-OS%22%3B%7D; _csrf-frontend=595aa068c5452237fba1c19139cdb79db612161e88f929de465cc74a553826a9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22EbsKN1jL7ufui2Y39bRug1MxA9ggUeTp%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems2/index.php'
+    'REMOTE_PORT' => '47636'
+    'REDIRECT_URL' => '/ems2/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ems2/gii/model'
+    'SCRIPT_NAME' => '/ems2/index.php'
+    'PHP_SELF' => '/ems2/index.php'
+    'REQUEST_TIME_FLOAT' => 1521735953.151
+    'REQUEST_TIME' => 1521735953
+]
+2018-03-22 16:26:15 [::1][-][0tebaciu8d9o1idkjk670mfk0h][error][yii\db\Exception] PDOException: could not find driver in /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php:686
+Stack trace:
+#0 /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php(686): PDO->__construct('mysql:host=loca...', 'root', '12345', NULL)
+#1 /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php(612): yii\db\Connection->createPdoInstance()
+#2 /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#3 /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#4 /srv/http/ems2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /srv/http/ems2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#6 /srv/http/ems2/vendor/yiisoft/yii2/db/Command.php(439): yii\db\Command->queryInternal('fetchAll', 7)
+#7 /srv/http/ems2/vendor/yiisoft/yii2/db/mysql/Schema.php(111): yii\db\Command->queryColumn()
+#8 /srv/http/ems2/vendor/yiisoft/yii2/db/Schema.php(237): yii\db\mysql\Schema->findTableNames('')
+#9 /srv/http/ems2/vendor/yiisoft/yii2-gii/generators/model/Generator.php(161): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 /srv/http/ems2/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#12 /srv/http/ems2/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct(Array)
+#14 /srv/http/ems2/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#15 /srv/http/ems2/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#16 /srv/http/ems2/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#17 /srv/http/ems2/vendor/yiisoft/yii2/widgets/ActiveForm.php(333): yii\BaseYii::createObject(Array)
+#18 /srv/http/ems2/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(336): require('/srv/http/ems2/...')
+#20 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/srv/http/ems2/...', '[<span class="s...')
+#21 /srv/http/ems2/vendor/yiisoft/yii2-gii/views/default/view.php(37): yii\base\View->renderFile('/srv/http/ems2/...', Array)
+#22 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(336): require('/srv/http/ems2/...')
+#23 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/srv/http/ems2/...', '[<span class="s...')
+#24 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/srv/http/ems2/...', Array, Object(yii\gii\controllers\DefaultController))
+#25 /srv/http/ems2/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 /srv/http/ems2/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(72): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 /srv/http/ems2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#29 /srv/http/ems2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#30 /srv/http/ems2/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#31 /srv/http/ems2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 /srv/http/ems2/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /srv/http/ems2/index.php(17): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: could not find driver in /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php:623
+Stack trace:
+#0 /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#1 /srv/http/ems2/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#2 /srv/http/ems2/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /srv/http/ems2/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#4 /srv/http/ems2/vendor/yiisoft/yii2/db/Command.php(439): yii\db\Command->queryInternal('fetchAll', 7)
+#5 /srv/http/ems2/vendor/yiisoft/yii2/db/mysql/Schema.php(111): yii\db\Command->queryColumn()
+#6 /srv/http/ems2/vendor/yiisoft/yii2/db/Schema.php(237): yii\db\mysql\Schema->findTableNames('')
+#7 /srv/http/ems2/vendor/yiisoft/yii2-gii/generators/model/Generator.php(161): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 /srv/http/ems2/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#10 /srv/http/ems2/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\BaseObject->__construct(Array)
+#12 /srv/http/ems2/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#13 /srv/http/ems2/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#14 /srv/http/ems2/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#15 /srv/http/ems2/vendor/yiisoft/yii2/widgets/ActiveForm.php(333): yii\BaseYii::createObject(Array)
+#16 /srv/http/ems2/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(336): require('/srv/http/ems2/...')
+#18 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/srv/http/ems2/...', '[<span class="s...')
+#19 /srv/http/ems2/vendor/yiisoft/yii2-gii/views/default/view.php(37): yii\base\View->renderFile('/srv/http/ems2/...', Array)
+#20 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(336): require('/srv/http/ems2/...')
+#21 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/srv/http/ems2/...', '[<span class="s...')
+#22 /srv/http/ems2/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/srv/http/ems2/...', Array, Object(yii\gii\controllers\DefaultController))
+#23 /srv/http/ems2/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 /srv/http/ems2/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(72): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 /srv/http/ems2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#27 /srv/http/ems2/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 /srv/http/ems2/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#29 /srv/http/ems2/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 /srv/http/ems2/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /srv/http/ems2/index.php(17): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2018-03-22 16:26:14 [::1][-][0tebaciu8d9o1idkjk670mfk0h][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_xsrf' => '2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120'
+    'username-localhost-8888' => '\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"'
+    'advanced-frontend' => '0tebaciu8d9o1idkjk670mfk0h'
+    'advanced-backend' => '9ha8tutv9m6hdbo9m2groq8fe6'
+    '_csrf-backend' => 'f12d6094a680a8829183ae7531dd2728606bd25775091e7568eddc2ec219123da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2oa3uqUgyi5qIlc94AhQXIop2EF8l-OS\";}'
+    '_csrf-frontend' => '595aa068c5452237fba1c19139cdb79db612161e88f929de465cc74a553826a9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"EbsKN1jL7ufui2Y39bRug1MxA9ggUeTp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/ems2/debug/default/view?tag=5ab3d9113999d'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_xsrf=2|efc1e189|120dfefe12b7fb1788a2b396a482a4a9|1520849120; username-localhost-8888=\"2|1:0|10:1520850716|23:username-localhost-8888|44:YzFiNWFmZTg5Yjg1NDRmOTgyMzRlMWMyNWNiOGE5NzE=|10f0f45d794ec390df75454f889cca11763edff23032712b730969016d89ffd2\"; advanced-frontend=0tebaciu8d9o1idkjk670mfk0h; advanced-backend=9ha8tutv9m6hdbo9m2groq8fe6; _csrf-backend=f12d6094a680a8829183ae7531dd2728606bd25775091e7568eddc2ec219123da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222oa3uqUgyi5qIlc94AhQXIop2EF8l-OS%22%3B%7D; _csrf-frontend=595aa068c5452237fba1c19139cdb79db612161e88f929de465cc74a553826a9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22EbsKN1jL7ufui2Y39bRug1MxA9ggUeTp%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) PHP/7.2.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/srv/http'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/http'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/srv/http/ems2/index.php'
+    'REMOTE_PORT' => '47666'
+    'REDIRECT_URL' => '/ems2/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ems2/gii/model'
+    'SCRIPT_NAME' => '/ems2/index.php'
+    'PHP_SELF' => '/ems2/index.php'
+    'REQUEST_TIME_FLOAT' => 1521735974.921
+    'REQUEST_TIME' => 1521735974
+]
