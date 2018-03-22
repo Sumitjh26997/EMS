@@ -39,7 +39,7 @@ use dmstr\widgets\Alert;
     <div class="pull-right hidden-xs">
         <b>Version</b> 2.0
     </div>
-    <strong>Copyright &copy; <?php?> <a href="http://www.mospi.gov.in/" target="_blank">Ministry of Statics and Programme Implementation</a>.</strong> All rights
+    <strong>Copyright &copy; <?php?> <a href="http://www.mospi.gov.in/" target="_blank">Ministry of Statistics and Programme Implementation</a>.</strong> All rights
     reserved.
 </footer>
 
