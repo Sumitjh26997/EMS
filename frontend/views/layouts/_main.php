@@ -22,7 +22,9 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
 
-    <link rel="icon" href="mospi.webp" type="image">
+    <link rel="icon" href="mospi.webp" type="image/webp">
+
+
     <?php $this->head() ?>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">

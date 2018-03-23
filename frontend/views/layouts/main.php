@@ -36,7 +36,7 @@ if (Yii::$app->controller->action->id === 'login') {
 
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
-        <link rel="icon" href="favicon.jpg" type="image/jpg">
+        <link rel="icon" href="mospi.webp" type="image/webp">
 
         <?php $this->head() ?>
     </head>
