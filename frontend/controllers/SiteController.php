@@ -110,6 +110,16 @@ class SiteController extends Controller
         return $this->goHome();
     }
 
+    public function actionTest()
+    {
+        return $this->render('test');
+    }
+
+    public function actionTest2()
+    {
+        return $this->render('test2');
+    }
+
     /**
      * Displays contact page.
      *
