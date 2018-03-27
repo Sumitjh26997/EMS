@@ -75,6 +75,12 @@ class ProgramController extends Controller
         ]);
     }
 
+public function actionSchedule()
+    {
+
+        return $this->render('schedule'
+        );
+    }
     /**
      * Updates an existing Program model.
      * If update is successful, the browser will be redirected to the 'view' page.

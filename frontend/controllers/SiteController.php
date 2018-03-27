@@ -75,6 +75,10 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    public function actionProfile()
+    {
+        return $this->render('profile');
+    }
     /**
      * Logs in a user.
      *
