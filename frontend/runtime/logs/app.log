@@ -18863,3 +18863,193 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1522066421.744
     'REQUEST_TIME' => 1522066421
 ]
+2018-03-27 08:50:27 [::1][-][f4mijq0sllnk4ovu3omm0tdaj5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: program/mospi.webp in /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('mospi.webp', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/mospi.w...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-03-27 08:50:27 [::1][-][f4mijq0sllnk4ovu3omm0tdaj5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.529351540.1521910029'
+    'advanced-frontend' => 'f4mijq0sllnk4ovu3omm0tdaj5'
+    '_csrf-frontend' => 'bab68e0c1371ce1ca902ed8168ed4ab5e63eab4f2e09cb89a228f81b61a8597aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YVDnd6ai_MhiTj9SMHoMUiTOxAN-RUnC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_ga=GA1.1.529351540.1521910029; advanced-frontend=f4mijq0sllnk4ovu3omm0tdaj5; _csrf-frontend=bab68e0c1371ce1ca902ed8168ed4ab5e63eab4f2e09cb89a228f81b61a8597aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YVDnd6ai_MhiTj9SMHoMUiTOxAN-RUnC%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '36214'
+    'REDIRECT_URL' => '/EMS/program/mospi.webp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/mospi.webp'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522140627.621
+    'REQUEST_TIME' => 1522140627
+]
+2018-03-27 08:55:35 [::1][-][f4mijq0sllnk4ovu3omm0tdaj5][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /var/www/html/EMS/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/update', Array)
+#4 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#6 {main}
+2018-03-27 08:55:35 [::1][-][f4mijq0sllnk4ovu3omm0tdaj5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.529351540.1521910029'
+    'advanced-frontend' => 'f4mijq0sllnk4ovu3omm0tdaj5'
+    '_csrf-frontend' => 'bab68e0c1371ce1ca902ed8168ed4ab5e63eab4f2e09cb89a228f81b61a8597aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YVDnd6ai_MhiTj9SMHoMUiTOxAN-RUnC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_ga=GA1.1.529351540.1521910029; advanced-frontend=f4mijq0sllnk4ovu3omm0tdaj5; _csrf-frontend=bab68e0c1371ce1ca902ed8168ed4ab5e63eab4f2e09cb89a228f81b61a8597aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YVDnd6ai_MhiTj9SMHoMUiTOxAN-RUnC%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '36252'
+    'REDIRECT_URL' => '/EMS/program/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/update'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522140935.136
+    'REQUEST_TIME' => 1522140935
+]
+2018-03-27 08:55:39 [::1][-][f4mijq0sllnk4ovu3omm0tdaj5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "program/update/mospi.webp". in /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/update/...', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-03-27 08:55:39 [::1][-][f4mijq0sllnk4ovu3omm0tdaj5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.529351540.1521910029'
+    'advanced-frontend' => 'f4mijq0sllnk4ovu3omm0tdaj5'
+    '_csrf-frontend' => 'bab68e0c1371ce1ca902ed8168ed4ab5e63eab4f2e09cb89a228f81b61a8597aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"YVDnd6ai_MhiTj9SMHoMUiTOxAN-RUnC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/update/1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_ga=GA1.1.529351540.1521910029; advanced-frontend=f4mijq0sllnk4ovu3omm0tdaj5; _csrf-frontend=bab68e0c1371ce1ca902ed8168ed4ab5e63eab4f2e09cb89a228f81b61a8597aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22YVDnd6ai_MhiTj9SMHoMUiTOxAN-RUnC%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '36254'
+    'REDIRECT_URL' => '/EMS/program/update/mospi.webp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/update/mospi.webp'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522140939.904
+    'REQUEST_TIME' => 1522140939
+]
