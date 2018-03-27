@@ -24290,3 +24290,2944 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1522164739.838
     'REQUEST_TIME' => 1522164739
 ]
+2018-03-27 17:00:26 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'DatePicker' not found in /var/www/html/EMS/frontend/views/program/_form.php:24
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, NULL)
+#3 /var/www/html/EMS/frontend/views/program/create.php(18): yii\base\View->render('_form', Array)
+#4 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/E...')
+#5 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(frontend\controllers\ProgramController))
+#8 /var/www/html/EMS/frontend/controllers/ProgramController.php(79): yii\base\Controller->render('create', Array)
+#9 [internal function]: frontend\controllers\ProgramController->actionCreate()
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/create', Array)
+#14 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#16 {main}
+2018-03-27 17:00:26 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '54436'
+    'REDIRECT_URL' => '/EMS/program/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/create'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170026.147
+    'REQUEST_TIME' => 1522170026
+]
+2018-03-27 17:01:08 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: program/mospi.webp in /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('mospi.webp', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/mospi.w...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-03-27 17:01:08 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '54448'
+    'REDIRECT_URL' => '/EMS/program/mospi.webp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/mospi.webp'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170068.622
+    'REQUEST_TIME' => 1522170068
+]
+2018-03-27 17:01:26 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: program/mospi.webp in /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('mospi.webp', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/mospi.w...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-03-27 17:01:26 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '54462'
+    'REDIRECT_URL' => '/EMS/program/mospi.webp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/mospi.webp'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170086.584
+    'REQUEST_TIME' => 1522170086
+]
+2018-03-27 17:01:55 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: program/mospi.webp in /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('mospi.webp', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/mospi.w...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-03-27 17:01:55 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '54518'
+    'REDIRECT_URL' => '/EMS/program/mospi.webp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/mospi.webp'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170115.353
+    'REQUEST_TIME' => 1522170115
+]
+2018-03-27 17:02:36 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: program/mospi.webp in /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('mospi.webp', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/mospi.w...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-03-27 17:02:36 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '54532'
+    'REDIRECT_URL' => '/EMS/program/mospi.webp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/mospi.webp'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170156.523
+    'REQUEST_TIME' => 1522170156
+]
+2018-03-27 17:05:18 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: program/mospi.webp in /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('mospi.webp', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/mospi.w...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-03-27 17:05:18 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/schedule'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '54558'
+    'REDIRECT_URL' => '/EMS/program/mospi.webp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/mospi.webp'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170318.983
+    'REQUEST_TIME' => 1522170318
+]
+2018-03-27 17:05:47 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][ParseError] ParseError: syntax error, unexpected ''value'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /var/www/html/EMS/frontend/views/program/schedule.php:76
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#4 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#5 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#11 {main}
+2018-03-27 17:05:47 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '54566'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170347.573
+    'REQUEST_TIME' => 1522170347
+]
+2018-03-27 17:06:00 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: program/mospi.webp in /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('mospi.webp', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/mospi.w...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-03-27 17:06:00 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/schedule'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '54578'
+    'REDIRECT_URL' => '/EMS/program/mospi.webp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/mospi.webp'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170360.403
+    'REQUEST_TIME' => 1522170360
+]
+2018-03-27 17:06:21 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: program/mospi.webp in /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('mospi.webp', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/mospi.w...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-03-27 17:06:21 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/schedule'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '54602'
+    'REDIRECT_URL' => '/EMS/program/mospi.webp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/mospi.webp'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170381.35
+    'REQUEST_TIME' => 1522170381
+]
+2018-03-27 17:06:41 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: program/mospi.webp in /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('mospi.webp', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/mospi.w...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-03-27 17:06:41 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/schedule'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '54614'
+    'REDIRECT_URL' => '/EMS/program/mospi.webp'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/mospi.webp'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170401.552
+    'REQUEST_TIME' => 1522170401
+]
+2018-03-27 17:14:02 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\time\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:14:02 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55416'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170842.846
+    'REQUEST_TIME' => 1522170842
+]
+2018-03-27 17:15:07 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][ParseError] ParseError: syntax error, unexpected '-', expecting ',' or ';' in /var/www/html/EMS/frontend/views/program/schedule.php:5
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#4 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#5 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#11 {main}
+2018-03-27 17:15:06 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55436'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170906.986
+    'REQUEST_TIME' => 1522170906
+]
+2018-03-27 17:15:07 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][ParseError] ParseError: syntax error, unexpected '-', expecting ',' or ';' in /var/www/html/EMS/frontend/views/program/schedule.php:5
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#4 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#5 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#11 {main}
+2018-03-27 17:15:07 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55438'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170907.642
+    'REQUEST_TIME' => 1522170907
+]
+2018-03-27 17:15:07 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][ParseError] ParseError: syntax error, unexpected '-', expecting ',' or ';' in /var/www/html/EMS/frontend/views/program/schedule.php:5
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#4 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#5 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#11 {main}
+2018-03-27 17:15:07 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55440'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170907.835
+    'REQUEST_TIME' => 1522170907
+]
+2018-03-27 17:15:08 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][ParseError] ParseError: syntax error, unexpected '-', expecting ',' or ';' in /var/www/html/EMS/frontend/views/program/schedule.php:5
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#4 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#5 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#11 {main}
+2018-03-27 17:15:08 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55442'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170908.031
+    'REQUEST_TIME' => 1522170908
+]
+2018-03-27 17:15:17 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartikv\time\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:15:17 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55446'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170917.678
+    'REQUEST_TIME' => 1522170917
+]
+2018-03-27 17:15:18 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartikv\time\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:15:18 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55448'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170918.281
+    'REQUEST_TIME' => 1522170918
+]
+2018-03-27 17:15:18 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartikv\time\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:15:18 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55450'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170918.455
+    'REQUEST_TIME' => 1522170918
+]
+2018-03-27 17:16:29 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartikv\widget\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:16:29 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55900'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170989.302
+    'REQUEST_TIME' => 1522170989
+]
+2018-03-27 17:16:30 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartikv\widget\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:16:30 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55902'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170990.125
+    'REQUEST_TIME' => 1522170990
+]
+2018-03-27 17:16:30 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartikv\widget\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:16:30 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55906'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170990.314
+    'REQUEST_TIME' => 1522170990
+]
+2018-03-27 17:16:30 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartikv\widget\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:16:30 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55910'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170990.463
+    'REQUEST_TIME' => 1522170990
+]
+2018-03-27 17:16:30 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartikv\widget\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:16:30 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55912'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170990.612
+    'REQUEST_TIME' => 1522170990
+]
+2018-03-27 17:16:30 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartikv\widget\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:16:30 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55904'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170990.762
+    'REQUEST_TIME' => 1522170990
+]
+2018-03-27 17:16:30 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartikv\widget\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:16:30 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55908'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170990.941
+    'REQUEST_TIME' => 1522170990
+]
+2018-03-27 17:16:31 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartikv\widget\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:16:31 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55914'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170991.113
+    'REQUEST_TIME' => 1522170991
+]
+2018-03-27 17:16:37 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widget\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:16:37 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55924'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170997.66
+    'REQUEST_TIME' => 1522170997
+]
+2018-03-27 17:16:38 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widget\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:16:38 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55926'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170998.503
+    'REQUEST_TIME' => 1522170998
+]
+2018-03-27 17:16:38 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widget\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:16:38 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55930'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170998.679
+    'REQUEST_TIME' => 1522170998
+]
+2018-03-27 17:16:38 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widget\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:16:38 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55928'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170998.841
+    'REQUEST_TIME' => 1522170998
+]
+2018-03-27 17:16:39 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widget\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:16:39 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55934'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522170999.007
+    'REQUEST_TIME' => 1522170999
+]
+2018-03-27 17:17:18 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widgets\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:17:18 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55940'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522171038.485
+    'REQUEST_TIME' => 1522171038
+]
+2018-03-27 17:17:19 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widgets\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:17:18 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55942'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522171038.995
+    'REQUEST_TIME' => 1522171038
+]
+2018-03-27 17:17:19 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widgets\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:17:19 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55946'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522171039.16
+    'REQUEST_TIME' => 1522171039
+]
+2018-03-27 17:17:19 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widgets\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:17:19 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55948'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522171039.316
+    'REQUEST_TIME' => 1522171039
+]
+2018-03-27 17:17:19 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widgets\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:17:19 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55944'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522171039.5
+    'REQUEST_TIME' => 1522171039
+]
+2018-03-27 17:17:19 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widgets\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:77
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:17:19 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55950'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522171039.653
+    'REQUEST_TIME' => 1522171039
+]
+2018-03-27 17:18:11 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widgets\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:78
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:18:11 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55960'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522171091.989
+    'REQUEST_TIME' => 1522171091
+]
+2018-03-27 17:18:12 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widgets\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:78
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:18:12 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55962'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522171092.524
+    'REQUEST_TIME' => 1522171092
+]
+2018-03-27 17:18:12 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widgets\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:78
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:18:12 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55964'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522171092.73
+    'REQUEST_TIME' => 1522171092
+]
+2018-03-27 17:18:12 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widgets\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:78
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:18:12 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55968'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522171092.91
+    'REQUEST_TIME' => 1522171092
+]
+2018-03-27 17:18:13 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widgets\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:78
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:18:13 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55966'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522171093.079
+    'REQUEST_TIME' => 1522171093
+]
+2018-03-27 17:18:13 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][Error] Error: Class 'kartik\widgets\TimePicker' not found in /var/www/html/EMS/frontend/views/program/schedule.php:78
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', Array)
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('schedule', Array, Object(frontend\controllers\ProgramController))
+#4 /var/www/html/EMS/frontend/controllers/ProgramController.php(62): yii\base\Controller->render('schedule')
+#5 [internal function]: frontend\controllers\ProgramController->actionSchedule()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('schedule', Array)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/schedul...', Array)
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#12 {main}
+2018-03-27 17:18:13 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
+    '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+    'REMOTE_PORT' => '55970'
+    'REDIRECT_URL' => '/EMS/program/schedule'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/program/schedule'
+    'SCRIPT_NAME' => '/EMS/index.php'
+    'PHP_SELF' => '/EMS/index.php'
+    'REQUEST_TIME_FLOAT' => 1522171093.232
+    'REQUEST_TIME' => 1522171093
+]
