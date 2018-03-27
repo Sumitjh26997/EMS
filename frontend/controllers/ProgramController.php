@@ -57,6 +57,11 @@ class ProgramController extends Controller
         ]);
     }
 
+    public function actionSchedule()
+    {
+      return $this->render('schedule');
+    }
+
     /**
      * Creates a new Program model.
      * If creation is successful, the browser will be redirected to the 'view' page.
@@ -75,12 +80,6 @@ class ProgramController extends Controller
         ]);
     }
 
-public function actionSchedule()
-    {
-
-        return $this->render('schedule'
-        );
-    }
     /**
      * Updates an existing Program model.
      * If update is successful, the browser will be redirected to the 'view' page.
@@ -130,4 +129,6 @@ public function actionSchedule()
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
+
+
 }

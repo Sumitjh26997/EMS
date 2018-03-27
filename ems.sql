@@ -113,9 +113,11 @@ CREATE TABLE `program` (
   `date` date DEFAULT NULL,
   `start_time` time DEFAULT NULL,
   `end_time` time DEFAULT NULL,
-  `discription` mediumtext,
+  `description` mediumtext,
   `init_weight` int(11) DEFAULT NULL,
   `priority` varchar(255) DEFAULT NULL,
+  `type` varchar(20) DEFAULT NULL,
+  `program_weight` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -200,4 +202,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-24 15:37:32
+-- Dump completed on 2018-03-27 21:07:49

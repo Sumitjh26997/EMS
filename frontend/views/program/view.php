@@ -35,9 +35,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'date',
             'start_time',
             'end_time',
-            'discription:ntext',
+            'description:ntext',
             'init_weight',
             'priority',
+            'type',
+            'program_weight',
         ],
     ]) ?>
 
