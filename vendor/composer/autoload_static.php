@@ -34,8 +34,14 @@ class ComposerStaticInit06fd81b132eee426ecb495bde9060630
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'k' => 
+        array (
+            'kartik\\time\\' => 12,
+            'kartik\\base\\' => 12,
+        ),
         'd' => 
         array (
+            'dosamigos\\datepicker\\' => 21,
             'dmstr\\' => 6,
         ),
         'c' => 
@@ -124,6 +130,18 @@ class ComposerStaticInit06fd81b132eee426ecb495bde9060630
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+        ),
+        'kartik\\time\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-timepicker',
+        ),
+        'kartik\\base\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-krajee-base',
+        ),
+        'dosamigos\\datepicker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/2amigos/yii2-date-picker-widget/src',
         ),
         'dmstr\\' => 
         array (
