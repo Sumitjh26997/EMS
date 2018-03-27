@@ -16,7 +16,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'location')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'timestamp')->textInput() ?>
+    <!-- <?= $form->field($model, 'timestamp')->textInput() ?> -->
 
     <?= $form->field($model, 'date')->textInput() ?>
 
@@ -26,7 +26,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'discription')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'init_weight')->textInput() ?>
+    <!-- <?= $form->field($model, 'init_weight')->textInput() ?> -->
 
     <?= $form->field($model, 'priority')->textInput(['maxlength' => true]) ?>
 

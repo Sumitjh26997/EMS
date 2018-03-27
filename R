@@ -1,0 +1,154 @@
+-COMBINED command to make Data
+data<-c(1:10)
+-entering numerical items as data
+data<-c(1:10)
+-entering numerical items as data
+data<-c(1:10)
+-entering text items as data
+> day<-c('monday','tuesday')
+> day
+[1] "monday"  "tuesday"
+> day1<-c(day,"friday")
+> day1
+[1] "monday"  "tuesday" "friday"
+-using scan to make numerical data
+> data=scan()
+1: 1 2 3 4 6 887 23 423
+9:
+Read 8 items
+> data
+[1]   1   2   3   4   6 887  23 423
+-get working directory
+getwd()
+-r treats columns as seperate samples or variables and rows represents replicates or observations
+> y<-matrix(1:20,nrow=5,ncol=4)
+> y
+     [,1] [,2] [,3] [,4]
+[1,]    1    6   11   16
+[2,]    2    7   12   17
+[3,]    3    8   13   18
+[4,]    4    9   14   19
+[5,]    5   10   15   20
+> y<-matrix(nrow=5,ncol=4)
+> y
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+> y<-matrix(nrow=5,ncol=3)
+> y
+     [,1] [,2] [,3]
+[1,]   NA   NA   NA
+[2,]   NA   NA   NA
+[3,]   NA   NA   NA
+[4,]   NA   NA   NA
+[5,]   NA   NA   NA
+> y<-matrix(1:15,nrow=5,ncol=3)
+> y
+     [,1] [,2] [,3]
+[1,]    1    6   11
+[2,]    2    7   12
+[3,]    3    8   13
+[4,]    4    9   14
+[5,]    5   10   15
+> y<-matrix(1,15,234,23123,123,45,7889,213,76,21,67,23,65,42,432,nrow=5,ncol=3)Error in matrix(1, 15, 234, 23123, 123, 45, 7889, 213, 76, 21, 67, 23,  :
+  unused arguments (23123, 123, 45, 7889, 213, 76, 21, 67, 23, 65, 42, 432)
+> y<-matrix(1:15,nrow=5,ncol=3)
+> y
+     [,1] [,2] [,3]
+[1,]    1    6   11
+[2,]    2    7   12
+[3,]    3    8   13
+[4,]    4    9   14
+[5,]    5   10   15
+> y=scan()
+1:
+> y
+     [,1] [,2] [,3]
+[1,]    1    6   11
+[2,]    2    7   12
+[3,]    3    8   13
+[4,]    4    9   14
+[5,]    5   10   15
+> d<
++
+> d<-c(1,2,3,4)
+> e<-c("red","white","red",
++
+> e<-c("red","white","red",NA)
+> e
+[1] "red"   "white" "red"   NA
+> f<-c(TRUE,TRUE,TRUE,FALSE)
+> mydata<-data.frame(d,e,f)
+> mydata
+  d     e     f
+1 1   red  TRUE
+2 2 white  TRUE
+3 3   red  TRUE
+4 4  <NA> FALSE
+> names(mydata)<-c("ID","Color","Passed")
+> mydata
+  ID Color Passed
+1  1   red   TRUE
+2  2 white   TRUE
+3  3   red   TRUE
+4  4  <NA>  FALSE
+> row.names(mydata)<-c("one","two","three","four")
+> mydata
+      ID Color Passed
+one    1   red   TRUE
+two    2 white   TRUE
+three  3   red   TRUE
+four   4  <NA>  FALSE
+> mydata(one,Color)
+Error: could not find function "mydata"
+> mydata[one][Color]
+Error in `[.data.frame`(mydata, one) : object 'one' not found
+> mydata["\one"]["Color"]
+Error: '\o' is an unrecognized escape in character string starting ""\o"
+> mydata["one"]["Color"]
+Error in `[.data.frame`(mydata, "one") : undefined columns selected
+> mydata[one][Color]
+Error in `[.data.frame`(mydata, one) : object 'one' not found
+> ls()
+ [1] "d"      "data"   "day"    "day1"   "e"      "f"      "mydata" "x"
+ [9] "x1"     "y"      "z1"     "z2"
+> mydata[3:5]
+Error in `[.data.frame`(mydata, 3:5) : undefined columns selected
+> myframe[1:3]
+Error: object 'myframe' not found
+> mydata[1:3]
+      ID Color Passed
+one    1   red   TRUE
+two    2 white   TRUE
+three  3   red   TRUE
+four   4  <NA>  FALSE
+> mydata[c("one","Color")]
+Error in `[.data.frame`(mydata, c("one", "Color")) :
+  undefined columns selected
+> mydata[c("ID","Color")]
+      ID Color
+one    1   red
+two    2 white
+three  3   red
+four   4  <NA>
+> mydata[2:3]
+      Color Passed
+one     red   TRUE
+two   white   TRUE
+three   red   TRUE
+four   <NA>  FALSE
+> mydata[3:3]
+      Passed
+one     TRUE
+two     TRUE
+three   TRUE
+four   FALSE
+> mydata[1:3]
+      ID Color Passed
+one    1   red   TRUE
+two    2 white   TRUE
+three  3   red   TRUE
+four   4  <NA>  FALSE
