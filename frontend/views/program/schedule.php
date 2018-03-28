@@ -96,10 +96,6 @@ $this->title = 'EMS';
                  ]);?>
                 <!-- /.input group -->
               </div>
-
-                   <input type="date" class="btn btn-sm btn-info btn-flat" style="width:20%">
-                   <input type="time" class="btn btn-sm btn-info btn-flat" style="width:20%">
-
                   <!-- /.users-list -->
                 </div>
                 <br>
