@@ -3,6 +3,8 @@
 /* @var $this yii\web\View */
 use dosamigos\datepicker\DatePicker;
 use kartik\time\TimePicker;
+use yii\helpers\Html;
+ 
 //use kartik\widgets\ActiveForm;
 //use kartik\widgets\TimePicker;
 
@@ -62,7 +64,8 @@ $this->title = 'EMS';
                       <input type="checkbox" name="minister1" value="minister1">
                     </li>
                   </ul>
-                  <div class="form-group">
+                  <br>
+                  <div class="col-sm-4 form-group">
                 <label>Date:</label>
                 <?= DatePicker::widget([
                       'name' => 'date',
@@ -76,8 +79,10 @@ $this->title = 'EMS';
                               'format' => 'yyyy-mm-dd'
                           ]
                       ]);?>
-
-               <br><label>Start Time</label>
+                </div>
+               
+               <div class="col-sm-4 form-group">
+               <label>Start Time</label>
                <?=TimePicker::widget([
                   'id' => 'start_time',
                 	'name' => 'start_time',
@@ -85,24 +90,35 @@ $this->title = 'EMS';
                 		'showSeconds' => false
                 	]
                 ]);?>
-
-                <br><label>End Time</label>
-                <?=TimePicker::widget([
-                  'id' => 'end_time',
-                 	'name' => 'end_time',
-                 	'pluginOptions' => [
-                 		'showSeconds' => false
-                 	]
-                 ]);?>
-                <!-- /.input group -->
               </div>
-                  <!-- /.users-list -->
-                </div>
-                <br>
-                   <!-- <button class="btn btn-sm btn-info btn-flat ">Submit</button> -->
-<button type="button" class="btn btn-block btn-success btn-lg" style="width:30%; align:center;" data-toggle="modal" data-target="#modal-default">
+                
+               <!--  <br><br><br>  -->
+                <div class="col-sm-4 form-group">
+                      <label>End Time</label>
+                      <?=TimePicker::widget([
+                        'id' => 'end_time',
+                       	'name' => 'end_time',
+                       	'pluginOptions' => [
+                       		'showSeconds' => false
+                       	]
+                       ]);?>
+                       <br>
+                       <button  type="button" class="btn btn-block btn-success btn-lg" style="width:50%;" data-toggle="modal" data-target="#modal-default">
                 Submit
               </button>
+               </div>
+                <!-- /.input group -->
+              
+                  <!-- /.users-list -->
+                  
+                <div class="col-sm-4 form-group">
+  
+            </div>
+                </div>
+                
+                   <!-- <button class="btn btn-sm btn-info btn-flat ">Submit</button> -->
+
+
 
   </form>
 
@@ -128,11 +144,109 @@ $this->title = 'EMS';
                 <h4 class="modal-title">Default Modal</h4>
               </div>
               <div class="modal-body">
-                <p>One fine body&hellip;</p>
+               <form id="select">
+    <div class="box-body no-padding">
+                  <!-- <ol >
+                    <li>
+                      <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:10%;max-height:10%;">
+                      Shikhar Bhatt
+                      <span class="users-list-date">Today</span>
+                      <input type="checkbox" name="minister1" value="minister1">
+                    </li>
+                    <li>
+                      <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:10%;max-height:10%;">
+                      Shikhar Bhatt
+                      <input type="checkbox" name="minister1" value="minister1">
+                      <span class="users-list-date">Today</span>
+                      
+                    </li>
+                   
+                    </ol> -->
+                  <div class="box">
+            <div class="box-header">
+               </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>ID</th>
+                  <th></th>
+                  <th>Minister Name</th>
+                  <th>Status</th>
+                  <th>Select</th>
+                </tr>
+                </thead>
+                <tbody style="align:center;">
+                <tr>
+                  <td>1</td>
+                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                  <td>Shikhar Bhatt</td>
+                  <td>Available</td>
+                  <td><input type="checkbox" name="minister1" value="minister1"></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                  <td>Shikhar Bhatt</td>
+                  <td>Available</td>
+                  <td><input type="checkbox" name="minister1" value="minister1"></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                  <td>Shikhar Bhatt</td>
+                  <td>Available</td>
+                  <td><input type="checkbox" name="minister1" value="minister1"></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                  <td>Shikhar Bhatt</td>
+                  <td>Available</td>
+                  <td><input type="checkbox" name="minister1" value="minister1"></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                  <td>Shikhar Bhatt</td>
+                  <td>Available</td>
+                  <td><input type="checkbox" name="minister1" value="minister1"></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                  <td>Shikhar Bhatt</td>
+                  <td>Available</td>
+                  <td><input type="checkbox" name="minister1" value="minister1"></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                  <td>Shikhar Bhatt</td>
+                  <td>Available</td>
+                  <td><input type="checkbox" name="minister1" value="minister1"></td>
+                </tr>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+      
+                  <!-- /.users-list -->
+                </div>
+                <br>
+                   <!-- <button class="btn btn-sm btn-info btn-flat ">Submit</button> -->
+              
+
+  </form>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <?= Html::a(
+                                    'Create Program',
+                                    ['/program/create'],
+                                    ['data-method' => 'post', 'class' => 'btn btn-primary']
+                                ) ?>
               </div>
             </div>
             <!-- /.modal-content -->

@@ -39,15 +39,6 @@ return array (
       '@yii/gii' => $vendorDir . '/yiisoft/yii2-gii',
     ),
   ),
-  'yiisoft/yii2-faker' => 
-  array (
-    'name' => 'yiisoft/yii2-faker',
-    'version' => '2.0.3.0',
-    'alias' => 
-    array (
-      '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
-    ),
-  ),
   'cebe/yii2-gravatar' => 
   array (
     'name' => 'cebe/yii2-gravatar',
@@ -84,15 +75,6 @@ return array (
       '@kartik/base' => $vendorDir . '/kartik-v/yii2-krajee-base',
     ),
   ),
-  'kartik-v/yii2-widget-timepicker' => 
-  array (
-    'name' => 'kartik-v/yii2-widget-timepicker',
-    'version' => '1.0.3.0',
-    'alias' => 
-    array (
-      '@kartik/time' => $vendorDir . '/kartik-v/yii2-widget-timepicker',
-    ),
-  ),
   '2amigos/yii2-date-picker-widget' => 
   array (
     'name' => '2amigos/yii2-date-picker-widget',
@@ -100,6 +82,24 @@ return array (
     'alias' => 
     array (
       '@dosamigos/datepicker' => $vendorDir . '/2amigos/yii2-date-picker-widget/src',
+    ),
+  ),
+  'yiisoft/yii2-faker' => 
+  array (
+    'name' => 'yiisoft/yii2-faker',
+    'version' => '2.0.4.0',
+    'alias' => 
+    array (
+      '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
+    ),
+  ),
+  'kartik-v/yii2-widget-timepicker' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-timepicker',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@kartik/time' => $vendorDir . '/kartik-v/yii2-widget-timepicker',
     ),
   ),
 );
