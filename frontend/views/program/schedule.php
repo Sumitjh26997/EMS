@@ -4,6 +4,7 @@
 use dosamigos\datepicker\DatePicker;
 use kartik\time\TimePicker;
 use yii\helpers\Html;
+use frontend\models\User; 
 
 //use kartik\widgets\ActiveForm;
 //use kartik\widgets\TimePicker;
@@ -15,13 +16,15 @@ $this->title = 'EMS';
   <form id="minister">
     <div class="box-body no-padding">
                   <ul class="users-list clearfix">
+                    <?php foreach($ministers as $minister ) {?>
                     <li>
-                      <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:50%;max-height:20%;">
-                      <a class="users-list-name" href="#">Shikhar Bhatt</a>
-                      <span class="users-list-date">Today</span>
-                      <input type="checkbox" name="minister1" value="minister1">
+                      <img src="photos/<?php echo $minister['image']?>" alt="User Image" style="border-radius:50%;max-width:50%;max-height:20%;min-width:50%;min-height:20%;">
+                      <a class="users-list-name" href="#"><?php echo $minister['username']?></a>
+                      <span class="users-list-date"><?php echo $minister['designation']?></span>
+                      <input type="checkbox" id="<?php echo $minister['id']?>" value="<?php echo $minister['image']?>">
                     </li>
-                    <li>
+                    <?php } ?>
+                    <!-- <li>
                       <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:50%;max-height:20%;">
                       <a class="users-list-name" href="#">Norman</a>
                       <span class="users-list-date">Yesterday</span>
@@ -63,7 +66,7 @@ $this->title = 'EMS';
                       <span class="users-list-date">14 Jan</span>
                       <input type="checkbox" name="minister1" value="minister1">
                     </li>
-                    
+ -->
                   </ul>
                   <br>
                   <div class="col-sm-4 form-group">
