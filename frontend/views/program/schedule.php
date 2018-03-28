@@ -4,7 +4,7 @@
 use dosamigos\datepicker\DatePicker;
 use kartik\time\TimePicker;
 use yii\helpers\Html;
- 
+
 //use kartik\widgets\ActiveForm;
 //use kartik\widgets\TimePicker;
 
@@ -51,18 +51,19 @@ $this->title = 'EMS';
                       <span class="users-list-date">14 Jan</span>
                       <input type="checkbox" name="minister1" value="minister1">
                     </li>
-                    <li>
+                     <li>
                       <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:50%;max-height:20%;">
-                      <a class="users-list-name" href="#">Nora</a>
-                      <span class="users-list-date">15 Jan</span>
+                      <a class="users-list-name" href="#">Sarah</a>
+                      <span class="users-list-date">14 Jan</span>
                       <input type="checkbox" name="minister1" value="minister1">
                     </li>
-                    <li>
+                     <li>
                       <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:50%;max-height:20%;">
-                      <a class="users-list-name" href="#">Nadia</a>
-                      <span class="users-list-date">15 Jan</span>
+                      <a class="users-list-name" href="#">Sarah</a>
+                      <span class="users-list-date">14 Jan</span>
                       <input type="checkbox" name="minister1" value="minister1">
                     </li>
+                    
                   </ul>
                   <br>
                   <div class="col-sm-4 form-group">
@@ -82,7 +83,7 @@ $this->title = 'EMS';
                 </div>
                
                <div class="col-sm-4 form-group">
-               <label>Start Time</label>
+               <label>Start Time:</label>
                <?=TimePicker::widget([
                   'id' => 'start_time',
                 	'name' => 'start_time',
@@ -94,7 +95,7 @@ $this->title = 'EMS';
                 
                <!--  <br><br><br>  -->
                 <div class="col-sm-4 form-group">
-                      <label>End Time</label>
+                      <label>End Time:</label>
                       <?=TimePicker::widget([
                         'id' => 'end_time',
                        	'name' => 'end_time',
@@ -141,7 +142,7 @@ $this->title = 'EMS';
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Default Modal</h4>
+                <h4 class="modal-title">Minister Status</h4>
               </div>
               <div class="modal-body">
                <form id="select">
