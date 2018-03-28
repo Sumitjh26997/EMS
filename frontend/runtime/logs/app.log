@@ -23631,7 +23631,11 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1522151880.014
     'REQUEST_TIME' => 1522151880
 ]
+<<<<<<< HEAD
+2018-03-27 13:14:17 [::1][-][pkak56l6is9j8lk0o1o7vdb0h4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: program/mospi.webp in /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php:128
+=======
 2018-03-27 13:22:56 [::1][-][u182qa4ca58pun3ea24hfh2a9a][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: program/mospi.webp in /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php:128
+>>>>>>> 9710bd18a5f66875e9505337e2550cd94c406691
 Stack trace:
 #0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('mospi.webp', Array)
 #1 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/mospi.w...', Array)
@@ -23644,15 +23648,24 @@ Stack trace:
 #0 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
 #1 /var/www/html/EMS/index.php(17): yii\base\Application->run()
 #2 {main}
+<<<<<<< HEAD
+2018-03-27 13:14:17 [::1][-][pkak56l6is9j8lk0o1o7vdb0h4][info][application] $_GET = []
+=======
 2018-03-27 13:22:56 [::1][-][u182qa4ca58pun3ea24hfh2a9a][info][application] $_GET = []
+>>>>>>> 9710bd18a5f66875e9505337e2550cd94c406691
 
 $_POST = []
 
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
+    'advanced-frontend' => 'pkak56l6is9j8lk0o1o7vdb0h4'
+    '_csrf-frontend' => 'd4288c18961c04d2d8901c2cddbd84016b2ede9bc22b0591218529d79543288aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SDruKjRBW8rq2hPNiQLfR2Zo7lFMxQVL\";}'
+=======
     'advanced-frontend' => 'u182qa4ca58pun3ea24hfh2a9a'
     '_csrf-frontend' => '6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4\";}'
+>>>>>>> 9710bd18a5f66875e9505337e2550cd94c406691
 ]
 
 $_SESSION = [
@@ -23663,6 +23676,15 @@ $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/EMS/program/schedule'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=pkak56l6is9j8lk0o1o7vdb0h4; _csrf-frontend=d4288c18961c04d2d8901c2cddbd84016b2ede9bc22b0591218529d79543288aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SDruKjRBW8rq2hPNiQLfR2Zo7lFMxQVL%22%3B%7D'
+=======
     'HTTP_PRAGMA' => 'no-cache'
     'HTTP_CACHE_CONTROL' => 'no-cache'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
@@ -23671,6 +23693,7 @@ $_SERVER = [
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
     'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
     'HTTP_COOKIE' => 'advanced-frontend=u182qa4ca58pun3ea24hfh2a9a; _csrf-frontend=6acfc491dc928406e783527b3969d91502a1ee07ac0316202fd80ed540f4bca1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22QKZD6nNhTyXCjrbq6yjLSv7CbEjoAgW4%22%3B%7D'
+>>>>>>> 9710bd18a5f66875e9505337e2550cd94c406691
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
     'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
 '
@@ -23685,7 +23708,11 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
     'SERVER_ADMIN' => 'webmaster@localhost'
     'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+<<<<<<< HEAD
+    'REMOTE_PORT' => '34270'
+=======
     'REMOTE_PORT' => '47660'
+>>>>>>> 9710bd18a5f66875e9505337e2550cd94c406691
     'REDIRECT_URL' => '/EMS/program/mospi.webp'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -23694,6 +23721,91 @@ $_SERVER = [
     'REQUEST_URI' => '/EMS/program/mospi.webp'
     'SCRIPT_NAME' => '/EMS/index.php'
     'PHP_SELF' => '/EMS/index.php'
+<<<<<<< HEAD
+    'REQUEST_TIME_FLOAT' => 1522156457.659
+    'REQUEST_TIME' => 1522156457
+]
+2018-03-27 13:19:40 [::1][-][pkak56l6is9j8lk0o1o7vdb0h4][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'ems' in /var/www/html/EMS/vendor/yiisoft/yii2/db/Connection.php:686
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/db/Connection.php(686): PDO->__construct('mysql:host=loca...', 'root', '12345', NULL)
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/db/Connection.php(612): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/EMS/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/EMS/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/db/Command.php(396): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/db/mysql/Schema.php(309): yii\db\Command->queryAll()
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/db/mysql/Schema.php(122): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('program')
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('program', 'schema', false)
+#11 /var/www/html/EMS/vendor/yiisoft/yii2/db/ActiveRecord.php(350): yii\db\Schema->getTableSchema('program')
+#12 /var/www/html/EMS/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\ActiveRecord::getTableSchema()
+#13 /var/www/html/EMS/vendor/yiisoft/yii2/db/BaseActiveRecord.php(491): yii\db\ActiveRecord->attributes()
+#14 /var/www/html/EMS/vendor/yiisoft/yii2/db/BaseActiveRecord.php(288): yii\db\BaseActiveRecord->hasAttribute('name')
+#15 /var/www/html/EMS/vendor/yiisoft/yii2/helpers/BaseHtml.php(2188): yii\db\BaseActiveRecord->__get('name')
+#16 /var/www/html/EMS/vendor/yiisoft/yii2/helpers/BaseHtml.php(1319): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\Program), 'name')
+#17 /var/www/html/EMS/vendor/yiisoft/yii2/helpers/BaseHtml.php(1373): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\Program), 'name', Array)
+#18 /var/www/html/EMS/vendor/yiisoft/yii2/widgets/ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\Program), 'name', '[<span class="s...')
+#19 /var/www/html/EMS/frontend/views/program/_form.php(15): yii\widgets\ActiveField->textInput('[<span class="s...')
+#20 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/E...')
+#21 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', '[<span class="s...')
+#22 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, NULL)
+#23 /var/www/html/EMS/frontend/views/program/create.php(36): yii\base\View->render('_form', Array)
+#24 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/E...')
+#25 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', '[<span class="s...')
+#26 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#27 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(frontend\controllers\ProgramController))
+#28 /var/www/html/EMS/frontend/controllers/ProgramController.php(74): yii\base\Controller->render('create', Array)
+#29 [internal function]: frontend\controllers\ProgramController->actionCreate()
+#30 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#31 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#32 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#33 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/create', Array)
+#34 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#35 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#36 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'ems' in /var/www/html/EMS/vendor/yiisoft/yii2/db/Connection.php:623
+Stack trace:
+#0 /var/www/html/EMS/vendor/yiisoft/yii2/db/Connection.php(995): yii\db\Connection->open()
+#1 /var/www/html/EMS/vendor/yiisoft/yii2/db/Connection.php(982): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/EMS/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/db/Command.php(1140): yii\db\Command->prepare(true)
+#4 /var/www/html/EMS/vendor/yiisoft/yii2/db/Command.php(396): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /var/www/html/EMS/vendor/yiisoft/yii2/db/mysql/Schema.php(309): yii\db\Command->queryAll()
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/db/mysql/Schema.php(122): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('program')
+#8 /var/www/html/EMS/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('program', 'schema', false)
+#9 /var/www/html/EMS/vendor/yiisoft/yii2/db/ActiveRecord.php(350): yii\db\Schema->getTableSchema('program')
+#10 /var/www/html/EMS/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\ActiveRecord::getTableSchema()
+#11 /var/www/html/EMS/vendor/yiisoft/yii2/db/BaseActiveRecord.php(491): yii\db\ActiveRecord->attributes()
+#12 /var/www/html/EMS/vendor/yiisoft/yii2/db/BaseActiveRecord.php(288): yii\db\BaseActiveRecord->hasAttribute('name')
+#13 /var/www/html/EMS/vendor/yiisoft/yii2/helpers/BaseHtml.php(2188): yii\db\BaseActiveRecord->__get('name')
+#14 /var/www/html/EMS/vendor/yiisoft/yii2/helpers/BaseHtml.php(1319): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\Program), 'name')
+#15 /var/www/html/EMS/vendor/yiisoft/yii2/helpers/BaseHtml.php(1373): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\Program), 'name', Array)
+#16 /var/www/html/EMS/vendor/yiisoft/yii2/widgets/ActiveField.php(404): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\Program), 'name', '[<span class="s...')
+#17 /var/www/html/EMS/frontend/views/program/_form.php(15): yii\widgets\ActiveField->textInput('[<span class="s...')
+#18 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/E...')
+#19 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', '[<span class="s...')
+#20 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, NULL)
+#21 /var/www/html/EMS/frontend/views/program/create.php(36): yii\base\View->render('_form', Array)
+#22 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(336): require('/var/www/html/E...')
+#23 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/var/www/html/E...', '[<span class="s...')
+#24 /var/www/html/EMS/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/E...', Array, Object(frontend\controllers\ProgramController))
+#25 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(frontend\controllers\ProgramController))
+#26 /var/www/html/EMS/frontend/controllers/ProgramController.php(74): yii\base\Controller->render('create', Array)
+#27 [internal function]: frontend\controllers\ProgramController->actionCreate()
+#28 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#29 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#30 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#31 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('program/create', Array)
+#32 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /var/www/html/EMS/index.php(17): yii\base\Application->run()
+#34 {main}
+Additional Information:
+
+2018-03-27 13:19:40 [::1][-][pkak56l6is9j8lk0o1o7vdb0h4][info][application] $_GET = []
+=======
     'REQUEST_TIME_FLOAT' => 1522156976.569
     'REQUEST_TIME' => 1522156976
 ]
@@ -34894,27 +35006,45 @@ Stack trace:
 #14 /var/www/html/EMS/index.php(17): yii\base\Application->run()
 #15 {main}
 2018-03-28 07:11:29 [::1][2][tgh039lvkipjtbum749d2utkj7][info][application] $_GET = []
+>>>>>>> 9710bd18a5f66875e9505337e2550cd94c406691
 
 $_POST = []
 
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
+    'advanced-frontend' => 'pkak56l6is9j8lk0o1o7vdb0h4'
+    '_csrf-frontend' => 'd4288c18961c04d2d8901c2cddbd84016b2ede9bc22b0591218529d79543288aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"SDruKjRBW8rq2hPNiQLfR2Zo7lFMxQVL\";}'
+=======
     'advanced-frontend' => 'tgh039lvkipjtbum749d2utkj7'
     '_identity-frontend' => '2b194fcabfce54d9438ef3c6cac1e05e50d29c7f9c9f42048d049bd94e937dc3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"W1PB0JdD41V82ffyjtFz7d3FiLALmL9o\",2592000]\";}'
     '_csrf-frontend' => 'b6c412aaec6f11a6dadb1975da65b6a234a0a950ee07b4e874c3afe670c7e7f2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VSzibR1WcByyKB7f-giPOUfliT0q6wY3\";}'
+>>>>>>> 9710bd18a5f66875e9505337e2550cd94c406691
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
+=======
     '__returnUrl' => '/EMS/program/create'
     '__id' => 2
+>>>>>>> 9710bd18a5f66875e9505337e2550cd94c406691
 ]
 
 $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'localhost'
     'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=pkak56l6is9j8lk0o1o7vdb0h4; _csrf-frontend=d4288c18961c04d2d8901c2cddbd84016b2ede9bc22b0591218529d79543288aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22SDruKjRBW8rq2hPNiQLfR2Zo7lFMxQVL%22%3B%7D'
+=======
     'HTTP_PRAGMA' => 'no-cache'
     'HTTP_CACHE_CONTROL' => 'no-cache'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
@@ -34923,6 +35053,7 @@ $_SERVER = [
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
     'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
     'HTTP_COOKIE' => 'advanced-frontend=tgh039lvkipjtbum749d2utkj7; _identity-frontend=2b194fcabfce54d9438ef3c6cac1e05e50d29c7f9c9f42048d049bd94e937dc3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22W1PB0JdD41V82ffyjtFz7d3FiLALmL9o%22%2C2592000%5D%22%3B%7D; _csrf-frontend=b6c412aaec6f11a6dadb1975da65b6a234a0a950ee07b4e874c3afe670c7e7f2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VSzibR1WcByyKB7f-giPOUfliT0q6wY3%22%3B%7D'
+>>>>>>> 9710bd18a5f66875e9505337e2550cd94c406691
     'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
     'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
 '
@@ -34937,7 +35068,11 @@ $_SERVER = [
     'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
     'SERVER_ADMIN' => 'webmaster@localhost'
     'SCRIPT_FILENAME' => '/var/www/html/EMS/index.php'
+<<<<<<< HEAD
+    'REMOTE_PORT' => '34304'
+=======
     'REMOTE_PORT' => '38350'
+>>>>>>> 9710bd18a5f66875e9505337e2550cd94c406691
     'REDIRECT_URL' => '/EMS/program/create'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -34946,6 +35081,10 @@ $_SERVER = [
     'REQUEST_URI' => '/EMS/program/create'
     'SCRIPT_NAME' => '/EMS/index.php'
     'PHP_SELF' => '/EMS/index.php'
+<<<<<<< HEAD
+    'REQUEST_TIME_FLOAT' => 1522156780.158
+    'REQUEST_TIME' => 1522156780
+=======
     'REQUEST_TIME_FLOAT' => 1522221089.118
     'REQUEST_TIME' => 1522221089
 ]
@@ -35017,6 +35156,7 @@ $_SERVER = [
     'PHP_SELF' => '/EMS/index.php'
     'REQUEST_TIME_FLOAT' => 1522221103.41
     'REQUEST_TIME' => 1522221103
+>>>>>>> 9710bd18a5f66875e9505337e2550cd94c406691
 ]
 2018-03-28 07:18:23 [::1][2][tgh039lvkipjtbum749d2utkj7][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: program/mospi.webp in /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php:128
 Stack trace:
