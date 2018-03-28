@@ -3,6 +3,8 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use dosamigos\datepicker\DatePicker;
+use kartik\time\TimePicker;
+
 
 
 /* @var $this yii\web\View */
@@ -16,7 +18,8 @@ use dosamigos\datepicker\DatePicker;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'type')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'type')->dropDownList(
+            ['1' => 'Select an event type','Meeting' => 'Meeting', 'Seminar' => 'Seminar', 'Workshop' => 'Workshop'],['options' => ['1' => ['disabled' => true,'selected'  => true]]]  ); ?>
 
     <?= $form->field($model, 'location')->textInput(['maxlength' => true]) ?>
 
@@ -35,15 +38,19 @@ use dosamigos\datepicker\DatePicker;
     ]);?>
     <!-- <?= $form->field($model, 'date')->textInput() ?> -->
 
-    <?= $form->field($model, 'start_time')->textInput() ?>
+    <!-- <?= $form->field($model, 'start_time')->textInput() ?> -->
+    <?=$form->field($model, 'start_time')->widget(TimePicker::classname(), []);?>
 
-    <?= $form->field($model, 'end_time')->textInput() ?>
+    <!-- <?= $form->field($model, 'end_time')->textInput() ?> -->
+    <?=$form->field($model, 'end_time')->widget(TimePicker::classname(), []);?>
+
 
     <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
 
     <!-- <?= $form->field($model, 'init_weight')->textInput() ?> -->
 
-    <?= $form->field($model, 'priority')->textInput(['maxlength' => true]) ?>
+    <!-- <?= $form->field($model, 'priority')->textInput(['maxlength' => true]) ?> -->
+    <?= $form->field($model, 'priority')->radioList(array('High'=>'High','Medium'=>'Medium','Low'=>'Low')); ?>
 
 
     <!-- <?= $form->field($model, 'program_weight')->textInput() ?> -->
