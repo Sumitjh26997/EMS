@@ -251,4 +251,15 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+    public function actionMail()
+    {
+      Yii::$app->mailer->compose()
+        ->setFrom('sumit.hotchandani@gmail.com')
+        ->setTo('kailashgaur10@gmail.com')
+        ->setSubject('Test Mail')
+        ->setTextBody('Plain text content')
+        ->setHtmlBody('<b>HTML content</b>')
+        ->send();
+    }
 }
