@@ -2,8 +2,9 @@
 
 /* @var $this yii\web\View */
 use dosamigos\datepicker\DatePicker;
-use kartik\widgets\ActiveForm;
-use kartik\widgets\TimePicker;
+use kartik\time\TimePicker;
+//use kartik\widgets\ActiveForm;
+//use kartik\widgets\TimePicker;
 
 $this->title = 'EMS';
 ?>
@@ -66,7 +67,9 @@ $this->title = 'EMS';
                 <?= DatePicker::widget([
                       'name' => 'date',
                       'id' => 'date',
-                      'value' => '',
+                      'value' => date("Y-m-d"),
+                      //'minDate' => '0',
+                      //'datesDisabled' => date("Y-m-d"),
                       'template' => '{addon}{input}',
                           'clientOptions' => [
                               'autoclose' => true,
@@ -74,8 +77,23 @@ $this->title = 'EMS';
                           ]
                       ]);?>
 
-               <label>Start Time</label>
-              <?= TimePicker::widget(['name' => 'begin_time']);?>
+               <br><label>Start Time</label>
+               <?=TimePicker::widget([
+                  'id' => 'start_time',
+                	'name' => 'start_time',
+                	'pluginOptions' => [
+                		'showSeconds' => false
+                	]
+                ]);?>
+
+                <br><label>End Time</label>
+                <?=TimePicker::widget([
+                  'id' => 'end_time',
+                 	'name' => 'end_time',
+                 	'pluginOptions' => [
+                 		'showSeconds' => false
+                 	]
+                 ]);?>
                 <!-- /.input group -->
               </div>
 
