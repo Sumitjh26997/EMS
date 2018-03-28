@@ -140,7 +140,7 @@ DROP TABLE IF EXISTS `user`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `Name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `username` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `auth_key` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
   `password_hash` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `password_reset_token` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -155,10 +155,11 @@ CREATE TABLE `user` (
   `sex` char(1) COLLATE utf8_unicode_ci DEFAULT NULL,
   `location` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `party` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `join_date` date DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`),
   UNIQUE KEY `password_reset_token` (`password_reset_token`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -167,6 +168,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'shikhar','xhjDBQw6oS9kiYrbd2wqCLfi-6snEsl4','$2y$13$B0nPVpsnJsJVWOf29BCTaOnfz5vkTKaCvoM7OU6xM2Fc3XtHyMdXi',NULL,'shikhar@gmail.com',10,1522171691,1522171691,'Statistics','MP','shikhar.jpg','2018-03-20','M','KANPUR','RND',NULL),(2,'sumit','W1PB0JdD41V82ffyjtFz7d3FiLALmL9o','$2y$13$BT3f.1UN/P9mhYCrD4oE6OrwJHxay3RtrnldyC.2AZKgYmJeAnuQ6',NULL,'sumit.hot@gmail.com',10,1522171776,1522171776,'Statistics','MP','jerry.jpg','2018-03-20','M','PUNE','CCC',NULL),(3,'krg','Uu7Qm5TH7SrXuDs-6kktY6g_EaDtYwfi','$2y$13$DFOr91lcbnAtgf6dHzyVweDTu1OleNkyDv6naxTOtKa9nC/5kGXwe',NULL,'krg@gmail.com',10,1522171797,1522171797,'Statistics','Tatta','pika.jpg','2018-03-21','M','KHEME','LODU',NULL);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -202,4 +204,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-27 21:07:49
+-- Dump completed on 2018-03-28 14:11:08

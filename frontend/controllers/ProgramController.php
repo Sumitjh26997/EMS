@@ -28,7 +28,7 @@ class ProgramController extends Controller
              ],
              'access' => [
                          'class' => \yii\filters\AccessControl::className(),
-                         'only' => ['index','create','update','view'],
+                         'only' => ['index','create','update','view','schedule'],
                          'rules' => [
                              // allow authenticated users
                              [
