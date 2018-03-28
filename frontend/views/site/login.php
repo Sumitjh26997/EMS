@@ -21,7 +21,7 @@ $fieldOptions2 = [
 
 <div class="login-box">
     <div class="login-logo">
-        <a href="#"><b>Admin</b>LTE</a>
+        <center><img src="mospi.webp" style="max-width:20%;max-height:20%;"> <b>E</b>M<b>S</b></center>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
@@ -62,8 +62,7 @@ $fieldOptions2 = [
         </div> -->
         <!-- /.social-auth-links -->
 
-        <a href="#">I forgot my password</a><br>
-        <a href="register.html" class="text-center">Register a new membership</a>
+        <a href="">Forgot my password</a><br>
 
     </div>
     <!-- /.login-box-body -->
