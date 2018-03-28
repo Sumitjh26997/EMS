@@ -33,16 +33,30 @@ class EngagedController extends Controller
      * Lists all Engaged models.
      * @return mixed
      */
-    public function actionIndex()
-    {
-        $searchModel = new EngagedSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+     public function behaviors()
+     {
+         return [
+             'verbs' => [
+                 'class' => VerbFilter::className(),
+                 'actions' => [
+                     'delete' => ['post'],
+                 ],
+             ],
+             'access' => [
+                         'class' => \yii\filters\AccessControl::className(),
+                         'only' => ['index','create','update','view'],
+                         'rules' => [
+                             // allow authenticated users
+                             [
+                                 'allow' => true,
+                                 'roles' => ['@'],
+                             ],
+                             // everything else is denied
+                         ],
+                     ],
+         ];
+     }
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
-    }
 
     /**
      * Displays a single Engaged model.
