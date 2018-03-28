@@ -18,8 +18,8 @@ class ProgramSearch extends Program
     public function rules()
     {
         return [
-            [['id', 'init_weight'], 'integer'],
-            [['name', 'location', 'timestamp', 'date', 'start_time', 'end_time', 'discription', 'priority'], 'safe'],
+            [['id', 'init_weight', 'program_weight'], 'integer'],
+            [['name', 'location', 'timestamp', 'date', 'start_time', 'end_time', 'description', 'priority', 'type'], 'safe'],
         ];
     }
 
@@ -65,12 +65,14 @@ class ProgramSearch extends Program
             'start_time' => $this->start_time,
             'end_time' => $this->end_time,
             'init_weight' => $this->init_weight,
+            'program_weight' => $this->program_weight,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'location', $this->location])
-            ->andFilterWhere(['like', 'discription', $this->discription])
-            ->andFilterWhere(['like', 'priority', $this->priority]);
+            ->andFilterWhere(['like', 'description', $this->description])
+            ->andFilterWhere(['like', 'priority', $this->priority])
+            ->andFilterWhere(['like', 'type', $this->type]);
 
         return $dataProvider;
     }

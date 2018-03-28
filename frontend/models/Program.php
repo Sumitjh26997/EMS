@@ -14,9 +14,11 @@ use Yii;
  * @property string $date
  * @property string $start_time
  * @property string $end_time
- * @property string $discription
+ * @property string $description
  * @property int $init_weight
  * @property string $priority
+ * @property string $type
+ * @property int $program_weight
  */
 class Program extends \yii\db\ActiveRecord
 {
@@ -35,9 +37,10 @@ class Program extends \yii\db\ActiveRecord
     {
         return [
             [['timestamp', 'date', 'start_time', 'end_time'], 'safe'],
-            [['discription'], 'string'],
-            [['init_weight'], 'integer'],
+            [['description'], 'string'],
+            [['init_weight', 'program_weight'], 'integer'],
             [['name', 'location', 'priority'], 'string', 'max' => 255],
+            [['type'], 'string', 'max' => 20],
         ];
     }
 
@@ -54,9 +57,11 @@ class Program extends \yii\db\ActiveRecord
             'date' => 'Date',
             'start_time' => 'Start Time',
             'end_time' => 'End Time',
-            'discription' => 'Discription',
+            'description' => 'Description',
             'init_weight' => 'Init Weight',
             'priority' => 'Priority',
+            'type' => 'Type',
+            'program_weight' => 'Program Weight',
         ];
     }
 }

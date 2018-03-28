@@ -1,68 +1,5 @@
 [
     {
-        "name": "2amigos/yii2-date-picker-widget",
-        "version": "1.0.7",
-        "version_normalized": "1.0.7.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/2amigos/yii2-date-picker-widget.git",
-            "reference": "d09c2444e8c2329e38528bba77002dd65186c1ff"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/2amigos/yii2-date-picker-widget/zipball/d09c2444e8c2329e38528bba77002dd65186c1ff",
-            "reference": "d09c2444e8c2329e38528bba77002dd65186c1ff",
-            "shasum": ""
-        },
-        "require": {
-            "bower-asset/bootstrap-datepicker": "1.7.0",
-            "yiisoft/yii2": ">=2.0.9",
-            "yiisoft/yii2-bootstrap": "*"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "4.*"
-        },
-        "time": "2017-07-05T05:52:03+00:00",
-        "type": "yii2-extension",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0-dev"
-            },
-            "asset-installer-paths": {
-                "bower-asset-library": "vendor/bower"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "dosamigos\\datepicker\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "2amigOS! Consulting Group",
-                "email": "hola@2amigos.us",
-                "homepage": "http://2amigos.us",
-                "role": "Developer"
-            }
-        ],
-        "description": "Bootstrap DatePicker widget for Yii2.",
-        "homepage": "http://yiiwheels.com/extension/bootstrap-datepicker",
-        "keywords": [
-            "2amigos",
-            "datepicker",
-            "extension",
-            "widget",
-            "yii",
-            "yii 2",
-            "yii2"
-        ]
-    },
-    {
         "name": "almasaeed2010/adminlte",
         "version": "v2.4.3",
         "version_normalized": "2.4.3.0",
@@ -80,7 +17,7 @@
         "require": {
             "composer/installers": "1.*"
         },
-        "time": "2018-02-04T12:54:57+00:00",
+        "time": "2018-02-04 12:54:57",
         "type": "template",
         "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
@@ -133,7 +70,7 @@
         "suggest": {
             "symfony/yaml": "If you want to parse features, represented in YAML files"
         },
-        "time": "2016-10-30T11:50:56+00:00",
+        "time": "2016-10-30 11:50:56",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -208,30 +145,6 @@
         "installation-source": "dist",
         "license": [
             "MIT"
-        ]
-    },
-    {
-        "name": "bower-asset/bootstrap-datepicker",
-        "version": "v1.7.0",
-        "version_normalized": "1.7.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/uxsolutions/bootstrap-datepicker.git",
-            "reference": "d364be5b066b38f3675a5a1dc174ce1ab1f3360e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/uxsolutions/bootstrap-datepicker/zipball/d364be5b066b38f3675a5a1dc174ce1ab1f3360e",
-            "reference": "d364be5b066b38f3675a5a1dc174ce1ab1f3360e",
-            "shasum": null
-        },
-        "require": {
-            "bower-asset/jquery": ">=1.7.1,<4.0.0"
-        },
-        "type": "bower-asset",
-        "installation-source": "dist",
-        "license": [
-            "Apache-2.0"
         ]
     },
     {
@@ -389,7 +302,7 @@
             "facebook/xhprof": "*@dev",
             "phpunit/phpunit": "4.1.*"
         },
-        "time": "2017-07-16T21:13:23+00:00",
+        "time": "2017-07-16 21:13:23",
         "bin": [
             "bin/markdown"
         ],
@@ -446,7 +359,7 @@
         "require": {
             "yiisoft/yii2": "*"
         },
-        "time": "2013-12-10T17:49:58+00:00",
+        "time": "2013-12-10 17:49:58",
         "type": "yii2-extension",
         "installation-source": "dist",
         "autoload": {
@@ -530,7 +443,7 @@
             "stecman/symfony-console-completion": "For BASH autocompletion",
             "symfony/phpunit-bridge": "For phpunit-bridge support"
         },
-        "time": "2018-01-27T23:25:01+00:00",
+        "time": "2018-01-27 23:25:01",
         "bin": [
             "codecept"
         ],
@@ -587,7 +500,7 @@
         "require-dev": {
             "phpunit/phpunit": ">=4.8 <8.0"
         },
-        "time": "2018-02-18T13:56:56+00:00",
+        "time": "2018-02-18 13:56:56",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -619,7 +532,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.0"
         },
-        "time": "2017-01-09T10:58:51+00:00",
+        "time": "2017-01-09 10:58:51",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -665,7 +578,7 @@
             "composer/composer": "1.0.*@dev",
             "phpunit/phpunit": "^4.8.36"
         },
-        "time": "2017-12-29T09:13:20+00:00",
+        "time": "2017-12-29 09:13:20",
         "type": "composer-plugin",
         "extra": {
             "class": "Composer\\Installers\\Plugin",
@@ -783,7 +696,7 @@
             "yiisoft/yii2": "2.*",
             "yiisoft/yii2-bootstrap": "~2.0.0"
         },
-        "time": "2017-12-05T15:17:33+00:00",
+        "time": "2017-12-05 15:17:33",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -848,7 +761,7 @@
             "phpunit/phpunit": "^6.2.3",
             "squizlabs/php_codesniffer": "^3.0.2"
         },
-        "time": "2017-07-22T11:58:36+00:00",
+        "time": "2017-07-22 11:58:36",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -897,7 +810,7 @@
         "require": {
             "php": ">=5.3.2"
         },
-        "time": "2014-09-09T13:34:57+00:00",
+        "time": "2014-09-09 13:34:57",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -962,7 +875,7 @@
         "suggest": {
             "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
         },
-        "time": "2017-11-15T23:40:40+00:00",
+        "time": "2017-11-15 23:40:40",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1015,7 +928,7 @@
         "require-dev": {
             "simpletest/simpletest": "^1.1"
         },
-        "time": "2017-06-03T02:28:16+00:00",
+        "time": "2017-06-03 02:28:16",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1062,7 +975,7 @@
             "jekyll": "1.0.2",
             "lessc": "1.4.2"
         },
-        "time": "2016-10-24T15:52:54+00:00",
+        "time": "2016-10-24 15:52:54",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1116,7 +1029,7 @@
             "phpunit/phpunit": "^4.0 || ^5.0",
             "squizlabs/php_codesniffer": "^1.5"
         },
-        "time": "2017-08-15T16:48:10+00:00",
+        "time": "2017-08-15 16:48:10",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1170,7 +1083,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.0"
         },
-        "time": "2017-03-20T17:10:46+00:00",
+        "time": "2017-03-20 17:10:46",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1230,7 +1143,7 @@
         "require": {
             "yiisoft/yii2-bootstrap": "@dev"
         },
-        "time": "2017-09-29T06:18:14+00:00",
+        "time": "2017-09-29 06:18:14",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -1267,23 +1180,23 @@
     },
     {
         "name": "kartik-v/yii2-widget-timepicker",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "version": "v1.0.3",
+        "version_normalized": "1.0.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/kartik-v/yii2-widget-timepicker.git",
-            "reference": "d8d12fa107dec612914393d74d551b4368ffeec2"
+            "reference": "203aeb9123e7fa9a3c584d206793d82abe96d469"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-widget-timepicker/zipball/d8d12fa107dec612914393d74d551b4368ffeec2",
-            "reference": "d8d12fa107dec612914393d74d551b4368ffeec2",
+            "url": "https://api.github.com/repos/kartik-v/yii2-widget-timepicker/zipball/203aeb9123e7fa9a3c584d206793d82abe96d469",
+            "reference": "203aeb9123e7fa9a3c584d206793d82abe96d469",
             "shasum": ""
         },
         "require": {
             "kartik-v/yii2-krajee-base": "*"
         },
-        "time": "2018-02-07T11:49:20+00:00",
+        "time": "2017-01-08 06:36:24",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -1298,7 +1211,7 @@
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "BSD-3-Clause"
+            "BSD 3-Clause"
         ],
         "authors": [
             {
@@ -1344,7 +1257,7 @@
             "doctrine/common": "^2.6",
             "phpunit/phpunit": "^4.1"
         },
-        "time": "2017-10-19T19:58:43+00:00",
+        "time": "2017-10-19 19:58:43",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1389,7 +1302,7 @@
             "phar-io/version": "^1.0.1",
             "php": "^5.6 || ^7.0"
         },
-        "time": "2017-03-05T18:14:27+00:00",
+        "time": "2017-03-05 18:14:27",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1443,7 +1356,7 @@
         "require": {
             "php": "^5.6 || ^7.0"
         },
-        "time": "2017-03-05T17:38:23+00:00",
+        "time": "2017-03-05 17:38:23",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1495,7 +1408,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.6"
         },
-        "time": "2017-09-11T18:02:19+00:00",
+        "time": "2017-09-11 18:02:19",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1556,7 +1469,7 @@
             "mockery/mockery": "^1.0",
             "phpunit/phpunit": "^6.4"
         },
-        "time": "2017-11-30T07:14:17+00:00",
+        "time": "2017-11-30 07:14:17",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1606,7 +1519,7 @@
             "mockery/mockery": "^0.9.4",
             "phpunit/phpunit": "^5.2||^4.8.24"
         },
-        "time": "2017-07-14T14:27:02+00:00",
+        "time": "2017-07-14 14:27:02",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1647,7 +1560,7 @@
             "reference": "0464787bfa7cd13576c5a1e318709768798bec6a",
             "shasum": ""
         },
-        "time": "2016-04-07T12:29:16+00:00",
+        "time": "2016-04-07 12:29:16",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1698,7 +1611,7 @@
             "phpspec/phpspec": "^2.5|^3.2",
             "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5"
         },
-        "time": "2018-02-11T18:49:29+00:00",
+        "time": "2018-02-11 18:49:29",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1770,7 +1683,7 @@
         "suggest": {
             "ext-xdebug": "^2.5.5"
         },
-        "time": "2017-12-06T09:29:45+00:00",
+        "time": "2017-12-06 09:29:45",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1820,7 +1733,7 @@
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2017-11-27T13:52:08+00:00",
+        "time": "2017-11-27 13:52:08",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1869,7 +1782,7 @@
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2015-06-21T13:50:34+00:00",
+        "time": "2015-06-21 13:50:34",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1915,7 +1828,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
         },
-        "time": "2017-02-26T11:10:40+00:00",
+        "time": "2017-02-26 11:10:40",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1967,7 +1880,7 @@
         "require-dev": {
             "phpunit/phpunit": "^6.2.4"
         },
-        "time": "2017-11-27T05:48:46+00:00",
+        "time": "2017-11-27 05:48:46",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2047,7 +1960,7 @@
             "ext-xdebug": "*",
             "phpunit/php-invoker": "^1.1"
         },
-        "time": "2018-02-01T05:57:37+00:00",
+        "time": "2018-02-01 05:57:37",
         "bin": [
             "phpunit"
         ],
@@ -2112,7 +2025,7 @@
         "suggest": {
             "ext-soap": "*"
         },
-        "time": "2018-01-06T05:45:45+00:00",
+        "time": "2018-01-06 05:45:45",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2161,7 +2074,7 @@
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2016-08-06T14:39:51+00:00",
+        "time": "2016-08-06 14:39:51",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2215,7 +2128,7 @@
             "php": ">=5.4.0",
             "yiisoft/yii2": "2.0.*"
         },
-        "time": "2017-01-11T14:05:47+00:00",
+        "time": "2017-01-11 14:05:47",
         "type": "yii2-extension",
         "extra": {
             "asset-installer-paths": {
@@ -2270,7 +2183,7 @@
         "require-dev": {
             "phpunit/phpunit": "^5.7 || ^6.0"
         },
-        "time": "2017-03-04T06:30:41+00:00",
+        "time": "2017-03-04 06:30:41",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2319,7 +2232,7 @@
         "require-dev": {
             "phpunit/phpunit": "^6.4"
         },
-        "time": "2018-02-01T13:46:46+00:00",
+        "time": "2018-02-01 13:46:46",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2383,7 +2296,7 @@
         "require-dev": {
             "phpunit/phpunit": "^6.2"
         },
-        "time": "2017-08-03T08:09:46+00:00",
+        "time": "2017-08-03 08:09:46",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2437,7 +2350,7 @@
         "require-dev": {
             "phpunit/phpunit": "^6.1"
         },
-        "time": "2017-07-01T08:51:00+00:00",
+        "time": "2017-07-01 08:51:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2491,7 +2404,7 @@
             "ext-mbstring": "*",
             "phpunit/phpunit": "^6.0"
         },
-        "time": "2017-04-03T13:19:02+00:00",
+        "time": "2017-04-03 13:19:02",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2561,7 +2474,7 @@
         "suggest": {
             "ext-uopz": "*"
         },
-        "time": "2017-04-27T15:39:26+00:00",
+        "time": "2017-04-27 15:39:26",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2613,7 +2526,7 @@
         "require-dev": {
             "phpunit/phpunit": "^6.0"
         },
-        "time": "2017-08-03T12:35:26+00:00",
+        "time": "2017-08-03 12:35:26",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2660,7 +2573,7 @@
         "require-dev": {
             "phpunit/phpunit": "^6.0"
         },
-        "time": "2017-03-29T09:07:27+00:00",
+        "time": "2017-03-29 09:07:27",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2707,7 +2620,7 @@
         "require-dev": {
             "phpunit/phpunit": "^6.0"
         },
-        "time": "2017-03-03T06:23:57+00:00",
+        "time": "2017-03-03 06:23:57",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2759,7 +2672,7 @@
         "require": {
             "php": ">=5.6.0"
         },
-        "time": "2015-07-28T20:34:47+00:00",
+        "time": "2015-07-28 20:34:47",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2803,7 +2716,7 @@
         "require": {
             "php": ">=5.6"
         },
-        "time": "2016-10-03T07:35:21+00:00",
+        "time": "2016-10-03 07:35:21",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2853,7 +2766,7 @@
             "mockery/mockery": "~0.9.1",
             "symfony/phpunit-bridge": "~3.3@dev"
         },
-        "time": "2017-09-30T22:39:41+00:00",
+        "time": "2017-09-30 22:39:41",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2913,7 +2826,7 @@
         "suggest": {
             "symfony/process": ""
         },
-        "time": "2018-01-03T07:38:00+00:00",
+        "time": "2018-01-03 07:38:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2983,7 +2896,7 @@
             "symfony/lock": "",
             "symfony/process": ""
         },
-        "time": "2018-01-29T09:06:29+00:00",
+        "time": "2018-01-29 09:06:29",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3034,7 +2947,7 @@
         "require": {
             "php": "^7.1.3"
         },
-        "time": "2018-01-03T07:38:00+00:00",
+        "time": "2018-01-03 07:38:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3096,7 +3009,7 @@
         "suggest": {
             "symfony/css-selector": ""
         },
-        "time": "2018-01-03T07:38:00+00:00",
+        "time": "2018-01-03 07:38:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3161,7 +3074,7 @@
             "symfony/dependency-injection": "",
             "symfony/http-kernel": ""
         },
-        "time": "2018-01-03T07:38:00+00:00",
+        "time": "2018-01-03 07:38:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3212,7 +3125,7 @@
         "require": {
             "php": "^7.1.3"
         },
-        "time": "2018-01-03T07:38:00+00:00",
+        "time": "2018-01-03 07:38:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3266,7 +3179,7 @@
         "suggest": {
             "ext-mbstring": "For best performance"
         },
-        "time": "2018-01-30T19:27:44+00:00",
+        "time": "2018-01-30 19:27:44",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3333,7 +3246,7 @@
         "suggest": {
             "symfony/console": "For validating YAML files using the lint command"
         },
-        "time": "2018-01-21T19:06:11+00:00",
+        "time": "2018-01-21 19:06:11",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3387,7 +3300,7 @@
             "ext-xmlwriter": "*",
             "php": "^7.0"
         },
-        "time": "2017-04-07T12:08:54+00:00",
+        "time": "2017-04-07 12:08:54",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -3430,7 +3343,7 @@
             "phpunit/phpunit": "^4.6",
             "sebastian/version": "^1.0.1"
         },
-        "time": "2018-01-29T19:49:41+00:00",
+        "time": "2018-01-29 19:49:41",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3488,7 +3401,7 @@
             "php": ">=5.4.0",
             "yiisoft/yii2-composer": "~2.0.4"
         },
-        "time": "2018-02-18T22:52:12+00:00",
+        "time": "2018-02-18 22:52:12",
         "bin": [
             "yii"
         ],
@@ -3581,7 +3494,7 @@
             "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
             "yiisoft/yii2": "~2.0.6"
         },
-        "time": "2018-02-16T10:41:52+00:00",
+        "time": "2018-02-16 10:41:52",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -3645,7 +3558,7 @@
         "require-dev": {
             "composer/composer": "^1.0"
         },
-        "time": "2016-12-20T13:26:02+00:00",
+        "time": "2016-12-20 13:26:02",
         "type": "composer-plugin",
         "extra": {
             "class": "yii\\composer\\Plugin",
@@ -3695,7 +3608,7 @@
             "yiisoft/yii2": "~2.0.13",
             "yiisoft/yii2-bootstrap": "~2.0.0"
         },
-        "time": "2017-12-05T07:36:23+00:00",
+        "time": "2017-12-05 07:36:23",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -3744,7 +3657,7 @@
             "fzaninotto/faker": "*",
             "yiisoft/yii2": "*"
         },
-        "time": "2015-03-01T06:22:44+00:00",
+        "time": "2015-03-01 06:22:44",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -3795,7 +3708,7 @@
             "yiisoft/yii2": "~2.0.13",
             "yiisoft/yii2-bootstrap": "~2.0.0"
         },
-        "time": "2017-12-22T23:53:06+00:00",
+        "time": "2017-12-22 23:53:06",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -3848,7 +3761,7 @@
             "swiftmailer/swiftmailer": "~6.0",
             "yiisoft/yii2": "~2.0.4"
         },
-        "time": "2017-08-04T10:48:17+00:00",
+        "time": "2017-08-04 10:48:17",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -3878,6 +3791,93 @@
             "mailer",
             "swift",
             "swiftmailer",
+            "yii2"
+        ]
+    },
+    {
+        "name": "bower-asset/bootstrap-datepicker",
+        "version": "v1.7.0",
+        "version_normalized": "1.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/uxsolutions/bootstrap-datepicker.git",
+            "reference": "d364be5b066b38f3675a5a1dc174ce1ab1f3360e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/uxsolutions/bootstrap-datepicker/zipball/d364be5b066b38f3675a5a1dc174ce1ab1f3360e",
+            "reference": "d364be5b066b38f3675a5a1dc174ce1ab1f3360e",
+            "shasum": null
+        },
+        "require": {
+            "bower-asset/jquery": ">=1.7.1,<4.0.0"
+        },
+        "type": "bower-asset",
+        "installation-source": "dist",
+        "license": [
+            "Apache-2.0"
+        ]
+    },
+    {
+        "name": "2amigos/yii2-date-picker-widget",
+        "version": "1.0.7",
+        "version_normalized": "1.0.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/2amigos/yii2-date-picker-widget.git",
+            "reference": "d09c2444e8c2329e38528bba77002dd65186c1ff"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/2amigos/yii2-date-picker-widget/zipball/d09c2444e8c2329e38528bba77002dd65186c1ff",
+            "reference": "d09c2444e8c2329e38528bba77002dd65186c1ff",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/bootstrap-datepicker": "1.7.0",
+            "yiisoft/yii2": ">=2.0.9",
+            "yiisoft/yii2-bootstrap": "*"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.*"
+        },
+        "time": "2017-07-05 05:52:03",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            },
+            "asset-installer-paths": {
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "dosamigos\\datepicker\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "2amigOS! Consulting Group",
+                "email": "hola@2amigos.us",
+                "homepage": "http://2amigos.us",
+                "role": "Developer"
+            }
+        ],
+        "description": "Bootstrap DatePicker widget for Yii2.",
+        "homepage": "http://yiiwheels.com/extension/bootstrap-datepicker",
+        "keywords": [
+            "2amigos",
+            "datepicker",
+            "extension",
+            "widget",
+            "yii",
+            "yii 2",
             "yii2"
         ]
     }

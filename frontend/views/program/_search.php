@@ -29,11 +29,15 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'end_time') ?>
 
-    <?php // echo $form->field($model, 'discription') ?>
+    <?php // echo $form->field($model, 'description') ?>
 
     <?php // echo $form->field($model, 'init_weight') ?>
 
     <?php // echo $form->field($model, 'priority') ?>
+
+    <?php // echo $form->field($model, 'type') ?>
+
+    <?php // echo $form->field($model, 'program_weight') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

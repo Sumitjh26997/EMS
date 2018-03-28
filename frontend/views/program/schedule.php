@@ -1,6 +1,10 @@
 <?php
 
 /* @var $this yii\web\View */
+use dosamigos\datepicker\DatePicker;
+use kartik\time\TimePicker;
+//use kartik\widgets\ActiveForm;
+//use kartik\widgets\TimePicker;
 
 $this->title = 'EMS';
 ?>
@@ -60,18 +64,38 @@ $this->title = 'EMS';
                   </ul>
                   <div class="form-group">
                 <label>Date:</label>
+                <?= DatePicker::widget([
+                      'name' => 'date',
+                      'id' => 'date',
+                      'value' => date("Y-m-d"),
+                      //'minDate' => '0',
+                      //'datesDisabled' => date("Y-m-d"),
+                      'template' => '{addon}{input}',
+                          'clientOptions' => [
+                              'autoclose' => true,
+                              'format' => 'yyyy-mm-dd'
+                          ]
+                      ]);?>
 
-                <div class="input-group date">
-                  <div class="input-group-addon">
-                    <i class="fa fa-calendar"></i>
-                  </div>
-                  <input type="text" class="form-control pull-right" id="datepicker">
-                </div>
+               <br><label>Start Time</label>
+               <?=TimePicker::widget([
+                  'id' => 'start_time',
+                	'name' => 'start_time',
+                	'pluginOptions' => [
+                		'showSeconds' => false
+                	]
+                ]);?>
+
+                <br><label>End Time</label>
+                <?=TimePicker::widget([
+                  'id' => 'end_time',
+                 	'name' => 'end_time',
+                 	'pluginOptions' => [
+                 		'showSeconds' => false
+                 	]
+                 ]);?>
                 <!-- /.input group -->
               </div>
-                   <input type="date" class="btn btn-sm btn-info btn-flat" style="width:20%">
-                   <input type="time" class="btn btn-sm btn-info btn-flat" style="width:20%">
-                                               
                   <!-- /.users-list -->
                 </div>
                 <br>
@@ -79,7 +103,7 @@ $this->title = 'EMS';
 <button type="button" class="btn btn-block btn-success btn-lg" style="width:30%; align:center;" data-toggle="modal" data-target="#modal-default">
                 Submit
               </button>
-      
+
   </form>
 
 <!-- <div class="row">
@@ -89,7 +113,7 @@ $this->title = 'EMS';
               <h3 class="box-title">Modal Examples</h3>
             </div>
             <div class="box-body">
-              
+
             </div>
           </div>
         </div>
@@ -116,7 +140,3 @@ $this->title = 'EMS';
           <!-- /.modal-dialog -->
         </div>
 </div>
-
-
-
-

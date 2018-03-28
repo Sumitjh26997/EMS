@@ -15,31 +15,30 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
-    public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'actions' => ['login', 'error'],
-                        'allow' => true,
-                    ],
-                    [
-                        'actions' => ['logout', 'index'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
-        ];
-    }
+     public function behaviors()
+     {
+         return [
+             'verbs' => [
+                 'class' => VerbFilter::className(),
+                 'actions' => [
+                     'delete' => ['post'],
+                 ],
+             ],
+             'access' => [
+                         'class' => \yii\filters\AccessControl::className(),
+                         'only' => ['index','create','update','view'],
+                         'rules' => [
+                             // allow authenticated users
+                             [
+                                 'allow' => true,
+                                 'roles' => ['@'],
+                             ],
+                             // everything else is denied
+                         ],
+                     ],
+         ];
+     }
+
 
     /**
      * {@inheritdoc}
