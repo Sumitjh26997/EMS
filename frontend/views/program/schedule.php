@@ -111,7 +111,7 @@ $this->title = 'EMS';
                        	]
                        ]);?>
                        <br>
-                       <button  type="submit" class="btn btn-block btn-success btn-lg" style="width:50%;" data-toggle="modal" data-target="#modal-default">
+                       <button  type="button" class="btn btn-block btn-success btn-lg" style="width:50%;" data-toggle="modal" data-target="#modal-default">
                 Submit
               </button>
                </div>
