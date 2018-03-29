@@ -42,6 +42,7 @@ if (Yii::$app->controller->action->id === 'login') {
     </head>
     <body class="hold-transition skin-blue sidebar-mini wysihtml5-supported">
     <?php $this->beginBody() ?>
+    
     <div class="wrapper">
 
         <?= $this->render(

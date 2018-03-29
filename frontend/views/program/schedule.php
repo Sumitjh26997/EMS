@@ -5,72 +5,37 @@ use dosamigos\datepicker\DatePicker;
 use kartik\time\TimePicker;
 use yii\helpers\Html;
 use frontend\models\User;
-use yii\helpers\Url; 
+use yii\helpers\Url;
 
 //use kartik\widgets\ActiveForm;
 //use kartik\widgets\TimePicker;
 
 $this->title = 'EMS';
 ?>
-
+<?php
+  if($flag==1)
+  {
+    echo $flag;
+    echo "<script>$('#modal-default').modal('show')</script>"
+    ?>
+  <?php
+  }
+ ?>
 <div class="site-index">
-  <form id="minister">
+  <!-- <form id="minister"> -->
     <div class="box-body no-padding">
                   <ul class="users-list clearfix">
-                    <?php foreach($ministers as $minister ) {?>
+                    <?php foreach($ministers as $minister) {?>
                     <li>
                       <div class="<?php echo $minister['id']?>">
                         <img src="photos/<?php echo $minister['image']?>" alt="User Image" style="border-radius:50%;max-width:100px;max-height:100px;min-width:100px;min-height:100px;">
-                        <a class="users-list-name" href="#"><?php echo $minister['username']?> Hello World</a>
+                        <a class="users-list-name" href="#"><?php echo $minister['username']?></a>
                         <span class="users-list-date"><?php echo $minister['designation']?></span>
-                        <input type="checkbox" id="<?php echo $minister['id']?>" value="<?php echo $minister['image']?>" 
-                        onclick="multiple_values(<?php echo $minister['id']?>">
+                        <input type="checkbox" class="minister" id="<?php echo $minister['id']?>" value="<?php echo $minister['id']?>"
+                        onclick="filter()">
                       </div>
                     </li>
                     <?php } ?>
-                    <!-- <li>
-                      <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:50%;max-height:20%;">
-                      <a class="users-list-name" href="#">Norman</a>
-                      <span class="users-list-date">Yesterday</span>
-                      <input type="checkbox" name="minister1" value="minister1">
-                    </li>
-                    <li>
-                      <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:50%;max-height:20%;">
-                      <a class="users-list-name" href="#">Jane</a>
-                      <span class="users-list-date">12 Jan</span>
-                      <input type="checkbox" name="minister1" value="minister1">
-                    </li>
-                    <li>
-                      <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:50%;max-height:20%;">
-                      <a class="users-list-name" href="#">John</a>
-                      <span class="users-list-date">12 Jan</span>
-                      <input type="checkbox" name="minister1" value="minister1">
-                    </li>
-                    <li>
-                      <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:50%;max-height:20%;">
-                      <a class="users-list-name" href="#">Alexander</a>
-                      <span class="users-list-date">13 Jan</span>
-                      <input type="checkbox" name="minister1" value="minister1">
-                    </li>
-                    <li>
-                      <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:50%;max-height:20%;">
-                      <a class="users-list-name" href="#">Sarah</a>
-                      <span class="users-list-date">14 Jan</span>
-                      <input type="checkbox" name="minister1" value="minister1">
-                    </li>
-                     <li>
-                      <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:50%;max-height:20%;">
-                      <a class="users-list-name" href="#">Sarah</a>
-                      <span class="users-list-date">14 Jan</span>
-                      <input type="checkbox" name="minister1" value="minister1">
-                    </li>
-                     <li>
-                      <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:50%;max-height:20%;">
-                      <a class="users-list-name" href="#">Sarah</a>
-                      <span class="users-list-date">14 Jan</span>
-                      <input type="checkbox" name="minister1" value="minister1">
-                    </li>
- -->
                   </ul>
                   <br>
                   <div class="col-sm-4 form-group">
@@ -88,7 +53,7 @@ $this->title = 'EMS';
                           ]
                       ]);?>
                 </div>
-               
+
                <div class="col-sm-4 form-group">
                <label>Start Time:</label>
                <?=TimePicker::widget([
@@ -99,7 +64,7 @@ $this->title = 'EMS';
                 	]
                 ]);?>
               </div>
-                
+
                <!--  <br><br><br>  -->
                 <div class="col-sm-4 form-group">
                       <label>End Time:</label>
@@ -111,24 +76,130 @@ $this->title = 'EMS';
                        	]
                        ]);?>
                        <br>
-                       <button  type="button" class="btn btn-block btn-success btn-lg" style="width:50%;" data-toggle="modal" data-target="#modal-default">
+                       <!-- <button  type="button" class="btn btn-block btn-success btn-lg" style="width:50%;" data-toggle="modal" data-target="#modal-default"> -->
+                       <button  type="button" class="btn btn-block btn-success btn-lg" style="width:50%;" onclick="submitform();">
                 Submit
               </button>
                </div>
                 <!-- /.input group -->
-              
+
                   <!-- /.users-list -->
-                  
+
                 <div class="col-sm-4 form-group">
-  
+
             </div>
+            <div class="modal fade" id="modal-default">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Minister Status</h4>
+                    </div>
+                    <div class="modal-body">
+                     <form id="select">
+          <div class="box-body no-padding">
+
+                        <div class="box">
+                  <div class="box-header">
+                     </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th></th>
+                        <th>Minister Name</th>
+                        <th>Status</th>
+                        <th>Select</th>
+                      </tr>
+                      </thead>
+                      <tbody style="align:center;">
+                      <tr>
+                        <td>1</td>
+                        <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                        <td>Shikhar Bhatt</td>
+                        <td>Available</td>
+                        <td><input type="checkbox" name="minister1" value="minister1"></td>
+                      </tr>
+
+                      <!-- <tr>
+                        <td>1</td>
+                        <td><img src="photos/shikh
+                        ar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                        <td>Shikhar Bhatt</td>
+                        <td>Available</td>
+                        <td><input type="checkbox" name="minister1" value="minister1"></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                        <td>Shikhar Bhatt</td>
+                        <td>Available</td>
+                        <td><input type="checkbox" name="minister1" value="minister1"></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                        <td>Shikhar Bhatt</td>
+                        <td>Available</td>
+                        <td><input type="checkbox" name="minister1" value="minister1"></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                        <td>Shikhar Bhatt</td>
+                        <td>Available</td>
+                        <td><input type="checkbox" name="minister1" value="minister1"></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                        <td>Shikhar Bhatt</td>
+                        <td>Available</td>
+                        <td><input type="checkbox" name="minister1" value="minister1"></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                        <td>Shikhar Bhatt</td>
+                        <td>Available</td>
+                        <td><input type="checkbox" name="minister1" value="minister1"></td>
+                      </tr> -->
+                    </table>
+                  </div>
+                  <!-- /.box-body -->
                 </div>
-                
+
+                        <!-- /.users-list -->
+                      </div>
+                      <br>
+                         <!-- <button class="btn btn-sm btn-info btn-flat ">Submit</button> -->
+
+
+        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                      <?= Html::a(
+                                          'Create Program',
+                                          ['/program/create'],
+                                          ['data-method' => 'post', 'class' => 'btn btn-primary']
+                                      ) ?>
+                    </div>
+                  </div>
+                  <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+              </div>
+                </div>
+
                    <!-- <button class="btn btn-sm btn-info btn-flat ">Submit</button> -->
 
 
 
-  </form>
+  <!-- </form> -->
 
 <!-- <div class="row">
         <div class="col-xs-12">
@@ -143,127 +214,43 @@ $this->title = 'EMS';
         </div>
       </div> -->
 
-      <div class="modal fade" id="modal-default">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Minister Status</h4>
-              </div>
-              <div class="modal-body">
-               <form id="select">
-    <div class="box-body no-padding">
-                  <!-- <ol >
-                    <li>
-                      <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:10%;max-height:10%;">
-                      Shikhar Bhatt
-                      <span class="users-list-date">Today</span>
-                      <input type="checkbox" name="minister1" value="minister1">
-                    </li>
-                    <li>
-                      <img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:10%;max-height:10%;">
-                      Shikhar Bhatt
-                      <input type="checkbox" name="minister1" value="minister1">
-                      <span class="users-list-date">Today</span>
-                      
-                    </li>
-                   
-                    </ol> -->
-                  <div class="box">
-            <div class="box-header">
-               </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped">
-                <thead>
-                <tr>
-                  <th>ID</th>
-                  <th></th>
-                  <th>Minister Name</th>
-                  <th>Status</th>
-                  <th>Select</th>
-                </tr>
-                </thead>
-                <tbody style="align:center;">
-                <tr>
-                  <td>1</td>
-                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
-                  <td>Shikhar Bhatt</td>
-                  <td>Available</td>
-                  <td><input type="checkbox" name="minister1" value="minister1"></td>
-                </tr>
-                <?php foreach($ministers as $minister ) {?>
-                    <script type="text/javascript">check_selected(<?= $minister['id'] ?>);</script>
-                    <?php } ?>
-                <!-- <tr>
-                  <td>1</td>
-                  <td><img src="photos/shikh
-                  ar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
-                  <td>Shikhar Bhatt</td>
-                  <td>Available</td>
-                  <td><input type="checkbox" name="minister1" value="minister1"></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
-                  <td>Shikhar Bhatt</td>
-                  <td>Available</td>
-                  <td><input type="checkbox" name="minister1" value="minister1"></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
-                  <td>Shikhar Bhatt</td>
-                  <td>Available</td>
-                  <td><input type="checkbox" name="minister1" value="minister1"></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
-                  <td>Shikhar Bhatt</td>
-                  <td>Available</td>
-                  <td><input type="checkbox" name="minister1" value="minister1"></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
-                  <td>Shikhar Bhatt</td>
-                  <td>Available</td>
-                  <td><input type="checkbox" name="minister1" value="minister1"></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
-                  <td>Shikhar Bhatt</td>
-                  <td>Available</td>
-                  <td><input type="checkbox" name="minister1" value="minister1"></td>
-                </tr> -->
-              </table>
-            </div>
-            <!-- /.box-body -->
-          </div>
-      
-                  <!-- /.users-list -->
-                </div>
-                <br>
-                   <!-- <button class="btn btn-sm btn-info btn-flat ">Submit</button> -->
-              
 
-  </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-                <?= Html::a(
-                                    'Create Program',
-                                    ['/program/create'],
-                                    ['data-method' => 'post', 'class' => 'btn btn-primary']
-                                ) ?>
-              </div>
-            </div>
-            <!-- /.modal-content -->
-          </div>
-          <!-- /.modal-dialog -->
-        </div>
 </div>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
 
+	var minister;
+	//var limit;
+
+	function multiple_values(inputclass){
+		var val = new Array();
+		$("."+inputclass+":checked").each(function() {
+		    val.push($(this).val());
+		});
+		//val.push("none");
+		return val;
+	}
+
+  function filter()
+  {
+    minister = multiple_values("minister");
+    alert(minister);
+  }
+
+  function submitform()
+  {
+    $.post( '<?= Url::toRoute('program/schedule')?>',{'minister':minister})
+    .done(function(data){
+            alert("success");
+            $('body').html(data);
+        })
+        .fail(function() {
+        alert( "error" );
+    })
+  }
+
+  function open_modal()
+  {
+    document.getElementById('modal-default').style.display='block';
+  }
+</script>

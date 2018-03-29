@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use Yii;
 use backend\models\User;
 use frontend\models\Program;
+//use frontend\models\Engaged;
 use frontend\models\ProgramSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -29,7 +30,7 @@ class ProgramController extends Controller
              ],
              'access' => [
                          'class' => \yii\filters\AccessControl::className(),
-                         'only' => ['index','create','update','view','schedule'],
+                         'only' => ['index','create','update','view','schedule','remove','alter'],
                          'rules' => [
                              // allow authenticated users
                              [
@@ -95,9 +96,19 @@ class ProgramController extends Controller
 
     public function actionSchedule()
     {
+      $flag=0;
       $userminister=Yii::$app->user->identity->id;
       $ministers = User::find()->all();
-      return $this->render('schedule',['ministers'=>$ministers]);
+      if(isset($_POST['minister']))
+      {
+        $flag=1;
+        print_r($_POST['minister']);
+        // print_r($_POST['date']);
+        // print_r($_POST['start']);
+        // print_r($_POST['end']);
+        // //$query = Enagaged::find()
+      }
+      return $this->render('schedule',['ministers'=>$ministers,'flag'=>$flag]);
     }
 
     /**
