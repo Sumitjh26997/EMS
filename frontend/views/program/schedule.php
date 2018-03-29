@@ -4,7 +4,8 @@
 use dosamigos\datepicker\DatePicker;
 use kartik\time\TimePicker;
 use yii\helpers\Html;
-use frontend\models\User; 
+use frontend\models\User;
+use yii\helpers\Url; 
 
 //use kartik\widgets\ActiveForm;
 //use kartik\widgets\TimePicker;
@@ -18,10 +19,13 @@ $this->title = 'EMS';
                   <ul class="users-list clearfix">
                     <?php foreach($ministers as $minister ) {?>
                     <li>
-                      <img src="photos/<?php echo $minister['image']?>" alt="User Image" style="border-radius:50%;max-width:50%;max-height:20%;min-width:50%;min-height:20%;">
-                      <a class="users-list-name" href="#"><?php echo $minister['username']?></a>
-                      <span class="users-list-date"><?php echo $minister['designation']?></span>
-                      <input type="checkbox" id="<?php echo $minister['id']?>" value="<?php echo $minister['image']?>">
+                      <div class="<?php echo $minister['id']?>">
+                        <img src="photos/<?php echo $minister['image']?>" alt="User Image" style="border-radius:50%;max-width:100px;max-height:100px;min-width:100px;min-height:100px;">
+                        <a class="users-list-name" href="#"><?php echo $minister['username']?> Hello World</a>
+                        <span class="users-list-date"><?php echo $minister['designation']?></span>
+                        <input type="checkbox" id="<?php echo $minister['id']?>" value="<?php echo $minister['image']?>" 
+                        onclick="multiple_values(<?php echo $minister['id']?>">
+                      </div>
                     </li>
                     <?php } ?>
                     <!-- <li>
@@ -107,7 +111,7 @@ $this->title = 'EMS';
                        	]
                        ]);?>
                        <br>
-                       <button  type="button" class="btn btn-block btn-success btn-lg" style="width:50%;" data-toggle="modal" data-target="#modal-default">
+                       <button  type="submit" class="btn btn-block btn-success btn-lg" style="width:50%;" data-toggle="modal" data-target="#modal-default">
                 Submit
               </button>
                </div>
@@ -189,9 +193,13 @@ $this->title = 'EMS';
                   <td>Available</td>
                   <td><input type="checkbox" name="minister1" value="minister1"></td>
                 </tr>
-                <tr>
+                <?php foreach($ministers as $minister ) {?>
+                    <script type="text/javascript">check_selected(<?= $minister['id'] ?>);</script>
+                    <?php } ?>
+                <!-- <tr>
                   <td>1</td>
-                  <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
+                  <td><img src="photos/shikh
+                  ar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
                   <td>Shikhar Bhatt</td>
                   <td>Available</td>
                   <td><input type="checkbox" name="minister1" value="minister1"></td>
@@ -230,7 +238,7 @@ $this->title = 'EMS';
                   <td>Shikhar Bhatt</td>
                   <td>Available</td>
                   <td><input type="checkbox" name="minister1" value="minister1"></td>
-                </tr>
+                </tr> -->
               </table>
             </div>
             <!-- /.box-body -->
@@ -258,3 +266,4 @@ $this->title = 'EMS';
           <!-- /.modal-dialog -->
         </div>
 </div>
+
