@@ -4,6 +4,7 @@ namespace frontend\controllers;
 
 use Yii;
 use backend\models\User;
+use frontend\models\Program;
 use frontend\models\ProgramSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -55,6 +56,28 @@ class ProgramController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
+    }
+
+    public function actionRemove()
+    {
+      $searchModel = new ProgramSearch();
+      $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+      return $this->render('remove', [
+          'searchModel' => $searchModel,
+          'dataProvider' => $dataProvider,
+      ]);
+    }
+
+    public function actionAlter()
+    {
+      $searchModel = new ProgramSearch();
+      $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+      return $this->render('alter', [
+          'searchModel' => $searchModel,
+          'dataProvider' => $dataProvider,
+      ]);
     }
 
     /**
