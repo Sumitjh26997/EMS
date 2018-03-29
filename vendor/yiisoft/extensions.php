@@ -93,15 +93,6 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
-  'kartik-v/yii2-widget-timepicker' => 
-  array (
-    'name' => 'kartik-v/yii2-widget-timepicker',
-    'version' => '1.0.3.0',
-    'alias' => 
-    array (
-      '@kartik/time' => $vendorDir . '/kartik-v/yii2-widget-timepicker',
-    ),
-  ),
   'yiisoft/yii2-jui' => 
   array (
     'name' => 'yiisoft/yii2-jui',
@@ -118,6 +109,15 @@ return array (
     'alias' => 
     array (
       '@yii2fullcalendar' => $vendorDir . '/philippfrenzel/yii2fullcalendar',
+    ),
+  ),
+  'kartik-v/yii2-widget-timepicker' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-timepicker',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@kartik/time' => $vendorDir . '/kartik-v/yii2-widget-timepicker',
     ),
   ),
 );

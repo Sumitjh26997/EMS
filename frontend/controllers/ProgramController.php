@@ -3,7 +3,7 @@
 namespace frontend\controllers;
 
 use Yii;
-use frontend\models\Program;
+use backend\models\User;
 use frontend\models\ProgramSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -72,7 +72,9 @@ class ProgramController extends Controller
 
     public function actionSchedule()
     {
-      return $this->render('schedule');
+      $userminister=Yii::$app->user->identity->id;
+      $ministers = User::find()->all();
+      return $this->render('schedule',['ministers'=>$ministers]);
     }
 
     /**
