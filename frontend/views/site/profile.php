@@ -22,7 +22,7 @@ $this->title='Profile';
             <div class="box-body box-profile">
               <img class="profile-user-img img-responsive img-circle" src="program/photos/shikhar.jpg" alt="User profile picture">
 
-              <h3 class="profile-username text-center">Nina Mcintire</h3>
+              <h3 class="profile-username text-center"><?=Yii::$app->user->identity->username?></h3>
 
               <p class="text-muted text-center">Software Engineer</p>
 

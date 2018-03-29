@@ -8,7 +8,7 @@ use Yii;
  * This is the model class for table "user".
  *
  * @property int $id
- * @property string $Name
+ * @property string $username
  * @property string $auth_key
  * @property string $password_hash
  * @property string $password_reset_token
@@ -23,6 +23,7 @@ use Yii;
  * @property string $sex
  * @property string $location
  * @property string $party
+ * @property string $join_date
  */
 class User extends \yii\db\ActiveRecord
 {
@@ -40,10 +41,10 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['Name', 'auth_key', 'password_hash', 'email', 'created_at', 'updated_at'], 'required'],
+            [['auth_key', 'password_hash', 'email', 'created_at', 'updated_at'], 'required'],
             [['status', 'created_at', 'updated_at'], 'integer'],
-            [['dob'], 'safe'],
-            [['Name', 'password_hash', 'password_reset_token', 'email', 'ministry', 'designation', 'image', 'location', 'party'], 'string', 'max' => 255],
+            [['dob', 'join_date'], 'safe'],
+            [['username', 'password_hash', 'password_reset_token', 'email', 'ministry', 'designation', 'image', 'location', 'party'], 'string', 'max' => 255],
             [['auth_key'], 'string', 'max' => 32],
             [['sex'], 'string', 'max' => 1],
             [['email'], 'unique'],
@@ -58,7 +59,7 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'Name' => 'Name',
+            'username' => 'Username',
             'auth_key' => 'Auth Key',
             'password_hash' => 'Password Hash',
             'password_reset_token' => 'Password Reset Token',
@@ -73,6 +74,7 @@ class User extends \yii\db\ActiveRecord
             'sex' => 'Sex',
             'location' => 'Location',
             'party' => 'Party',
+            'join_date' => 'Join Date',
         ];
     }
 }
