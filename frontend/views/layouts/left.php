@@ -30,7 +30,9 @@
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
                     ['label' => 'Menu', 'options' => ['class' => 'header']],
-                    ['label' => 'Create a Program', 'icon' => 'circle-o text-red', 'url' => ['/program/schedule']],
+                    ['label' => 'Create a Program', 'icon' => 'circle-o text-green', 'url' => ['/program/schedule']],
+                    ['label' => 'Alter a Program', 'icon' => 'circle-o text-blue', 'url' => ['/program/alter']],
+                    ['label' => 'Remove a Program', 'icon' => 'circle-o text-red', 'url' => ['/program/remove']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     [
                         'label' => 'Some tools',
