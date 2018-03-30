@@ -12,15 +12,7 @@ use yii\helpers\Url;
 
 $this->title = 'EMS';
 ?>
-<?php
-  if($flag==1)
-  {
-    echo $flag;
-    echo "<script>$('#modal-default').modal('show')</script>"
-    ?>
-  <?php
-  }
- ?>
+
 <div class="site-index">
   <!-- <form id="minister"> -->
     <div class="box-body no-padding" id="boxload">
@@ -31,8 +23,7 @@ $this->title = 'EMS';
                         <img src="photos/<?php echo $minister['image']?>" alt="User Image" style="border-radius:50%;max-width:100px;max-height:100px;min-width:100px;min-height:100px;">
                         <a class="users-list-name" href="#"><?php echo $minister['username']?></a>
                         <span class="users-list-date"><?php echo $minister['designation']?></span>
-                        <input type="checkbox" class="minister" id="<?php echo $minister['id']?>" value="<?php echo $minister['id']?>"
-                        onclick="filter()">
+                        <input type="checkbox" class="minister" name=checklist[] id="<?php echo $minister['id']?>" value="<?php echo $minister['id']?>">
                       </div>
                     </li>
                     <?php } ?>
@@ -77,9 +68,11 @@ $this->title = 'EMS';
                        ]);?>
                        <br>
                        <!-- <button  type="button" class="btn btn-block btn-success btn-lg" style="width:50%;" data-toggle="modal" data-target="#modal-default"> -->
-                       <button  type="button" class="btn btn-block btn-success btn-lg" style="width:50%;" onclick="submitform();">
-                Submit
-              </button>
+                       <?= Html::a(
+                                          'Create Program',
+                                          ['/program/create'],
+                                          ['data-method' => 'post', 'class' => 'btn btn-primary']
+                                      ) ?>
                </div>
                 <!-- /.input group -->
 

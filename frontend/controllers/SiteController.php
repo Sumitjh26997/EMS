@@ -148,7 +148,10 @@ class SiteController extends Controller
     {
         return $this->render('test2');
     }
-
+    public function actionProgs($id)
+    {
+        return $this->render('progs',['id'=>$id]);
+    }
     /**
      * Displays contact page.
      *
