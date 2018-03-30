@@ -5,11 +5,12 @@ namespace frontend\controllers;
 use Yii;
 use backend\models\User;
 use frontend\models\Program;
-//use frontend\models\Engaged;
+use frontend\models\Engaged;
 use frontend\models\ProgramSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\db\Query;
 
 /**
  * ProgramController implements the CRUD actions for Program model.
@@ -96,19 +97,70 @@ class ProgramController extends Controller
 
     public function actionSchedule()
     {
+      $con=mysqli_connect("localhost","root","12345","ems");
+
+      if (mysqli_connect_errno($con)) {
+         echo "Failed to connect to MySQL: " . mysqli_connect_error();
+      }
       $flag=0;
       $userminister=Yii::$app->user->identity->id;
       $ministers = User::find()->all();
+      $result = mysqli_query($con,"select e.minister_id from engaged e join program p on e.program_id=p.id");
+       while(   $row = mysqli_fetch_array($result))
+       {
+         print_r($row);
+       }
+      $date='2018-03-21';
+      $start='06:00 pm';
+      $end='06:00 pm';
       if(isset($_POST['minister']))
       {
         $flag=1;
         print_r($_POST['minister']);
-        // print_r($_POST['date']);
-        // print_r($_POST['start']);
-        // print_r($_POST['end']);
-        // //$query = Enagaged::find()
+        print_r($_POST['date']);
+         print_r($_POST['start']);
+         print_r($_POST['end']);
+        // $busy = Yii::app()->db->createCommand()
+        // ->select('e.minister_id')
+        // ->from('engaged e')
+        // ->join('program p','p.id=e.program_id')
+        // ->where('e.attending=1')->exe();
+        //  $busy= Engaged::find('minister_id')->where(['attending'=>1])->innerJoin('program','program.id = minister.program_id');
+        //  echo "Behen ka lauda";
+        // print_r($busy[0]->minister_id);
+
+        // $busy=new Query;
+        // $busy->select(['SELECT minister_id'])
+        // ->from('engaged')
+        // ->join('INNER JOIN','program','engaged.program_id=p.id');
+        // $command=$busy->createCommand();
+        // $data=$command->queryAll();
+   $con=mysqli_connect("localhost","root","12345","ems");
+
+   if (mysqli_connect_errno($con)) {
+      echo "Failed to connect to MySQL: " . mysqli_connect_error();
+   }
+$date=$_POST['date'];
+$start=$_POST['start'];
+$end=$_POST['end'];
+
+echo $date;
+   $result = mysqli_query($con,"select e.minister_id from engaged e join program p on e.program_id=p.id where p.date='$date' and e.attending=1 and p.start_time>='$start' and p.end_time<='$end'");
+while(   $row = mysqli_fetch_array($result))
+{
+  print_r($row);
+}
+
+
+//   $data = $row[0];
+
+   mysqli_close($con);
+
+
+
       }
-      return $this->render('schedule',['ministers'=>$ministers,'flag'=>$flag]);
+
+      return $this->render('schedule',['ministers'=>$ministers,'row'=>$row,'flag'=>$flag,'date'=>$date,'start'=>$start,'end'=>$end]);
     }
 
     /**
@@ -181,3 +233,4 @@ class ProgramController extends Controller
 
 
 }
+//select e.minister_id from engaged e join program p on e.program_id=p.id where p.date='2018-03-21' and e.attending=1 and p.start_time>='05:00 pm' and p.end_time<='06:00 pm'

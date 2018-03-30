@@ -4,7 +4,7 @@
 use dosamigos\datepicker\DatePicker;
 use kartik\time\TimePicker;
 use yii\helpers\Html;
-use frontend\models\User;
+use backend\models\User;
 use yii\helpers\Url;
 
 //use kartik\widgets\ActiveForm;
@@ -95,6 +95,17 @@ $this->title = 'EMS';
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span></button>
                       <h4 class="modal-title">Minister Status</h4>
+                      <?php
+                      echo $date;
+                      echo $start;
+                      echo $end;
+                      echo $row['minister_id'];
+                        // foreach($row as $a){
+                        //    echo $a['minister_id'];
+                        //  }
+                        // echo $ministers[0]->username;
+
+                      ?>
                     </div>
                     <div class="modal-body">
                      <form id="select">
@@ -103,7 +114,9 @@ $this->title = 'EMS';
                         <div class="box">
                   <div class="box-header">
                      </div>
-                  <!-- /.box-header -->
+                  <!-- /.box-hea                        // echo $ministers[0]->username;
+
+der -->
                   <div class="box-body">
                     <table id="example1" class="table table-bordered table-striped">
                       <thead>
@@ -116,57 +129,15 @@ $this->title = 'EMS';
                       </tr>
                       </thead>
                       <tbody style="align:center;">
-                      <tr>
-                        <td>1</td>
-                        <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
-                        <td>Shikhar Bhatt</td>
-                        <td>Available</td>
-                        <td><input type="checkbox" name="minister1" value="minister1"></td>
-                      </tr>
 
-                      <!-- <tr>
-                        <td>1</td>
-                        <td><img src="photos/shikh
-                        ar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
-                        <td>Shikhar Bhatt</td>
-                        <td>Available</td>
-                        <td><input type="checkbox" name="minister1" value="minister1"></td>
-                      </tr>
                       <tr>
+
                         <td>1</td>
                         <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
                         <td>Shikhar Bhatt</td>
                         <td>Available</td>
                         <td><input type="checkbox" name="minister1" value="minister1"></td>
                       </tr>
-                      <tr>
-                        <td>1</td>
-                        <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
-                        <td>Shikhar Bhatt</td>
-                        <td>Available</td>
-                        <td><input type="checkbox" name="minister1" value="minister1"></td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
-                        <td>Shikhar Bhatt</td>
-                        <td>Available</td>
-                        <td><input type="checkbox" name="minister1" value="minister1"></td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
-                        <td>Shikhar Bhatt</td>
-                        <td>Available</td>
-                        <td><input type="checkbox" name="minister1" value="minister1"></td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
-                        <td>Shikhar Bhatt</td>
-                        <td>Available</td>
-                        <td><input type="checkbox" name="minister1" value="minister1"></td>
-                      </tr> -->
                     </table>
                   </div>
                   <!-- /.box-body -->
@@ -239,7 +210,10 @@ $this->title = 'EMS';
 
   function submitform()
   {
-    $.post( '<?= Url::toRoute('program/schedule')?>',{'minister':minister})
+    var date=$('#date').val();
+    var start=$('#start_time').val();
+    var end=$('#end_time').val();
+    $.post( '<?= Url::toRoute('program/schedule')?>',{'minister':minister,'date':date,'start':start,'end':end})
     .done(function(data){
             alert("success");
             $('body').html(data);
