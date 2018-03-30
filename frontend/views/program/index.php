@@ -38,7 +38,7 @@ $this->title = 'Programs';
             //'type',
             //'program_weight',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            //['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 </div>

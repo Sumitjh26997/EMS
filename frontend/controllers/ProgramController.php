@@ -105,6 +105,7 @@ class ProgramController extends Controller
       $flag=0;
       $userminister=Yii::$app->user->identity->id;
       $ministers = User::find()->all();
+      $checked = User::find()->all();
       $result = mysqli_query($con,"select e.* from engaged e join program p on e.program_id=p.id");
        // while(   $row = mysqli_fetch_array($result))
        // {
@@ -117,11 +118,18 @@ class ProgramController extends Controller
       {
         $flag=1;
 
-      //  $id = $_POST['minister'];
-        //$iddata =implode("','",$id);
-        //$checked = mysqli_query($con,"select * from user where id in $iddata");
-        //print_r($checked);
-       
+      $id = $_POST['minister'];
+      $iddata =implode("','",$id);
+      //print_r($iddata);
+      $checked = mysqli_query($con,"select * from user where id in ('$iddata')");
+      //print_r($checked);
+      // while($row = mysqli_fetch_array($checked))
+      //  {
+      //    print_r($row);
+      //
+      //
+      //  }
+
    $con=mysqli_connect("localhost","root","12345","ems");
 
    if (mysqli_connect_errno($con)) {
@@ -132,14 +140,14 @@ $start=$_POST['start'];
 $end=$_POST['end'];
 
 //echo $date;
-   $result = mysqli_query($con,"select e.* from engaged e join program p on e.program_id=p.id where p.date='$date' and e.attending=1 and p.start_time>='$start' and p.end_time<='$end'");
+   $result = mysqli_query($con,"select e.minister_id from engaged e join program p on e.program_id=p.id where p.date='$date' and e.attending=1 and p.start_time>='$start' and p.end_time<='$end'");
 
-while(   $row = mysqli_fetch_array($result))
-{
-  print_r($row);
-
-
-}
+// while(   $row = mysqli_fetch_array($result))
+// {
+//   print_r($row);
+//
+//
+// }
 //print_r($result);
 //   $data = $row[0];
 
@@ -149,7 +157,7 @@ while(   $row = mysqli_fetch_array($result))
 
       }
 
-      return $this->render('schedule',['ministers'=>$ministers,'result'=>$result,'flag'=>$flag,'date'=>$date,'start'=>$start,'end'=>$end]);
+      return $this->render('schedule',['ministers'=>$ministers,'result'=>$result,'flag'=>$flag,'date'=>$date,'start'=>$start,'end'=>$end,'checked'=>$checked]);
     }
 
     /**
@@ -177,11 +185,41 @@ while(   $row = mysqli_fetch_array($result))
             $program_id = $p->id;
             $minister_id = Yii::$app->user->identity->id;
             $command=$connection->createCommand()->insert('engaged',['program_id'=>$program_id,'minister_id'=>$minister_id,'attending'=>1,'reason'=>'Personal'])->execute();
-            
+
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('create', [
+            'model' => $model,
+        ]);
+    }
+
+
+    public function actionCreateme()
+    {
+
+        // $connection= new \yii\db\Connection([
+        //   'dsn' => 'mysql:host=localhost;dbname=ems',
+        //   'username'=>'root',
+        //   'password'=>'12345',
+        // ]);
+        // $connection->open();
+        $model = new Program();
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            // $find=Program::find()->orderBy(['id'=>SORT_DESC])->one();
+            // $find->program_weight=0;
+            // $find->save();
+            // //$entry = new Engaged();
+            // $p=Program::find()->orderBy(['id'=>SORT_DESC])->one();
+            // $program_id = $p->id;
+            // $minister_id = Yii::$app->user->identity->id;
+            // $command=$connection->createCommand()->insert('engaged',['program_id'=>$program_id,'minister_id'=>$minister_id,'attending'=>1,'reason'=>'Personal'])->execute();
+
+            return $this->redirect(['view', 'id' => $model->id]);
+        }
+
+        return $this->render('createme', [
             'model' => $model,
         ]);
     }
