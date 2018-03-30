@@ -30,7 +30,8 @@
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
                     ['label' => 'Menu', 'options' => ['class' => 'header']],
-                    ['label' => 'Create a Program', 'icon' => 'circle-o text-green', 'url' => ['/program/schedule']],
+                    ['label' => 'Create Ministry Engagement', 'icon' => 'circle-o text-green', 'url' => ['/program/schedule']],
+                    ['label' => 'Create Personal Engagement', 'icon' => 'circle-o text-purple', 'url' => ['/program/create']],
                     ['label' => 'Alter a Program', 'icon' => 'circle-o text-blue', 'url' => ['/program/alter']],
                     ['label' => 'Remove a Program', 'icon' => 'circle-o text-red', 'url' => ['/program/remove']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],

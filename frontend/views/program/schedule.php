@@ -99,7 +99,7 @@ $this->title = 'EMS';
                       echo $date;
                       echo $start;
                       echo $end;
-                      echo $row['minister_id'];
+                      //echo $row['minister_id'];
                         // foreach($row as $a){
                         //    echo $a['minister_id'];
                         //  }
@@ -131,12 +131,18 @@ der -->
                       <tbody style="align:center;">
 
                       <tr>
-
-                        <td>1</td>
+                        <?php
+                         foreach ($result as $row) {?>
+                           <td><?=$row['minister_id']?></td>
+                          
+                        <?php
+                         }
+                        ?>
+                        <!-- <td>1</td>
                         <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
                         <td>Shikhar Bhatt</td>
                         <td>Available</td>
-                        <td><input type="checkbox" name="minister1" value="minister1"></td>
+                        <td><input type="checkbox" name="minister1" value="minister1"></td> -->
                       </tr>
                     </table>
                   </div>
