@@ -116,25 +116,12 @@ class ProgramController extends Controller
       if(isset($_POST['minister']))
       {
         $flag=1;
-      //  print_r($_POST['minister']);
-//        print_r($_POST['date']);
-  //       print_r($_POST['start']);
-    //     print_r($_POST['end']);
-        // $busy = Yii::app()->db->createCommand()
-        // ->select('e.minister_id')
-        // ->from('engaged e')
-        // ->join('program p','p.id=e.program_id')
-        // ->where('e.attending=1')->exe();
-        //  $busy= Engaged::find('minister_id')->where(['attending'=>1])->innerJoin('program','program.id = minister.program_id');
-        //  echo "Behen ka lauda";
-        // print_r($busy[0]->minister_id);
 
-        // $busy=new Query;
-        // $busy->select(['SELECT minister_id'])
-        // ->from('engaged')
-        // ->join('INNER JOIN','program','engaged.program_id=p.id');
-        // $command=$busy->createCommand();
-        // $data=$command->queryAll();
+      //  $id = $_POST['minister'];
+        //$iddata =implode("','",$id);
+        //$checked = mysqli_query($con,"select * from user where id in $iddata");
+        //print_r($checked);
+       
    $con=mysqli_connect("localhost","root","12345","ems");
 
    if (mysqli_connect_errno($con)) {
@@ -146,9 +133,11 @@ $end=$_POST['end'];
 
 //echo $date;
    $result = mysqli_query($con,"select e.* from engaged e join program p on e.program_id=p.id where p.date='$date' and e.attending=1 and p.start_time>='$start' and p.end_time<='$end'");
+
 while(   $row = mysqli_fetch_array($result))
 {
   print_r($row);
+
 
 }
 //print_r($result);
@@ -188,11 +177,7 @@ while(   $row = mysqli_fetch_array($result))
             $program_id = $p->id;
             $minister_id = Yii::$app->user->identity->id;
             $command=$connection->createCommand()->insert('engaged',['program_id'=>$program_id,'minister_id'=>$minister_id,'attending'=>1,'reason'=>'Personal'])->execute();
-            //print_r($program_id);
-            //print_r($minister_id);
-            //$attending = 1;
-            //$entry->reason = "Personal";
-            //$entry->save();
+            
             return $this->redirect(['view', 'id' => $model->id]);
         }
 

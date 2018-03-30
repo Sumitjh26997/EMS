@@ -25,6 +25,13 @@ $this->title = 'EMS';
   <!-- <form id="minister"> -->
     <div class="box-body no-padding">
                   <ul class="users-list clearfix">
+                    <?php
+                      foreach($result as $row)
+                      {
+                        print_r($row);
+                      }
+
+                    ?>
                     <?php foreach($ministers as $minister) {?>
                     <li>
                       <div class="<?php echo $minister['id']?>">
@@ -129,8 +136,10 @@ der -->
                       </tr>
                       </thead>
                       <tbody style="align:center;">
-
+                        <?php foreach($result as $row){
+                          ?>
                       <tr>
+
                         <?php
                          foreach ($result as $row) {?>
                            <td><?=$row['minister_id']?></td>
@@ -139,11 +148,15 @@ der -->
                          }
                         ?>
                         <!-- <td>1</td>
+
                         <td><img src="photos/shikhar.jpg" alt="User Image" style="border-radius:50%;max-width:40%;max-height:30%;"></td>
                         <td>Shikhar Bhatt</td>
                         <td>Available</td>
                         <td><input type="checkbox" name="minister1" value="minister1"></td> -->
                       </tr>
+                      <?php
+                          }
+                      ?>
                     </table>
                   </div>
                   <!-- /.box-body -->
