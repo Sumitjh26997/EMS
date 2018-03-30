@@ -150,6 +150,14 @@ class SiteController extends Controller
     }
     public function actionProgs($id)
     {
+        if(isset($_POST['flag']))
+        {
+          $pid=$_POST['pid'];
+          $mid=$_POST['mid'];
+          $attending=$_POST['attending'];
+          $reason=$_POST['reason'];
+          echo "done";
+        }
         return $this->render('progs',['id'=>$id]);
     }
     /**
