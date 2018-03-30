@@ -105,21 +105,25 @@ class ProgramController extends Controller
       $flag=0;
       $userminister=Yii::$app->user->identity->id;
       $ministers = User::find()->all();
-      $result = mysqli_query($con,"select e.minister_id from engaged e join program p on e.program_id=p.id");
-       while(   $row = mysqli_fetch_array($result))
-       {
-         print_r($row);
-       }
+      $result = mysqli_query($con,"select e.* from engaged e join program p on e.program_id=p.id");
+       // while(   $row = mysqli_fetch_array($result))
+       // {
+       //   print_r($row);
+       // }
       $date='2018-03-21';
       $start='06:00 pm';
       $end='06:00 pm';
       if(isset($_POST['minister']))
       {
         $flag=1;
-        print_r($_POST['minister']);
-        print_r($_POST['date']);
-         print_r($_POST['start']);
-         print_r($_POST['end']);
+        $id = $_POST['minister'];
+        $iddata =implode("','",$id);
+        $checked = mysqli_query($con,"select * from user where id in $iddata");
+        print_r($checked);
+        //print_r($_POST['minister']);
+        //print_r($_POST['date']);
+         //print_r($_POST['start']);
+         //print_r($_POST['end']);
         // $busy = Yii::app()->db->createCommand()
         // ->select('e.minister_id')
         // ->from('engaged e')
@@ -144,12 +148,13 @@ $date=$_POST['date'];
 $start=$_POST['start'];
 $end=$_POST['end'];
 
-echo $date;
-   $result = mysqli_query($con,"select e.minister_id from engaged e join program p on e.program_id=p.id where p.date='$date' and e.attending=1 and p.start_time>='$start' and p.end_time<='$end'");
-while(   $row = mysqli_fetch_array($result))
-{
-  print_r($row);
-}
+//echo $date;
+   $result = mysqli_query($con,"select e.* from engaged e join program p on e.program_id=p.id where p.date='$date' and e.attending=1 and p.start_time>='$start' and p.end_time<='$end'");
+//    print_r($result);
+// while(   $row = mysqli_fetch_assoc($result))
+// {
+//   print_r($row);
+// }
 
 
 //   $data = $row[0];
@@ -160,7 +165,7 @@ while(   $row = mysqli_fetch_array($result))
 
       }
 
-      return $this->render('schedule',['ministers'=>$ministers,'row'=>$row,'flag'=>$flag,'date'=>$date,'start'=>$start,'end'=>$end]);
+      return $this->render('schedule',['ministers'=>$ministers,'result'=>$result,'flag'=>$flag,'date'=>$date,'start'=>$start,'end'=>$end]);
     }
 
     /**
