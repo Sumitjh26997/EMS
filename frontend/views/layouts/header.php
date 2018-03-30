@@ -261,9 +261,12 @@ use yii\helpers\Html;
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
+                                <?php 
+                                        $id=Yii::$app->user->identity->id;
+                                ?>
                                 <?= Html::a(
                                     'Profile',
-                                    ['/site/profile'],
+                                    ['/site/profile','id'=>$id],
                                     ['data-method' => 'post', 'class' => 'btn btn-default btn-flat']
                                 ) ?>
                             </div>

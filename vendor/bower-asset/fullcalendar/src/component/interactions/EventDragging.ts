@@ -55,7 +55,10 @@ export default class EventDragging extends Interaction {
 
 
   handleMousedown(seg, ev) {
-    if (this.component.canStartDrag(seg, ev)) {
+    if (
+      !this.component.shouldIgnoreMouse() &&
+      this.component.canStartDrag(seg, ev)
+    ) {
       this.buildDragListener(seg).startInteraction(ev, { distance: 5 })
     }
   }

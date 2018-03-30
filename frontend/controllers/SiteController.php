@@ -12,6 +12,7 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use frontend\models\Program;
 
 /**
  * Site controller
@@ -100,9 +101,22 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
-    public function actionProfile()
+    public function actionProfile($id)
     {
-        return $this->render('profile');
+
+        $events=Program::find()->where(['init_weight'=>$id])->all();
+        print_r($events);
+        $tasks=[];
+        foreach ($events as $event) {
+             $event = new \yii2fullcalendar\models\Event();
+              $event->id = $event->id;
+              $event->name = $event->name;
+              //$event->start = date('Y-m-d');
+              $tasks[] = $event;
+              
+         } 
+        print_r($tasks);
+        return $this->render('profile',['id'=>$id,'events'=>$tasks]);
     }
     /**
      * Logs in a user.

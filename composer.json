@@ -20,9 +20,10 @@
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "almasaeed2010/adminlte": "~2.4",
         "dmstr/yii2-adminlte-asset": "^2",
-        "kartik-v/yii2-widget-timepicker": "@dev",
+        "kartik-v/yii2-widget-timepicker": "*",
         "2amigos/yii2-date-picker-widget": "~1.0",
-        "philippfrenzel/yii2fullcalendar": "*"
+	"philippfrenzel/yii2fullcalendar":"*"
+
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

@@ -1,5 +1,5 @@
 <?php
-
+use yii\helpers\Url;
 $this->title='Profile';
 ?>
 <div class="content-wrapper">
@@ -83,6 +83,11 @@ $this->title='Profile';
             </div>
             <!-- /.box-body -->
           </div>
+          <?php ?>
+         <?= \yii2fullcalendar\yii2fullcalendar::widget(array(
+      'events'=> $events,
+  ));
+?>
           <!-- /.box -->
         </div>
         <!-- /.col -->

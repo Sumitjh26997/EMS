@@ -19,14 +19,12 @@ class ComposerStaticInit06fd81b132eee426ecb495bde9060630
         'y' => 
         array (
             'yii\\swiftmailer\\' => 16,
-            'yii\\jui\\' => 8,
             'yii\\gii\\' => 8,
             'yii\\faker\\' => 10,
             'yii\\debug\\' => 10,
             'yii\\composer\\' => 13,
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
-            'yii2fullcalendar\\' => 17,
         ),
         'r' => 
         array (
@@ -100,10 +98,6 @@ class ComposerStaticInit06fd81b132eee426ecb495bde9060630
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-swiftmailer',
         ),
-        'yii\\jui\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/yiisoft/yii2-jui',
-        ),
         'yii\\gii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-gii',
@@ -127,10 +121,6 @@ class ComposerStaticInit06fd81b132eee426ecb495bde9060630
         'yii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
-        ),
-        'yii2fullcalendar\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/philippfrenzel/yii2fullcalendar',
         ),
         'rmrevin\\yii\\fontawesome\\' => 
         array (

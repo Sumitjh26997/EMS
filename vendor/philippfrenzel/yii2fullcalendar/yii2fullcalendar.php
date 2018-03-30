@@ -107,6 +107,12 @@ class yii2fullcalendar extends elWidget
      * @var string
      */
     private $_pluginName = 'fullCalendar';
+	
+     /**
+     * The javascript function to us as en onLoading callback
+     * @var string the javascript code that implements the onLoading function
+     */
+    public $onLoading = "";
 
     /**
      * The javascript function to us as en eventRender callback
@@ -205,6 +211,11 @@ class yii2fullcalendar extends elWidget
         {
             ThemeAsset::register($view);
         }
+	
+	if (array_key_exists('defaultView',$this->clientOptions) && ($this->clientOptions['defaultView'] == 'timelineDay' || $this->clientOptions['defaultView'] == 'agendaDay'))
+        {
+            SchedulerAsset::register($view);
+        }    
 
         if (isset($this->options['lang']))
         {
@@ -272,9 +283,13 @@ class yii2fullcalendar extends elWidget
     {
         $id = $this->options['id'];
       
-        $options['loading'] = new JsExpression("function(isLoading, view ) {
+	if ($this->onLoading)
+            $options['loading'] = new JsExpression($this->onLoading);
+        else {
+	    $options['loading'] = new JsExpression("function(isLoading, view ) {
                 jQuery('#{$id}').find('.fc-loading').toggle(isLoading);
-        }");
+	    }");
+	}
                                                
         //add new theme information for the calendar                                       
 		$options['themeSystem'] = $this->themeSystem;
