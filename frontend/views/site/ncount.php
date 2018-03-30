@@ -12,10 +12,16 @@ $query="SELECT * FROM engaged e JOIN program p ON p.id=e.program_id WHERE e.mini
 
 $result = mysqli_query($con,$query);
 
-if(!empty($result))
+if(mysqli_num_rows($result)!=0)
 {
+  $row=mysqli_fetch_array($result);
+
   ?>
   <i class="fa fa-bell-o"></i>
   <span class="label label-warning">New</span>
   <?php
-}?>
+}
+else{
+  ?>
+  <i class="fa fa-bell-o"></i>
+<?php }?>

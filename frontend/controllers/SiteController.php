@@ -148,16 +148,49 @@ class SiteController extends Controller
     {
         return $this->render('test2');
     }
+    public function beforeAction($action){
+      $this->enableCsrfValidation= false;
+      return parent::beforeAction($action);
+    }
     public function actionProgs($id)
     {
-        if(isset($_POST['flag']))
-        {
-          $pid=$_POST['pid'];
-          $mid=$_POST['mid'];
-          $attending=$_POST['attending'];
-          $reason=$_POST['reason'];
-          echo "done";
-        }
+      $con=mysqli_connect("localhost","root","12345","ems");
+
+      if (mysqli_connect_errno($con)) {
+         echo "Failed to connect to MySQL: " . mysqli_connect_error();
+      }
+
+
+
+
+          //mysqli_close($con);
+
+          if(isset($_POST['attending'])){
+            $attending=$_POST['attending'];
+            $reason=$_POST['message'];
+            $pid=$_POST['pid'];
+            $mid=$_POST['mid'];
+            // print_r($attending);
+            // print_r($reason);
+            // print_r($pid);
+            // print_r($mid);
+            $query="UPDATE engaged set attending=$attending,reason='$reason' WHERE program_id=$pid AND minister_id=$mid";
+            $result = mysqli_query($con,$query);
+            //echo mysqli_affected_rows($con);
+            $_POST['attending']='';
+            $_POST['message']='';
+            $_POST['pid']='';
+            $_POST['mid']='';
+            // print_r($_POST['attending']);
+            // print_r($_POST['message']);
+            // print_r($_POST['pid']);
+            // print_r($_POST['mid']);
+            // print_r($result);
+          }
+
+
+
+        mysqli_close($con);
         return $this->render('progs',['id'=>$id]);
     }
     /**

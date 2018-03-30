@@ -1,21 +1,18 @@
 <?php
 
 use yii\helpers\Url;
+use yii\helpers\Html;
 /* @var $this yii\web\View */
 
 $this->title = 'EMS';
-
 
 $con=mysqli_connect("localhost","root","12345","ems");
 
 if (mysqli_connect_errno($con)) {
    echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-
-
-//echo $date;
 $query="SELECT * FROM engaged e JOIN program p ON p.id=e.program_id WHERE e.minister_id=$id AND attending=0 ORDER BY p.timestamp DESC";
-$result = mysqli_query($con,$query);
+$results = mysqli_query($con,$query);
 $sendid=Yii::$app->user->identity->id;
 ?>
 
@@ -30,12 +27,12 @@ $sendid=Yii::$app->user->identity->id;
 </div>
 
 <?php
-while($row=mysqli_fetch_array($result))
+while($row=mysqli_fetch_array($results))
 {
-  $init=$row['init_weight'];
-  $x="SELECT * FROM user WHERE id=$init";
-  $y = mysqli_query($con,$x);
-  $z=mysqli_fetch_array($y);
+  // $init=$row['init_weight'];
+  // $x="SELECT * FROM user WHERE id=$init";
+  // $y = mysqli_query($con,$x);
+  // $z=mysqli_fetch_array($y);
 ?>
 <div class="row">
   <div class="col-sm-2">
@@ -52,23 +49,9 @@ while($row=mysqli_fetch_array($result))
       <div class="box-body">
 
 
-          <input id="pid" value="<?=$row['id']?>" hidden >
-  <input id="mid" value="<?=Yii::$app->user->identity->id?>" hidden>
 
-        <div class="form-group">
-          <label>Initiator</label>
-          <input  class="form-control" value="<?=$z['username']?>" disabled >
-        </div>
 
-        <div class="form-group">
-          <label>Designation</label>
-          <input  class="form-control" value="<?=$z['designation']?>" disabled >
-        </div>
 
-        <div class="form-group">
-          <label>Ministry</label>
-          <input  class="form-control" value="<?=$z['ministry']?>" disabled >
-        </div>
 
         <div class="form-group">
           <label>Meeting Type</label>
@@ -147,12 +130,18 @@ while($row=mysqli_fetch_array($result))
         <h4 class="modal-title">Info Modal</h4>
       </div>
       <div class="modal-body">
-        <textarea id="message" class="btn btn-info"></textarea>
+        <form action="<?=Url::to(['/site/progs','id'=>$sendid])?>" method="post">
+          <input id="pid" value="<?=$row['id']?>" name="pid" style="background:'blue';">
+  <input id="mid" value="<?=Yii::$app->user->identity->id?>" name="mid" style="background:'blue';;">
+        <textarea name="message" id="message" class="btn btn-info"></textarea>
+        <input name="attending" id="attending" value=1 style="background:'blue';">
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-outline" onclick="confirm(1);">Confirm Accept</button>
+        <button type="submit" class="btn btn-outline">Submit</button>
       </div>
+      </form>
     </div>
     <!-- /.modal-content -->
   </div>
@@ -180,29 +169,3 @@ while($row=mysqli_fetch_array($result))
     <!-- /.modal-dialog -->
   </div>
 <?php }?>
-<script src="js/jquery.js"></script>
-
-<script type="text/javascript">
-function confirm(param)
-{
-  var flag=1;
-  var pid=$('#pid').val();
-  var mid=$('#mid').val();
-  var attending=param;
-  var reason=$('#message').val();
-  alert(pid);
-  alert(mid);
-  alert(attending);
-  alert(reason);
-  $.post( '<?= Url::toRoute(['site/progs','id'=>$sendid])?>',{'pid':pid,'mid':mid,'attending':attending,'reason':reason,'flag':flag})
-  .done(function(data){
-          alert("success");
-          $('body').html(data);
-      })
-      .fail(function() {
-      alert( "error" );
-  })
-  }
-
-
-</script>
