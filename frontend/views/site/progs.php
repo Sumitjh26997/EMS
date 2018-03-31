@@ -131,10 +131,10 @@ while($row=mysqli_fetch_array($results))
       </div>
       <div class="modal-body">
         <form action="<?=Url::to(['/site/progs','id'=>$sendid])?>" method="post">
-          <input id="pid" value="<?=$row['id']?>" name="pid" style="background:'blue';">
-  <input id="mid" value="<?=Yii::$app->user->identity->id?>" name="mid" style="background:'blue';;">
-        <textarea name="message" id="message" class="btn btn-info"></textarea>
-        <input name="attending" id="attending" value=1 style="background:'blue';">
+          <input id="pid" value="<?=$row['id']?>" name="pid" style="background:'blue';" hidden>
+  <input id="mid" value="<?=Yii::$app->user->identity->id?>" name="mid" style="background:'blue';" hidden>
+        <textarea name="message" id="message" class="btn btn-info" ></textarea>
+        <input name="attending" id="attending" value=1 style="background:'blue';" hidden>
 
       </div>
       <div class="modal-footer">
@@ -157,11 +157,16 @@ while($row=mysqli_fetch_array($results))
           <h4 class="modal-title">Danger Modal</h4>
         </div>
         <div class="modal-body">
-          <textarea id="message" class="btn btn-danger"></textarea>
+          <form action="<?=Url::to(['/site/progs','id'=>$sendid])?>" method="post">
+            <input id="pid" value="<?=$row['id']?>" name="pid" style="background:'blue';" hidden>
+    <input id="mid" value="<?=Yii::$app->user->identity->id?>" name="mid" style="background:'blue';" hidden>
+          <textarea name="message" id="message" class="btn btn-danger" ></textarea>
+          <input name="attending" id="attending" value=-1 style="background:'blue';" hidden>
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-outline" onclick="confirm(-1);">Confirm Reject</button>
+          <button type="submit" class="btn btn-outline">Submit</button>
         </div>
       </div>
       <!-- /.modal-content -->
