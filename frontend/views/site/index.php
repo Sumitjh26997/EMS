@@ -13,9 +13,15 @@ $this->title = 'EMS';
         </div>
         <br>
         <!-- /.box-header -->
-        <div class="box-body">
-          Search : 
-          <select name="month">
+        <div class="box-body" id="onsearch">
+
+          <label>Search :</label>
+
+          <br>
+          <div class="col-sm-3">
+          <label>By Month : </label> 
+          <select name="month" class="form-control select2" style="width:50%">
+            <option default selected>--</option>
             <option value="1">Jan</option>
             <option value="2">Feb</option>
             <option value="3">Mar</option>
@@ -29,13 +35,28 @@ $this->title = 'EMS';
             <option value="11">Nov</option>
             <option value="12">Dec</option>
           </select>
-          <select name="year">
+        </div>
+        <div class="col-sm-3">
+          <label>By Year : </label> 
+          <select name="year" class="form-control select2" style="width:50%">
+            <option default >--</option>
             <option value="2018">2018</option>
             <option value="2019">2019</option>
             <option value="2020">2020</option>
           </select>
-
-          <table id="example2" class="table table-bordered table-hover">
+        </div>
+          <div class="col-sm-3">
+          <label>By Program Name : </label><br>
+          <input type="text" class="form-group">
+        </div>
+        <div class="col-sm-3">
+          <label></label><br>
+         <button  type="button" class="btn btn-block btn-success btn-sm" style="width:50%;">
+                Submit
+              </button>
+        </div>
+          <br><br><br><br>
+          <table id="example2" class="table table-bordered table-hover" style="overflow-x:1">
             <thead>
             <tr>
               <th>Program ID</th>
