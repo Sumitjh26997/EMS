@@ -26,8 +26,8 @@ $this->title = 'EMS';
 
 // echo TIME('14:15:00');
 
-$start_time=TIME($start_time);
-$end_time=TIME($end_time);
+//$start_time=TIME($start_time);
+//$end_time=TIME($end_time);
 //print_r($minister);
 
 
@@ -47,7 +47,7 @@ $end_time=TIME($end_time);
 
 der -->
                   <!-- <div class="box-body"> -->
-                    <form action="<?=Url::to(['/program/createme'])?>" method="post">
+                    <form action="<?=Url::to(['/site/meform'])?>" method="post">
                       <input name="mid" value ="<?=Yii::$app->user->identity->id?>" hidden>
                       <input name="date" value ="<?=$date?>" hidden>
                       <input name="start" value ="<?=$start_time?>" hidden>

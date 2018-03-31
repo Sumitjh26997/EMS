@@ -98,6 +98,65 @@ class SiteController extends Controller
      *
      * @return mixed
      */
+
+     public function actionMeform()
+     {
+       if(!empty($_POST['checkbox'])){
+            foreach ($_POST['checkbox'] as $check) {
+              echo $check;
+
+          }
+    $checklist=$_POST['checkbox'];
+        $date=$_POST['date'];
+        $start=$_POST['start'];
+        $end=$_POST['end'];
+       return $this->render('/site/meform',['checklist'=>$checklist,'date'=>$date,'start'=>$start,'end'=>$end]);
+     }
+   }
+
+   public function actionIns()
+   {
+     if(!empty($_POST['checkbox'])){
+          foreach ($_POST['checkbox'] as $check) {
+            echo $check;
+
+        }
+
+        $init=$_POST['init'];
+        $name=$_POST['name'];
+        $location=$_POST['location'];
+        $priority=$_POST['priority'];
+        $description=$_POST['description'];
+        $type=$_POST['type'];
+        $checklist=$_POST['checkbox'];
+        $date=$_POST['date'];
+        $start=$_POST['start_time'];
+        $end=$_POST['end_time'];
+        $start_time=date("H:i",strtotime($start));
+        $end_time=date("H:i",strtotime($end));
+
+        $con=mysqli_connect("localhost","root","12345","ems");
+
+    if (mysqli_connect_errno($con)) {
+       echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+      $query="INSERT INTO program(name,location,date,start_time,end_time,description,init_weight,priority,type) VALUES('$name','$location','$date','$start_time','$end_time','$description',$init,'$priority','$type')";
+      // if(!mysqli_query($con,$query))
+      //   echo("".mysqli_error($con));
+      $result=mysqli_query($con,$query);
+      $p=Program::find()->orderBy(['id'=>SORT_DESC])->one();
+      $program_id = $p->id;
+      $query2="INSERT INTO engaged(program_id,minister_id,attending,reason) VALUES ($program_id,$init,1,'Initiator')";
+      $result2=mysqli_query($con,$query2);
+      foreach($checklist as $l)
+      {
+        $query3="INSERT INTO engaged(program_id,minister_id,attending,reason) VALUES ($program_id,$l,0,'')";
+        $result3=mysqli_query($con,$query3);
+      }
+   }
+   return $this->redirect(['/program/view', 'id' => $program_id]);
+ }
+
     public function actionIndex()
     {
         $id=Yii::$app->user->identity->id;

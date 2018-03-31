@@ -149,10 +149,19 @@ class UserController extends Controller
      public function actionCalendar($mid,$rid)
     {
 
-        
+
         return $this->render('calendar', [
             'mid' => $mid,'rid'=>$rid
         ]);
     }
+
+    public function actionReport()
+   {
+
+
+       return $this->render('report', [
+           
+       ]);
+   }
 
 }

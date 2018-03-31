@@ -14,8 +14,7 @@ $this->params['breadcrumbs'][] = 'Update';
 
     <h1><?= Html::encode($this->title) ?></h1><br>
 
-    <?= Html::a('Add Members', ['create'], ['class' => 'btn btn-success']) ?>
-    <br><br><br>
+
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>

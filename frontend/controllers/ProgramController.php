@@ -244,62 +244,62 @@ $end=$_POST['end'];
         ]);
     }
 
-    public function actionCareme()
-    {
-      if(!empty($_POST['checkbox'])){
-        foreach ($_POST['checkbox'] as $check) {
-          echo $check;
+    // public function actionCareme()
+    // {
+    //   if(!empty($_POST['checkbox'])){
+    //     foreach ($_POST['checkbox'] as $check) {
+    //       echo $check;
+    //
+    //     }
+    //     print_r($_POST['checkbox']);
+    //   }
+    // }
 
-        }
-        print_r($_POST['checkbox']);
-      }
-    }
-
-    public function actionCreateme()
-    {
-
-         $connection= new \yii\db\Connection([
-           'dsn' => 'mysql:host=localhost;dbname=ems',
-           'username'=>'root',
-           'password'=>'12345',
-         ]);
-       $connection->open();
-       if(!empty($_POST['checkbox'])){
-        foreach ($_POST['checkbox'] as $check) {
-          echo $check;
-
-        }
-        print_r($_POST['checkbox']);
-
-
-      //  $date=$_POST['date'];
-      //  $start=$_POST['start'];
-      //  $end=$_POST['end'];
-      }
-        $list=$_POST['checkbox'];
-        $model = new Program();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $mid=Yii::$app->user->identity->id;
-            $find=Program::find()->orderBy(['id'=>SORT_DESC])->one();
-            $find->init_weight=$mid;
-            $find->save();
-            // //$entry = new Engaged();
-            $p=Program::find()->orderBy(['id'=>SORT_DESC])->one();
-            $program_id = $p->id;
-            $minister_id = $mid;
-            foreach($list as $m)
-            $command=$connection->createCommand()->insert('engaged',['program_id'=>$program_id,'minister_id'=>$minister_id,'attending'=>1,'reason'=>'Initiator'])->execute();
-            {
-              $command=$connection->createCommand()->insert('engaged',['program_id'=>$program_id,'minister_id'=>$m,'attending'=>0,'reason'=>''])->execute();
-            }
-            return $this->redirect(['view', 'id' => $model->id]);
-        }
-
-        return $this->render('createme', [
-            'model' => $model,
-        ]);
-    }
+    // public function actionCreateme()
+    // {
+    //
+    //      $connection= new \yii\db\Connection([
+    //        'dsn' => 'mysql:host=localhost;dbname=ems',
+    //        'username'=>'root',
+    //        'password'=>'12345',
+    //      ]);
+    //    $connection->open();
+    //    if(!empty($_POST['checkbox'])){
+    //     foreach ($_POST['checkbox'] as $check) {
+    //       echo $check;
+    //
+    //     }
+    //     print_r($_POST['checkbox']);
+    //
+    //
+    //   //  $date=$_POST['date'];
+    //   //  $start=$_POST['start'];
+    //   //  $end=$_POST['end'];
+    //   }
+    //     $list=$_POST['checkbox'];
+    //     $model = new Program();
+    //
+    //     if ($model->load(Yii::$app->request->post()) && $model->save()) {
+    //         $mid=Yii::$app->user->identity->id;
+    //         $find=Program::find()->orderBy(['id'=>SORT_DESC])->one();
+    //         $find->init_weight=$mid;
+    //         $find->save();
+    //         // //$entry = new Engaged();
+    //         $p=Program::find()->orderBy(['id'=>SORT_DESC])->one();
+    //         $program_id = $p->id;
+    //         $minister_id = $mid;
+    //         foreach($list as $m)
+    //         $command=$connection->createCommand()->insert('engaged',['program_id'=>$program_id,'minister_id'=>$minister_id,'attending'=>1,'reason'=>'Initiator'])->execute();
+    //         {
+    //           $command=$connection->createCommand()->insert('engaged',['program_id'=>$program_id,'minister_id'=>$m,'attending'=>0,'reason'=>''])->execute();
+    //         }
+    //         return $this->redirect(['view', 'id' => $model->id]);
+    //     }
+    //
+    //     return $this->render('createme', [
+    //         'model' => $model,
+    //     ]);
+    // }
 
     /**
      * Updates an existing Program model.

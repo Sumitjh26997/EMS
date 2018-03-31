@@ -24,6 +24,7 @@
                     ['label' => 'Alter a Program', 'icon' => 'circle-o text-blue', 'url' => ['/program/alter']],
                     ['label' => 'Remove a Program', 'icon' => 'circle-o text-red', 'url' => ['/program/remove']],
                     ['label' => 'User Profiles' , 'icon' => 'circle-o text-yellow', 'url' => ['/user/index']],
+                    ['label' => 'Reports' , 'icon' => 'circle-o text-green', 'url' => ['/user/report']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     [
                         'label' => 'Some tools',
