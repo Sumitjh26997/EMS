@@ -114,7 +114,7 @@ return array (
   'kartik-v/yii2-widget-timepicker' => 
   array (
     'name' => 'kartik-v/yii2-widget-timepicker',
-    'version' => '1.0.3.0',
+    'version' => '9999999-dev',
     'alias' => 
     array (
       '@kartik/time' => $vendorDir . '/kartik-v/yii2-widget-timepicker',

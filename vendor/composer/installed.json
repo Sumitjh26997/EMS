@@ -1338,23 +1338,23 @@
     },
     {
         "name": "kartik-v/yii2-widget-timepicker",
-        "version": "v1.0.3",
-        "version_normalized": "1.0.3.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/kartik-v/yii2-widget-timepicker.git",
-            "reference": "203aeb9123e7fa9a3c584d206793d82abe96d469"
+            "reference": "d8d12fa107dec612914393d74d551b4368ffeec2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/yii2-widget-timepicker/zipball/203aeb9123e7fa9a3c584d206793d82abe96d469",
-            "reference": "203aeb9123e7fa9a3c584d206793d82abe96d469",
+            "url": "https://api.github.com/repos/kartik-v/yii2-widget-timepicker/zipball/d8d12fa107dec612914393d74d551b4368ffeec2",
+            "reference": "d8d12fa107dec612914393d74d551b4368ffeec2",
             "shasum": ""
         },
         "require": {
             "kartik-v/yii2-krajee-base": "*"
         },
-        "time": "2017-01-08T06:36:24+00:00",
+        "time": "2018-02-07T11:49:20+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
@@ -1369,7 +1369,7 @@
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "BSD 3-Clause"
+            "BSD-3-Clause"
         ],
         "authors": [
             {
