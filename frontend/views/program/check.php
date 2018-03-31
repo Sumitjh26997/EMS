@@ -47,7 +47,7 @@ $end_time=TIME($end_time);
 
 der -->
                   <!-- <div class="box-body"> -->
-                    <form action="<?=Url::to(['/program/createme']) ?>" method="post">
+                    <form action="<?=Url::to(['/program/create'])?>" method="post">
                     <table id="example1" class="table table-bordered table-striped">
                       <thead>
                       <tr>
