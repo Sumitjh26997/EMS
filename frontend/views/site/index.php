@@ -18,19 +18,20 @@ $this->title = 'EMS';
           <label>Search :</label>
 
           <br>
+          <input id="mid" value="<?=Yii::$app->user->identity->id?>" hidden>
           <div class="col-sm-3">
           <label>By Month : </label> 
-          <select name="month" class="form-control select2" style="width:50%">
-            <option default selected>--</option>
-            <option value="1">Jan</option>
-            <option value="2">Feb</option>
-            <option value="3">Mar</option>
-            <option value="4">Apr</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">Aug</option>
-            <option value="9">Sep</option>
+          <select id="month" class="form-control select2" style="width:50%">
+            <option value="default" selected>--</option>
+            <option value="01">Jan</option>
+            <option value="02">Feb</option>
+            <option value="03">Mar</option>
+            <option value="04">Apr</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">Aug</option>
+            <option value="09">Sep</option>
             <option value="10">Oct</option>
             <option value="11">Nov</option>
             <option value="12">Dec</option>
@@ -38,8 +39,8 @@ $this->title = 'EMS';
         </div>
         <div class="col-sm-3">
           <label>By Year : </label> 
-          <select name="year" class="form-control select2" style="width:50%">
-            <option default >--</option>
+          <select id="year" class="form-control select2" style="width:50%">
+            <option value="default" selected>--</option>
             <option value="2018">2018</option>
             <option value="2019">2019</option>
             <option value="2020">2020</option>
@@ -47,16 +48,16 @@ $this->title = 'EMS';
         </div>
           <div class="col-sm-3">
           <label>By Program Name : </label><br>
-          <input type="text" class="form-group">
+          <input id="text" type="text" value="" placeholder="default" class="form-group">
         </div>
         <div class="col-sm-3">
           <label></label><br>
-         <button  type="button" class="btn btn-block btn-success btn-sm" style="width:50%;">
+         <button  type="button" class="btn btn-block btn-success btn-sm" style="width:50%;" onclick="submit();">
                 Submit
               </button>
         </div>
           <br><br><br><br>
-          <table id="example2" class="table table-bordered table-hover" style="overflow-x:1">
+          <table id="schedule" class="table table-bordered table-hover" style="overflow-x:1">
             <thead>
             <tr>
               <th>Program ID</th>
@@ -95,3 +96,15 @@ $this->title = 'EMS';
   </div>
   <!-- /.row -->
 </section>
+
+<script src="/EMS/js/jquery.js"></script>
+<script type="text/javascript">
+function submit()
+{
+  var m=$('#month').val();
+  var y=$('#year').val();
+  var t=$('#text').val();
+  var mid=$('#mid').val();
+  $('#schedule').load('/EMS/frontend/views/site/get.php',{'m':m,'y':y,'t':t,'mid':mid});
+}
+</script>

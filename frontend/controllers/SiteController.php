@@ -101,7 +101,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $id=Yii::$app->user->identity->id;
-        $result = Program::findBySql("SELECT * from program p inner join engaged e on p.id=e.program_id where e.minister_id=$id order by p.date,p.start_time ASC")->all();
+        $result = Program::findBySql("SELECT * from program p inner join engaged e on p.id=e.program_id where e.minister_id=$id and e.attending=1 order by p.date,p.start_time ASC")->all();
         // echo $id;
         // print_r($result);
        return $this->render('index',['tables'=>$result]);

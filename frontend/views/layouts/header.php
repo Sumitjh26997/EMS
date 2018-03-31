@@ -117,8 +117,8 @@ $sendid=Yii::$app->user->identity->id;
     var myint;
     var str=$('#id').val();
     myint=setInterval(function(){
-      $('#ul').load('/EMS/frontend/views/site/notification.php',{'sendid':str})
-      $('#bell').load('/EMS/frontend/views/site/ncount.php',{'sendid':str})
+      // $('#ul').load('/EMS/frontend/views/site/notification.php',{'sendid':str})
+      // $('#bell').load('/EMS/frontend/views/site/ncount.php',{'sendid':str})
     },1000);
   })
 </script>
