@@ -24,6 +24,7 @@ use Yii;
  * @property string $location
  * @property string $party
  * @property string $join_date
+ * @property int $supervisor
  */
 class User extends \yii\db\ActiveRecord
 {
@@ -41,8 +42,8 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['auth_key', 'password_hash', 'email', 'created_at', 'updated_at'], 'required'],
-            [['status', 'created_at', 'updated_at'], 'integer'],
+            [['auth_key', 'password_hash', 'email', 'created_at', 'updated_at', 'supervisor'], 'required'],
+            [['status', 'created_at', 'updated_at', 'supervisor'], 'integer'],
             [['dob', 'join_date'], 'safe'],
             [['username', 'password_hash', 'password_reset_token', 'email', 'ministry', 'designation', 'image', 'location', 'party'], 'string', 'max' => 255],
             [['auth_key'], 'string', 'max' => 32],
@@ -75,6 +76,7 @@ class User extends \yii\db\ActiveRecord
             'location' => 'Location',
             'party' => 'Party',
             'join_date' => 'Join Date',
+            'supervisor' => 'Supervisor',
         ];
     }
 }

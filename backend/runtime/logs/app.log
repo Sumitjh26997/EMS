@@ -4850,3 +4850,361 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1522309649.518
     'REQUEST_TIME' => 1522309649
 ]
+2018-03-31 06:24:35 [::1][1][9gfsj2jhh3dqad4lq6c1s3ldt1][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\User' in file: /var/www/html/EMS/backend/models/User.php. Namespace missing? in /var/www/html/EMS/vendor/yiisoft/yii2/BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 /var/www/html/EMS/backend/controllers/UserController.php(67): spl_autoload_call('backend\\models\\...')
+#2 [internal function]: backend\controllers\UserController->actionCreate()
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user/create', Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/EMS/admin/index.php(17): yii\base\Application->run()
+#9 {main}
+2018-03-31 06:24:35 [::1][1][9gfsj2jhh3dqad4lq6c1s3ldt1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'c893afr5s5a9hsjc3ko780vti2'
+    'advanced-frontend' => '417n0pmg2qom5n58jf1os29vs5'
+    '_identity-frontend' => '7f3ecec626262422a331b5e4a9a52e063377703e99469cae7205b9ee2e712bcda:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[3,\"Uu7Qm5TH7SrXuDs-6kktY6g_EaDtYwfi\",2592000]\";}'
+    '_csrf-frontend' => '525d5775f9ab995c8a326ea2199817ad04f532736c95c36ef7cae4140448b2fda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"EyRjK_K1CGkgGuQJx9_F1ZxODBVPDUDT\";}'
+    'advanced-backend' => '9gfsj2jhh3dqad4lq6c1s3ldt1'
+    '_csrf-backend' => '7ca5dafc22bcbb786d72225f7731bb6c2f20921fab1bd0f53e9664a857970f1ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"fjMFv6QbA-O2xZwLCdtf0Zt9YrHv6vkj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/EMS/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/EMS/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=c893afr5s5a9hsjc3ko780vti2; advanced-frontend=417n0pmg2qom5n58jf1os29vs5; _identity-frontend=7f3ecec626262422a331b5e4a9a52e063377703e99469cae7205b9ee2e712bcda%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22Uu7Qm5TH7SrXuDs-6kktY6g_EaDtYwfi%22%2C2592000%5D%22%3B%7D; _csrf-frontend=525d5775f9ab995c8a326ea2199817ad04f532736c95c36ef7cae4140448b2fda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22EyRjK_K1CGkgGuQJx9_F1ZxODBVPDUDT%22%3B%7D; advanced-backend=9gfsj2jhh3dqad4lq6c1s3ldt1; _csrf-backend=7ca5dafc22bcbb786d72225f7731bb6c2f20921fab1bd0f53e9664a857970f1ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22fjMFv6QbA-O2xZwLCdtf0Zt9YrHv6vkj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/admin/index.php'
+    'REMOTE_PORT' => '38478'
+    'REDIRECT_URL' => '/EMS/admin/user/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/admin/user/create'
+    'SCRIPT_NAME' => '/EMS/admin/index.php'
+    'PHP_SELF' => '/EMS/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1522477475.779
+    'REQUEST_TIME' => 1522477475
+]
+2018-03-31 06:25:51 [::1][1][9gfsj2jhh3dqad4lq6c1s3ldt1][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\User' in file: /var/www/html/EMS/backend/models/User.php. Namespace missing? in /var/www/html/EMS/vendor/yiisoft/yii2/BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 /var/www/html/EMS/backend/controllers/UserController.php(67): spl_autoload_call('backend\\models\\...')
+#2 [internal function]: backend\controllers\UserController->actionCreate()
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user/create', Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/EMS/admin/index.php(17): yii\base\Application->run()
+#9 {main}
+2018-03-31 06:25:51 [::1][1][9gfsj2jhh3dqad4lq6c1s3ldt1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'c893afr5s5a9hsjc3ko780vti2'
+    'advanced-frontend' => '417n0pmg2qom5n58jf1os29vs5'
+    '_identity-frontend' => '7f3ecec626262422a331b5e4a9a52e063377703e99469cae7205b9ee2e712bcda:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[3,\"Uu7Qm5TH7SrXuDs-6kktY6g_EaDtYwfi\",2592000]\";}'
+    '_csrf-frontend' => '525d5775f9ab995c8a326ea2199817ad04f532736c95c36ef7cae4140448b2fda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"EyRjK_K1CGkgGuQJx9_F1ZxODBVPDUDT\";}'
+    'advanced-backend' => '9gfsj2jhh3dqad4lq6c1s3ldt1'
+    '_csrf-backend' => '7ca5dafc22bcbb786d72225f7731bb6c2f20921fab1bd0f53e9664a857970f1ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"fjMFv6QbA-O2xZwLCdtf0Zt9YrHv6vkj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/EMS/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/EMS/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=c893afr5s5a9hsjc3ko780vti2; advanced-frontend=417n0pmg2qom5n58jf1os29vs5; _identity-frontend=7f3ecec626262422a331b5e4a9a52e063377703e99469cae7205b9ee2e712bcda%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22Uu7Qm5TH7SrXuDs-6kktY6g_EaDtYwfi%22%2C2592000%5D%22%3B%7D; _csrf-frontend=525d5775f9ab995c8a326ea2199817ad04f532736c95c36ef7cae4140448b2fda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22EyRjK_K1CGkgGuQJx9_F1ZxODBVPDUDT%22%3B%7D; advanced-backend=9gfsj2jhh3dqad4lq6c1s3ldt1; _csrf-backend=7ca5dafc22bcbb786d72225f7731bb6c2f20921fab1bd0f53e9664a857970f1ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22fjMFv6QbA-O2xZwLCdtf0Zt9YrHv6vkj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/admin/index.php'
+    'REMOTE_PORT' => '38496'
+    'REDIRECT_URL' => '/EMS/admin/user/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/admin/user/create'
+    'SCRIPT_NAME' => '/EMS/admin/index.php'
+    'PHP_SELF' => '/EMS/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1522477551.777
+    'REQUEST_TIME' => 1522477551
+]
+2018-03-31 06:26:07 [::1][1][9gfsj2jhh3dqad4lq6c1s3ldt1][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\User' in file: /var/www/html/EMS/backend/models/User.php. Namespace missing? in /var/www/html/EMS/vendor/yiisoft/yii2/BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 /var/www/html/EMS/backend/controllers/UserController.php(67): spl_autoload_call('backend\\models\\...')
+#2 [internal function]: backend\controllers\UserController->actionCreate()
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user/create', Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/EMS/admin/index.php(17): yii\base\Application->run()
+#9 {main}
+2018-03-31 06:26:07 [::1][1][9gfsj2jhh3dqad4lq6c1s3ldt1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'c893afr5s5a9hsjc3ko780vti2'
+    'advanced-frontend' => '417n0pmg2qom5n58jf1os29vs5'
+    '_identity-frontend' => '7f3ecec626262422a331b5e4a9a52e063377703e99469cae7205b9ee2e712bcda:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[3,\"Uu7Qm5TH7SrXuDs-6kktY6g_EaDtYwfi\",2592000]\";}'
+    '_csrf-frontend' => '525d5775f9ab995c8a326ea2199817ad04f532736c95c36ef7cae4140448b2fda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"EyRjK_K1CGkgGuQJx9_F1ZxODBVPDUDT\";}'
+    'advanced-backend' => '9gfsj2jhh3dqad4lq6c1s3ldt1'
+    '_csrf-backend' => '7ca5dafc22bcbb786d72225f7731bb6c2f20921fab1bd0f53e9664a857970f1ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"fjMFv6QbA-O2xZwLCdtf0Zt9YrHv6vkj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/EMS/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/EMS/admin/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=c893afr5s5a9hsjc3ko780vti2; advanced-frontend=417n0pmg2qom5n58jf1os29vs5; _identity-frontend=7f3ecec626262422a331b5e4a9a52e063377703e99469cae7205b9ee2e712bcda%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22Uu7Qm5TH7SrXuDs-6kktY6g_EaDtYwfi%22%2C2592000%5D%22%3B%7D; _csrf-frontend=525d5775f9ab995c8a326ea2199817ad04f532736c95c36ef7cae4140448b2fda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22EyRjK_K1CGkgGuQJx9_F1ZxODBVPDUDT%22%3B%7D; advanced-backend=9gfsj2jhh3dqad4lq6c1s3ldt1; _csrf-backend=7ca5dafc22bcbb786d72225f7731bb6c2f20921fab1bd0f53e9664a857970f1ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22fjMFv6QbA-O2xZwLCdtf0Zt9YrHv6vkj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/admin/index.php'
+    'REMOTE_PORT' => '38498'
+    'REDIRECT_URL' => '/EMS/admin/user/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/admin/user/create'
+    'SCRIPT_NAME' => '/EMS/admin/index.php'
+    'PHP_SELF' => '/EMS/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1522477567.788
+    'REQUEST_TIME' => 1522477567
+]
+2018-03-31 06:26:22 [::1][1][9gfsj2jhh3dqad4lq6c1s3ldt1][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\User' in file: /var/www/html/EMS/backend/models/User.php. Namespace missing? in /var/www/html/EMS/vendor/yiisoft/yii2/BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 /var/www/html/EMS/backend/controllers/UserController.php(67): spl_autoload_call('backend\\models\\...')
+#2 [internal function]: backend\controllers\UserController->actionCreate()
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user/create', Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/EMS/admin/index.php(17): yii\base\Application->run()
+#9 {main}
+2018-03-31 06:26:22 [::1][1][9gfsj2jhh3dqad4lq6c1s3ldt1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'c893afr5s5a9hsjc3ko780vti2'
+    'advanced-frontend' => '417n0pmg2qom5n58jf1os29vs5'
+    '_identity-frontend' => '7f3ecec626262422a331b5e4a9a52e063377703e99469cae7205b9ee2e712bcda:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[3,\"Uu7Qm5TH7SrXuDs-6kktY6g_EaDtYwfi\",2592000]\";}'
+    '_csrf-frontend' => '525d5775f9ab995c8a326ea2199817ad04f532736c95c36ef7cae4140448b2fda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"EyRjK_K1CGkgGuQJx9_F1ZxODBVPDUDT\";}'
+    'advanced-backend' => '9gfsj2jhh3dqad4lq6c1s3ldt1'
+    '_csrf-backend' => '7ca5dafc22bcbb786d72225f7731bb6c2f20921fab1bd0f53e9664a857970f1ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"fjMFv6QbA-O2xZwLCdtf0Zt9YrHv6vkj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/EMS/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/EMS/admin/debug/default/view?panel=log&tag=5abf29ffc4ad6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=c893afr5s5a9hsjc3ko780vti2; advanced-frontend=417n0pmg2qom5n58jf1os29vs5; _identity-frontend=7f3ecec626262422a331b5e4a9a52e063377703e99469cae7205b9ee2e712bcda%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22Uu7Qm5TH7SrXuDs-6kktY6g_EaDtYwfi%22%2C2592000%5D%22%3B%7D; _csrf-frontend=525d5775f9ab995c8a326ea2199817ad04f532736c95c36ef7cae4140448b2fda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22EyRjK_K1CGkgGuQJx9_F1ZxODBVPDUDT%22%3B%7D; advanced-backend=9gfsj2jhh3dqad4lq6c1s3ldt1; _csrf-backend=7ca5dafc22bcbb786d72225f7731bb6c2f20921fab1bd0f53e9664a857970f1ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22fjMFv6QbA-O2xZwLCdtf0Zt9YrHv6vkj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/admin/index.php'
+    'REMOTE_PORT' => '38522'
+    'REDIRECT_URL' => '/EMS/admin/user/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/admin/user/create'
+    'SCRIPT_NAME' => '/EMS/admin/index.php'
+    'PHP_SELF' => '/EMS/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1522477582.601
+    'REQUEST_TIME' => 1522477582
+]
+2018-03-31 06:29:33 [::1][1][9gfsj2jhh3dqad4lq6c1s3ldt1][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\User' in file: /var/www/html/EMS/backend/models/User.php. Namespace missing? in /var/www/html/EMS/vendor/yiisoft/yii2/BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 /var/www/html/EMS/backend/controllers/UserController.php(67): spl_autoload_call('backend\\models\\...')
+#2 [internal function]: backend\controllers\UserController->actionCreate()
+#3 /var/www/html/EMS/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/EMS/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/EMS/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#6 /var/www/html/EMS/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user/create', Array)
+#7 /var/www/html/EMS/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/EMS/admin/index.php(17): yii\base\Application->run()
+#9 {main}
+2018-03-31 06:29:33 [::1][1][9gfsj2jhh3dqad4lq6c1s3ldt1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'c893afr5s5a9hsjc3ko780vti2'
+    'advanced-frontend' => '417n0pmg2qom5n58jf1os29vs5'
+    '_identity-frontend' => '7f3ecec626262422a331b5e4a9a52e063377703e99469cae7205b9ee2e712bcda:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[3,\"Uu7Qm5TH7SrXuDs-6kktY6g_EaDtYwfi\",2592000]\";}'
+    '_csrf-frontend' => '525d5775f9ab995c8a326ea2199817ad04f532736c95c36ef7cae4140448b2fda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"EyRjK_K1CGkgGuQJx9_F1ZxODBVPDUDT\";}'
+    'advanced-backend' => '9gfsj2jhh3dqad4lq6c1s3ldt1'
+    '_csrf-backend' => '7ca5dafc22bcbb786d72225f7731bb6c2f20921fab1bd0f53e9664a857970f1ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"fjMFv6QbA-O2xZwLCdtf0Zt9YrHv6vkj\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/EMS/admin/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/64.0.3282.167 Chrome/64.0.3282.167 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/EMS/admin/debug/default/view?panel=log&tag=5abf29ffc4ad6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=c893afr5s5a9hsjc3ko780vti2; advanced-frontend=417n0pmg2qom5n58jf1os29vs5; _identity-frontend=7f3ecec626262422a331b5e4a9a52e063377703e99469cae7205b9ee2e712bcda%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22Uu7Qm5TH7SrXuDs-6kktY6g_EaDtYwfi%22%2C2592000%5D%22%3B%7D; _csrf-frontend=525d5775f9ab995c8a326ea2199817ad04f532736c95c36ef7cae4140448b2fda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22EyRjK_K1CGkgGuQJx9_F1ZxODBVPDUDT%22%3B%7D; advanced-backend=9gfsj2jhh3dqad4lq6c1s3ldt1; _csrf-backend=7ca5dafc22bcbb786d72225f7731bb6c2f20921fab1bd0f53e9664a857970f1ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22fjMFv6QbA-O2xZwLCdtf0Zt9YrHv6vkj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/EMS/admin/index.php'
+    'REMOTE_PORT' => '38560'
+    'REDIRECT_URL' => '/EMS/admin/user/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/EMS/admin/user/create'
+    'SCRIPT_NAME' => '/EMS/admin/index.php'
+    'PHP_SELF' => '/EMS/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1522477773.435
+    'REQUEST_TIME' => 1522477773
+]

@@ -8,7 +8,7 @@ use yii\data\ActiveDataProvider;
 use backend\models\User;
 
 /**
- * UserSearch represents the model behind the search form of `\backend\models\User`.
+ * UserSearch represents the model behind the search form of `backend\models\User`.
  */
 class UserSearch extends User
 {
@@ -18,7 +18,7 @@ class UserSearch extends User
     public function rules()
     {
         return [
-            [['id', 'status', 'created_at', 'updated_at'], 'integer'],
+            [['id', 'status', 'created_at', 'updated_at', 'supervisor'], 'integer'],
             [['username', 'auth_key', 'password_hash', 'password_reset_token', 'email', 'ministry', 'designation', 'image', 'dob', 'sex', 'location', 'party', 'join_date'], 'safe'],
         ];
     }
@@ -65,6 +65,7 @@ class UserSearch extends User
             'updated_at' => $this->updated_at,
             'dob' => $this->dob,
             'join_date' => $this->join_date,
+            'supervisor' => $this->supervisor,
         ]);
 
         $query->andFilterWhere(['like', 'username', $this->username])
