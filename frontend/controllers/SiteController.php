@@ -105,19 +105,20 @@ class SiteController extends Controller
     {
 
         $events=Program::find()->where(['init_weight'=>$id])->all();
-        print_r($events);
+       /* print_r($events);*/
         $tasks=[];
-        foreach ($events as $event) {
-             $event = new \yii2fullcalendar\models\Event();
-              $event->id = $event->id;
-              $event->name = $event->name;
-              //$event->start = date('Y-m-d');
-              $tasks[] = $event;
+        // foreach ($events as $event) {
+        //      $event = new \yii2fullcalendar\models\Event();
+        //       $event->id = $event->id;
+        //       $event->name = $event->name;
+        //       //$event->start = date('Y-m-d');
+        //       $tasks[] = $event;
               
-         } 
-        print_r($tasks);
+        //  } 
+       /* print_r($tasks);*/
         return $this->render('profile',['id'=>$id,'events'=>$tasks]);
     }
+   
     /**
      * Logs in a user.
      *

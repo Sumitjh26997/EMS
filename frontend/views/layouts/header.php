@@ -4,6 +4,7 @@ use yii\helpers\Html;
 /* @var $this \yii\web\View */
 /* @var $content string */
 ?>
+
 <head>
   <link rel="shortcut icon" href="mospi.webp">
 </head>

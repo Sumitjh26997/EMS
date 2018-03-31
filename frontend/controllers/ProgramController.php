@@ -44,6 +44,10 @@ class ProgramController extends Controller
          ];
      }
 
+public function beforeAction($action) {
+    $this->enableCsrfValidation = false;
+    return parent::beforeAction($action);
+}
 
     /**
      * Lists all Program models.
@@ -51,6 +55,8 @@ class ProgramController extends Controller
      */
     public function actionIndex()
     {
+          Yii::$app->controller->enableCsrfValidation = false;
+
         $searchModel = new ProgramSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -94,6 +100,8 @@ class ProgramController extends Controller
             'model' => $this->findModel($id),
         ]);
     }
+
+
 
     public function actionSchedule()
     {
@@ -165,6 +173,83 @@ $end=$_POST['end'];
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
+ public function actionCreateme()
+    {
+
+        // $connection= new \yii\db\Connection([
+        //   'dsn' => 'mysql:host=localhost;dbname=ems',
+        //   'username'=>'root',
+        //   'password'=>'12345',
+        // ]);
+        // $connection->open();
+       if(!empty($_POST['checkbox'])){
+        foreach ($_POST['checkbox'] as $check) {
+          echo $check;
+          
+        }
+        print_r($_POST['checkbox']);
+      }
+        $model = new Program();
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            // $find=Program::find()->orderBy(['id'=>SORT_DESC])->one();
+            // $find->program_weight=0;
+            // $find->save();
+            // //$entry = new Engaged();
+            // $p=Program::find()->orderBy(['id'=>SORT_DESC])->one();
+            // $program_id = $p->id;
+            // $minister_id = Yii::$app->user->identity->id;
+            // $command=$connection->createCommand()->insert('engaged',['program_id'=>$program_id,'minister_id'=>$minister_id,'attending'=>1,'reason'=>'Personal'])->execute();
+
+            return $this->redirect(['view', 'id' => $model->id]);
+        }
+
+        return $this->render('createme', [
+            'model' => $model,
+        ]);
+    }
+     public function actionCheck()
+    { 
+       $con=mysqli_connect("localhost","root","12345","ems");
+
+   if (mysqli_connect_errno($con)) {
+      echo "Failed to connect to MySQL: " . mysqli_connect_error();
+   }
+      if(!empty($_POST['check_list'])){
+        foreach ($_POST['check_list'] as $check) {
+          echo $check;
+          # code...
+        }
+        print_r($_POST['check_list']);
+
+        $ministers=User::find()->where(['in','id',$_POST['check_list']])->all();
+      //print_r($ministers);
+      $date=$_POST['date'];
+      $start_time=date("H:i",strtotime($_POST['start_time']));
+      $end_time=date("H:i",strtotime($_POST['end_time']));
+
+      if($start_time < $end_time)
+      {
+        echo "oldjwhsh";
+      }
+
+
+      $busy ="select e.* from engaged e join program p on p.id = e.program_id where  p.date = '$date' and e.attending = 1 and (('$start_time' >= p.start_time and '$end_time'<=p.end_time) or ('$start_time'<=p.start_time and '$end_time'>=p.start_time) or ('$start_time'<=p.end_time and '$end_time'>=p.end_time));";
+      $result=mysqli_query($con,$busy);
+
+      while($row = mysqli_fetch_array($result))
+      {
+        print_r($row);
+      }
+
+       return $this->render('check',['minister'=>$ministers,'start_time'=> $start_time,'end_time'=>$end_time,'busy'=>$result,'date'=>$date]);
+      }
+      
+/*      mysqli_close($con);*/
+       
+    }
+
+
     public function actionCreate()
     {
 
@@ -195,34 +280,7 @@ $end=$_POST['end'];
     }
 
 
-    public function actionCreateme()
-    {
-
-        // $connection= new \yii\db\Connection([
-        //   'dsn' => 'mysql:host=localhost;dbname=ems',
-        //   'username'=>'root',
-        //   'password'=>'12345',
-        // ]);
-        // $connection->open();
-        $model = new Program();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            // $find=Program::find()->orderBy(['id'=>SORT_DESC])->one();
-            // $find->program_weight=0;
-            // $find->save();
-            // //$entry = new Engaged();
-            // $p=Program::find()->orderBy(['id'=>SORT_DESC])->one();
-            // $program_id = $p->id;
-            // $minister_id = Yii::$app->user->identity->id;
-            // $command=$connection->createCommand()->insert('engaged',['program_id'=>$program_id,'minister_id'=>$minister_id,'attending'=>1,'reason'=>'Personal'])->execute();
-
-            return $this->redirect(['view', 'id' => $model->id]);
-        }
-
-        return $this->render('createme', [
-            'model' => $model,
-        ]);
-    }
+   
 
     /**
      * Updates an existing Program model.
