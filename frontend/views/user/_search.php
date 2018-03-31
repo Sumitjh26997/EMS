@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\UserSearch */
+/* @var $model frontend\models\UserSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -17,7 +17,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'Name') ?>
+    <?= $form->field($model, 'username') ?>
 
     <?= $form->field($model, 'auth_key') ?>
 
@@ -46,6 +46,8 @@ use yii\widgets\ActiveForm;
     <?php // echo $form->field($model, 'location') ?>
 
     <?php // echo $form->field($model, 'party') ?>
+
+    <?php // echo $form->field($model, 'join_date') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

@@ -13,17 +13,6 @@
             </div>
         </div>
 
-        <!-- search form -->
-        <!-- <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-                <input type="text" name="q" class="form-control" placeholder="Search..."/>
-              <span class="input-group-btn">
-                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>
-            </div>
-        </form> -->
-        <!-- /.search form -->
 
         <?= dmstr\widgets\Menu::widget(
             [
@@ -34,6 +23,7 @@
                     ['label' => 'Create Personal Engagement', 'icon' => 'circle-o text-purple', 'url' => ['/program/create']],
                     ['label' => 'Alter a Program', 'icon' => 'circle-o text-blue', 'url' => ['/program/alter']],
                     ['label' => 'Remove a Program', 'icon' => 'circle-o text-red', 'url' => ['/program/remove']],
+                    ['label' => 'User Profiles' , 'icon' => 'circle-o text-yellow', 'url' => ['/user/index']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     [
                         'label' => 'Some tools',

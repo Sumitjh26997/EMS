@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel backend\models\UserSearch */
+/* @var $searchModel frontend\models\UserSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Users';
@@ -26,23 +26,24 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'Name',
-            'auth_key',
-            'password_hash',
-            'password_reset_token',
-            //'email:email',
+            'username',
+            //'auth_key',
+            //'password_hash',
+            //'password_reset_token',
+            'email:email',
             //'status',
             //'created_at',
             //'updated_at',
-            //'ministry',
-            //'designation',
+            'ministry',
+            'designation',
             //'image',
             //'dob',
-            //'sex',
-            //'location',
-            //'party',
+            'sex',
+            'location',
+            'party',
+            //'join_date',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ColumnView'],
         ],
     ]); ?>
 </div>

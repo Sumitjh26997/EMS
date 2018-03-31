@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\User */
+/* @var $model frontend\models\User */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -12,7 +12,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'Name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'auth_key')->textInput(['maxlength' => true]) ?>
 
@@ -41,6 +41,8 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'location')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'party')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'join_date')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
