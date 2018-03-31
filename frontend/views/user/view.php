@@ -114,6 +114,15 @@ $this->params['breadcrumbs'][] = $this->title;
   </div>
 <script src='/EMS/js/jquery.js'></script>
 <script>
+$(document).ready(function(){
+  var mid=$('#mid').val();
+  var rid=$('#rid').val();
+  if(mid==rid)
+  {
+    document.getElementById('block').style.display='none';
+  }
+});
+
 function block()
 {
   var mid=$('#mid').val();
@@ -127,4 +136,5 @@ function unblock()
   var rid=$('#rid').val();
   $('#block').load('/EMS/frontend/views/user/unblock.php',{'mid':mid,'rid':rid});
 }
+
 </script>
