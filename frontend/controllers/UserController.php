@@ -69,8 +69,12 @@ class UserController extends Controller
       {
         $flag=1;
       }
+
+      $query1="SELECT * FROM user WHERE id=$id";
+      $result=mysqli_query($con,$query1);
+      $user=mysqli_fetch_array($result);
         return $this->render('view', [
-            'model' => $this->findModel($id),'flag'=>$flag,
+            'model' => $this->findModel($id),'flag'=>$flag,'user'=>$user,
         ]);
     }
 

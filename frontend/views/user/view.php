@@ -32,30 +32,30 @@ $this->params['breadcrumbs'][] = $this->title;
           <!-- About Me Box -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <img class="profile-user-img img-responsive img-circle" src="/EMS/program/photos/<?=Yii::$app->user->identity->image?>" alt="User profile picture">
+              <img class="profile-user-img img-responsive img-circle" src="/EMS/program/photos/<?=$user['image']?>" alt="User profile picture">
 
-              <h3 class="profile-username text-center"><?=Yii::$app->user->identity->username?></h3>
+              <h3 class="profile-username text-center"><?=$user['username']?></h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <strong><i class="fa fa-user margin-r-5"></i>Designation</strong>
 
               <p class="text-muted">
-                <?=Yii::$app->user->identity->designation?>
+                <?=$user['designation']?>
               </p>
 
               <hr>
 
               <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
 
-              <p class="text-muted"><?=Yii::$app->user->identity->location?></p>
+              <p class="text-muted"><?=$user['location']?></p>
 
               <hr>
 
               <strong><i class="fa fa-calendar margin-r-5"></i>Date of Birth</strong>
 
               <p class="text-muted">
-                <?=Yii::$app->user->identity->dob?>
+                <?=$user['dob']?>
               </p>
 
               <hr>
@@ -63,7 +63,7 @@ $this->params['breadcrumbs'][] = $this->title;
               <strong><i class="fa fa-group margin-r-5"></i>Ministry</strong>
 
               <p class="text-muted">
-                <?=Yii::$app->user->identity->ministry?>
+                <?=$user['ministry']?>
               </p>
 
               <hr>
@@ -71,7 +71,7 @@ $this->params['breadcrumbs'][] = $this->title;
               <strong><i class="fa fa-home margin-r-5"></i>Party</strong>
 
               <p class="text-muted">
-                <?=Yii::$app->user->identity->party?>
+                <?=$user['party']?>
               </p>
 
               <hr>
@@ -80,11 +80,12 @@ $this->params['breadcrumbs'][] = $this->title;
               <strong><i class="fa fa-calendar margin-r-5"></i>Join Date</strong>
 
               <p class="text-muted">
-                <?=Yii::$app->user->identity->join_date?>
+                <?=$user['join_date']?>
               </p>
 
               <hr>
-              <input >
+              <input id="mid" value="<?=Yii::$app->user->identity->id?>" hidden>
+              <input id="rid" value="<?=$user['id']?>" hidden>
               <div id="block">
                 <?php
                 if($flag==1)
@@ -111,15 +112,19 @@ $this->params['breadcrumbs'][] = $this->title;
     </section>
     <!-- /.content -->
   </div>
-<script src='js/jquery.js'></script>
+<script src='/EMS/js/jquery.js'></script>
 <script>
 function block()
 {
-  $
+  var mid=$('#mid').val();
+  var rid=$('#rid').val();
+  $('#block').load('/EMS/frontend/views/user/block.php',{'mid':mid,'rid':rid});
 }
 
 function unblock()
 {
-
+  var mid=$('#mid').val();
+  var rid=$('#rid').val();
+  $('#block').load('/EMS/frontend/views/user/unblock.php',{'mid':mid,'rid':rid});
 }
 </script>
