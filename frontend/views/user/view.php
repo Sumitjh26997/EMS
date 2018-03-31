@@ -9,6 +9,8 @@ use yii\widgets\DetailView;
 $this->title = $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
+$mid=Yii::$app->user->identity->id;
+$rid=$user['id'];
 ?>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -83,6 +85,12 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?=$user['join_date']?>
               </p>
 
+              <hr>
+               <?= Html::a(
+                                          'View Schedule',
+                                          ['/user/calendar','mid'=>$mid,'rid'=>$rid],
+                                          ['class' => 'btn btn-primary btn-info','style'=>'width:100%']
+                                      ) ?>
               <hr>
               <input id="mid" value="<?=Yii::$app->user->identity->id?>" hidden>
               <input id="rid" value="<?=$user['id']?>" hidden>

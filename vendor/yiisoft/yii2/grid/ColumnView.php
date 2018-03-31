@@ -59,7 +59,7 @@ class ColumnView extends Column
      *
      * @see buttons
      */
-    public $template = '{view}';
+    public $template = '{view}   {update}';
     /**
      * @var array button rendering callbacks. The array keys are the button names (without curly brackets),
      * and the values are the corresponding button rendering callbacks. The callbacks should use the following
@@ -143,7 +143,7 @@ class ColumnView extends Column
     protected function initDefaultButtons()
     {
         $this->initDefaultButton('view', 'eye-open');
-        $this->initDefaultButton('update', 'pencil');
+        $this->initDefaultButton('update', 'calendar');
         $this->initDefaultButton('delete', 'trash', [
             'data-confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
             'data-method' => 'post',

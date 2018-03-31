@@ -145,4 +145,14 @@ class UserController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
+
+     public function actionCalendar($mid,$rid)
+    {
+
+        
+        return $this->render('calendar', [
+            'mid' => $mid,'rid'=>$rid
+        ]);
+    }
+
 }
