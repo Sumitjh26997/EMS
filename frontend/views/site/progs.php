@@ -20,7 +20,7 @@ $sendid=Yii::$app->user->identity->id;
   <div class="col-sm-4">
   </div>
         <div class="col-sm-4" >
-        <h2>Your Notifications<?=$sendid?></h2>
+        <h2>Your Notifications</h2>
         </div>
         <div class="col-sm-4">
         </div>

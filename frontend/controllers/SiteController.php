@@ -12,6 +12,9 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use frontend\models\Engaged;
+use frontend\models\Program;
+
 
 /**
  * Site controller
@@ -97,7 +100,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $id=Yii::$app->user->identity->id;
+        $result = Program::findBySql("SELECT * from program p inner join engaged e on p.id=e.program_id where e.minister_id=$id order by p.date,p.start_time ASC")->all();
+        // echo $id;
+        // print_r($result);
+       return $this->render('index',['tables'=>$result]);
     }
 
     public function actionProfile()
